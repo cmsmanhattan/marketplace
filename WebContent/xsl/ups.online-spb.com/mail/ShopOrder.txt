@@ -1,0 +1,14 @@
+To attention of the manager!!!
+
+Client with the name @FirstName @LastName made No. @NumberOfOrder order. 
+Client made the order and the order is containing @ProductCount of items.
+
+Comments to the order: @CustomerCommentariy.
+
+Contact person: @ContactPerson 
+Contacts of the client: @Phone phone and @CustomerFax fax.
+E-mail of the client of @CustomerEmail.
+
+Delivery address: @Contry, @City, @Address
+
+

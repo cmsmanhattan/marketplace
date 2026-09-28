@@ -1,0 +1,125 @@
+* {
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 0px; 
+	PADDING-TOP: 0px
+}
+HTML {
+	HEIGHT: 100%
+}
+BODY {
+	TEXT-ALIGN: center
+}
+TABLE {
+	BORDER-TOP-WIDTH: 0px; 
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-BOTTOM-WIDTH: 0px; 
+	WIDTH: 100%; 
+	BORDER-COLLAPSE: collapse; 
+	BORDER-RIGHT-WIDTH: 0px
+}
+TD {
+	VERTICAL-ALIGN: top
+}
+TH {
+	VERTICAL-ALIGN: top; 
+	TEXT-ALIGN: left
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+IMG {
+	BORDER-TOP-STYLE: none; 
+	BORDER-RIGHT-STYLE: none; 
+	BORDER-LEFT-STYLE: none; 
+	BORDER-BOTTOM-STYLE: none
+}
+H2 {
+	FONT-SIZE: 120%
+}
+H3 {
+	FONT-SIZE: 110%
+}
+H4 {
+	FONT-SIZE: 110%
+}
+P {
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 10px; 
+	PADDING-TOP: 0px
+}
+TEXTAREA .inputbox {
+	MARGIN: 0px 0px 5px; 
+	WIDTH: 300px; 
+	HEIGHT: 100px
+}
+SELECT {
+	MARGIN: 0px 0px 2px; 
+	VERTICAL-ALIGN: middle; 
+	HEIGHT: auto;
+	width:150px;
+}
+.width {
+	WIDTH: 100%
+}
+.main {
+	MARGIN: auto; 
+	TEXT-ALIGN: left
+}
+
+
+/* ============================================================
+   MOBILE / NARROW-SCREEN LAYOUT (main shop templates)
+   Applies only on screens <= 1024px. Desktop is unchanged.
+   ============================================================ */
+@media (max-width: 1024px) {
+
+	/* Fixed-width wrappers become fluid and centered, so header,
+	   content and footer share the same centering axis. */
+	.main,
+	.indent,
+	.indent_main {
+		width: 100% !important;
+		max-width: 100%;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		box-sizing: border-box;
+	}
+
+	/* Symmetric side gaps for the content container. */
+	#container {
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+	}
+
+	/* Hide the left / right sidebars on mobile
+	   (search filters, "My Account" - they clutter the screen). */
+	#left,
+	#right {
+		display: none !important;
+	}
+
+	/* Content wrappers used across the product pages. */
+	.contentArticle,
+	.mainContent,
+	.forum,
+	.registration {
+		width: auto !important;
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+
+	.blog,
+	.orders {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	.contentArticle img,
+	.mainContent img {
+		max-width: 100%;
+		height: auto;
+	}
+}

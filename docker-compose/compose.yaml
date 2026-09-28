@@ -1,0 +1,100 @@
+#########################################################################################
+## Kubernetes RUN
+## Translate a Docker Compose File to Kubernetes Resources
+## https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/
+##
+##  You must have 16 GB but Normal 32 GB
+##
+##########################################################################################
+services:
+  db:
+    image: mariadb:10.6.4-focal
+    ports:
+      - "3306:3306"
+    command:
+      - --max_connections=1000
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/01-init.sql
+      - ./notifications_migration.sql:/docker-entrypoint-initdb.d/02-notifications_migration.sql
+      - ./password_hash_migration.sql:/docker-entrypoint-initdb.d/03-password_hash_migration.sql
+      - ./resolution_center_migration.sql:/docker-entrypoint-initdb.d/04-resolution_center_migration.sql
+      - ./store_session_reset_after_rename.sql:/docker-entrypoint-initdb.d/05-store_session_reset_after_rename.sql
+      - ./stripe_migration.sql:/docker-entrypoint-initdb.d/06-stripe_migration.sql
+      - db_data:/var/lib/mysql
+    networks:
+      network:
+        ipv4_address: 10.5.0.5
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: grabfix
+      MYSQL_DATABASE: cmsdb
+      MYSQL_USER: cms
+      MYSQL_PASSWORD: grabfix
+
+  cmsmanhattan:
+    image: cmsmanhattan/cmsone:0.0.54
+    ports:
+      - "80:8080"
+    restart: always
+    depends_on:
+      - db
+    environment:
+      - CMS_DB_JDBC_URL=jdbc:mysql://10.5.0.5:3306/cmsdb?autoReconnect=true
+      - CMS_DB_USER=root
+      - CMS_DB_PASSWORD=grabfix
+      - CMS_DB_USE_SSL=false
+      - CMS_DB_AUTO_RECONECT=false
+    networks:
+      network:
+        ipv4_address: 10.5.0.4
+
+  cms2servicediscovery:
+    image: cmsmanhattan/cms2servicediscovery:1.0.10
+    ports:
+      - "8761:8761"
+    restart: always
+    networks:
+      network:
+        ipv4_address: 10.5.0.9
+
+  james:
+    image: apache/james:jpa-3.8.0
+    container_name: james
+    hostname: "10.5.0.3"
+    command:
+      - --generate-keystore
+    ports:
+      - "25:25"
+      - "110:110"
+      - "143:143"
+      - "465:465"
+      - "993:993"
+      - "119:119"
+      - "587:587"
+      - "8000:8000"
+      - "4555:4555"
+      - "9999:9999"
+    volumes:
+      - db_data:/root/conf:rw
+      - db_data:/root/var:rw
+      - db_data:/var/james/index:rw
+      - db_data:/logs:rw
+    environment:
+      - JAVA_OPTS=-Xmx2g -Xms2g
+    restart: always
+    networks:
+      network:
+        ipv4_address: 10.5.0.3
+
+volumes:
+  db_data:
+  cache:
+    driver: local
+
+networks:
+  network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16
+          gateway: 10.5.0.1

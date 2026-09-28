@@ -1,0 +1,66 @@
+#
+# This is setting for CMS Controllers 
+#
+#    !!!  It will generated dynamically via Maven install command in compile time
+#    Just use the annotation @PageController( jspName = "Order.jsp" ) .
+#    the file will packet in compile time in war file 
+#
+#
+###### Actiom Mapping  #########
+#
+# Post URL = Class
+#
+# Example  Productlist.jsp=mypackage.ProductlistAction
+#
+## 
+
+RegPage.jsp=com.cbsinc.cms.controllers.RegistrationAction
+Productlist.jsp=com.cbsinc.cms.controllers.ProductlistAction
+Authorization.jsp=com.cbsinc.cms.controllers.AuthorizationAction
+Policy.jsp=com.cbsinc.cms.controllers.ProductInfoPageAction
+Order.jsp=com.cbsinc.cms.controllers.OrderAction
+ProductPostCre.jsp=com.cbsinc.cms.controllers.ProductPostCreAction
+ProductUserPost.jsp=com.cbsinc.cms.controllers.ProductUserPostAction
+Co1ProductPost.jsp=com.cbsinc.cms.controllers.Co1ProductPostAction
+Co2ProductPost.jsp=com.cbsinc.cms.controllers.Co2ProductPostAction
+Ext1ProductPost.jsp=com.cbsinc.cms.controllers.Ext1ProductPostAction
+Ext2ProductPost.jsp=com.cbsinc.cms.controllers.Ext2ProductPostAction
+BlogExtProductPost.jsp=com.cbsinc.cms.controllers.BlogExtProductPostAction
+ExtFilesProductPost.jsp=com.cbsinc.cms.controllers.ExtFilesProductPostAction
+ExtTabsProductPost.jsp=com.cbsinc.cms.controllers.ExtTabsProductPostAction
+ProductUserPostMusic.jsp=com.cbsinc.cms.controllers.ProductUserPostMusicAction
+ProductUserPostVideo.jsp=com.cbsinc.cms.controllers.ProductUserPostVideoAction
+ProductUserPostTransport.jsp=com.cbsinc.cms.controllers.ProductUserPostTransportAction
+ExtFilesProductPostUser.jsp=com.cbsinc.cms.controllers.ExtFilesProductPostUserAction
+ExtOficeFilesProductPostUser.jsp=com.cbsinc.cms.controllers.ExtOficeFilesProductPostUserAction
+ExtMusicFilesProductPostUser.jsp=com.cbsinc.cms.controllers.ExtMusicFilesProductPostUserAction
+Ext1ProductPostUser.jsp=com.cbsinc.cms.controllers.Ext1ProductPostUserAction
+Ext2ProductPostUser.jsp=com.cbsinc.cms.controllers.Ext2ProductPostUserAction
+ProductUserPostBusiness.jsp=com.cbsinc.cms.controllers.ProductUserPostBusinessAction
+
+SelectBigImage.jsp=com.cbsinc.cms.controllers.SelectBigImageAction
+SelectFile.jsp=com.cbsinc.cms.controllers.SelectFileAction
+SelectImage.jsp=com.cbsinc.cms.controllers.SelectSmallImageAction
+
+OrderList.jsp=com.cbsinc.cms.controllers.OrderListAction
+
+AccountHistory.jsp=com.cbsinc.cms.controllers.AccountHistoryAction
+AccountHistoryDetal.jsp=com.cbsinc.cms.controllers.AccountHistoryDetalAction
+
+Pay.jsp=com.cbsinc.cms.controllers.PayAction
+PrePay.jsp=com.cbsinc.cms.controllers.PrePayAction
+
+Install.jsp=com.cbsinc.cms.controllers.InstallAction
+
+#ServicePagePost.jsp=com.cbsinc.cms.controllers.Ext1ProductPostUserAction
+ServicePagePost.jsp=com.cbsinc.cms.controllers.ServicePagePostUserAction
+
+Domain.jsp=com.cbsinc.cms.controllers.WhoisAction
+Support.jsp=com.cbsinc.cms.controllers.SupportAction
+EMail.jsp=com.cbsinc.cms.controllers.EMainAction
+fdresponce.jsp=com.cbsinc.cms.controllers.FDResponceAction
+BottomListPost.jsp=com.cbsinc.cms.controllers.BottomListPostAction
+SetDomain.jsp=com.cbsinc.cms.controllers.SetDomainAction
+Merchant.jsp=com.cbsinc.cms.controllers.MerchantAction
+NewsBlockPostCre.jsp=com.cbsinc.cms.controllers.NewBlockPostCreAction
+

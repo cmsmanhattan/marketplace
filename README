@@ -1,0 +1,114 @@
+Instaltion CMS.
+
+2. Install MySQL5.6 
+2. run sql script in order to make tables and rows
+3. Run Maven pom file with basic options ( mvn clean install)
+4. Use Ecplise project in order to run the project on tomcat automaticaly
+
+BitBucket pay issues
+https://www.atlassian.com/company/contact/purchasing-licensing#/
+
+login and password - admin/admin
+Any questions mail to: 
+Konstantin Grabko: konstantin.grabko@yahoo.com
+
+clean logs in docker
+docker system prune -f
+
+
+
+doker 
+install 
+docker-compose up --build
+uninstall
+docker compose down -v
+
+ docker update --kernel-memory 2G a8b32f136d4c
+ 
+ docker cp my_app:/app/data.txt ./data.txt
+
+curl -XPUT http://localhost:8000/users/support -d '{"password":"support"}' -H "Content-Type: application/json"
+curl -XGET http://localhost:8000/users
+http://localhost:8000/domains/{host}
+https://www.baeldung.com/rest-template
+
+docker exec james_run java -jar /root/james-cli.jar AddDomain domain.tld
+docker exec james_run java -jar /root/james-cli.jar AddUser user@domain.tld secretPassword
+
+https://github.com/lff0305/springboot-lagency-struts-1/blob/master/main/pom.xml
+sss
+
+
+https://stackoverflow.com/questions/25797214/jetty-how-to-programmatically-configure-multiple-virtual-hosts
+
+https://github.com/apache/james-project/blob/master/server/apps/jpa-app/README.adoc
+
+https://raw.githubusercontent.com/apache/james-project/master/server/apps/jpa-app/docker-compose.yml 
+ 
+ 
+ WENMAIL ADMIN API
+ http://localhost:8087/actuator/swagger-ui/index.html#/
+ 
+ OPEN AI
+ http://localhost:8096/index.html
+  OPEN AI API
+ http://localhost:8086/actuator/swagger-ui/index.html
+ 
+ run those command to instal the project 
+  npm install --legacy-peer-deps
+  npm install -g @angular/cli
+  npm start
+  
+  https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/
+  
+  
+  IA -- section
+  complete instruction how load dolly dataset to pyspark
+  https://www.datacamp.com/tutorial/complete-databricks-dolly-tutorial
+  https://www.youtube.com/watch?v=kiNGF9OTphU
+  https://www.geeksforgeeks.org/how-to-read-json-files-with-pandas/
+  
+  load dataset
+  https://www.youtube.com/watch?v=yYvSscuM8so
+  https://www.kaggle.com/datasets
+  
+  load cvs or exel files
+  https://www.youtube.com/watch?v=EMvT8tiHJ7o
+  https://www.youtube.com/watch?v=8rfH7al7PgU
+  
+  add chatbot from OpenAI
+  https://www.youtube.com/watch?v=2izXQUoXyjA
+  
+  
+  
+  https://www.youtube.com/watch?v=ZjDZ96m08-k
+  https://www.youtube.com/watch?v=v7oLMvcxgFY
+  https://www.youtube.com/watch?v=ttBs_wfw_6U
+  https://www.youtube.com/watch?v=GoJ6Fa4QRd0
+  
+  https://github.com/Netflix/eureka/tree/master/eureka-examples
+  
+https://www.youtube.com/watch?v=p6xDCz00TxU
+
+  
+  
+  docker run -p "25:25" -p "143:143" \
+    -v "$PWD/mailetcontainer.xml:/root/conf/mailetcontainer.xml" \
+    -v "$PWD/target/custom-mailets.jar:/root/extensions-jars/custom-mailets.jar" \
+    my-james-image:latest --generate-keystore
+    
+    
+    https://james.apache.org/howTo/imap-server.html
+    https://collabnix.com/how-to-setup-ollama-with-ollama-webui-using-docker-compose/
+    
+    
+    https://james.staged.apache.org/james-project/3.9.0/servers/distributed/configure/smtp.html
+    https://github.com/apache/james-project/blob/master/examples/custom-james-assembly/sample-configuration/smtpserver.xml
+    https://nozaki.me/roller/kyle/entry/configuring-james-to-use-ssl
+    
+    
+    -Djava.io.tmpdir=C:\temp
+    
+    https://github.com/sandeepkv93/SimpleLoadBalancer
+    https://spring.io/blog/2023/07/05/active-health-check-strategies-with-spring-cloud-gateway
+    

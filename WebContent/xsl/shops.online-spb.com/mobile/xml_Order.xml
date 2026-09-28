@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<?xml-stylesheet type="text/xsl" href="order.xsl"?>
+<document>
+   <version>1.0</version>
+   <name>Authorization</name>
+   <role_id>0</role_id>
+   <title>Order</title>
+   <admin>
+   <post_manager>PostManager.jsp</post_manager>
+   </admin>
+   <subject_site></subject_site>
+   <site_name></site_name>
+   <host>shops.online-spb.com</host>
+   <login>33</login>
+   <passwdord></passwdord>
+   <message></message>
+   <shoping_url>Productlist.jsp</shoping_url>
+   <balans>0</balans>
+   <to_navigator>wCatalog.jsp</to_navigator>
+   <to_navigator_location>NavigatorLocation.jsp</to_navigator_location>
+   <to_account_history>AccountHistory.jsp</to_account_history>
+   <to_login>Authorization.jsp</to_login>
+   <to_registration>Authorization.jsp?Login=</to_registration>
+   <to_order>Order.jsp</to_order>
+   <to_order_hist>OrderList.jsp</to_order_hist>
+   <to_pay>PrePay.jsp</to_pay>
+
+<shipment_phone></shipment_phone>
+<contact_person> </contact_person>
+<shipment_email>grabko@mail.ru</shipment_email>
+
+
+
+   <firstname></firstname>
+   <lastname></lastname>
+   <company>33</company>
+   <email>grabko@mail.ru</email>
+   <phone></phone>
+   <mphone></mphone>
+   <fax></fax>
+   <icq></icq>
+   <website></website>
+   <question></question>
+   <answer></answer>
+   <country></country>
+   <city></city>
+   <site>4</site>
+   <message></message>
+
+   <list>
+<product>
+<basket_id>70</basket_id>
+<product_url>http://www.online-spb.com:80/downloadservletbyodrder?basket_id=70</product_url>
+<file_exist></file_exist>
+<name> Скачивать фиалы   </name>
+<icon></icon>
+<image></image>
+<policy_url></policy_url>
+<description><r><![CDATA[  Вы можете утановить фаил для скачивания как  описания товара или новости и прайс лист. ]]></r></description>
+<amount>10.0</amount>
+<currency>
+<code>3</code>
+<description>Рубли</description>
+</currency>
+<version></version>
+</product>
+</list>
+
+
+
+<!-- ????????? ?????? ???????? ??? ???   -->
+   <empty_page>false</empty_page>
+<!-- ????????? ?????? ??????? ??? ???   -->
+   <empty_basket>false</empty_basket>
+<!-- ?????????? ??????? ???????   -->
+   <quantity_product>1</quantity_product>
+<!-- ??? ?????? ????????   -->
+    <offset>0</offset>
+
+
+<next>Order.jsp?offset=10</next>
+<prev>Order.jsp?offset=0</prev>
+
+<action>add</action>
+<imgname>null</imgname>
+<image_id>null</image_id>
+<img_url></img_url>
+<city_id>1</city_id>
+<country_id>1</country_id>
+<order_end_amount>10.0</order_end_amount>
+<order_amount>10.0</order_amount>
+<order_tax>0.0</order_tax>
+<order_id>1</order_id>
+<order_currency_id>3</order_currency_id>
+<order_paystatus>0</order_paystatus>
+<order_status>0</order_status>
+<order_status_lable>несформирован
+</order_status_lable>
+<delivery_amoun>0</delivery_amoun>
+<delivery_timeend></delivery_timeend>
+<delivery_long></delivery_long>
+<delivery_start></delivery_start>
+<cards_name></cards_name>
+<city_fullname></city_fullname>
+<country_fullname></country_fullname>
+<currency_lable>Рубли</currency_lable>
+<img_url></img_url>
+
+<shipment_address></shipment_address>
+<shipment_fax></shipment_fax>
+<shipment_description></shipment_description>
+<city_name></city_name>
+<country_name></country_name>
+
+<country_telcode>0</country_telcode>
+<currency_rate>0</currency_rate>
+<city_telcode></city_telcode>
+<cdate>05/09/2009</cdate>
+<paystatus_lable>обрабатываеться
+</paystatus_lable>
+
+<internet>false</internet>
+
+
+<country>
+<country-item><selected>1</selected><item></item><code>-1</code><url>Order.jsp?country_id=0</url></country-item>
+<country-item><selected>1</selected><item>Россия</item><code>1</code><url>Order.jsp?country_id=1</url></country-item>
+<country-item><selected>1</selected><item>США</item><code>2</code><url>Order.jsp?country_id=2</url></country-item>
+<country-item><selected>1</selected><item>Англия</item><code>3</code><url>Order.jsp?country_id=3</url></country-item>
+<country-item><selected>1</selected><item>Ирландия</item><code>4</code><url>Order.jsp?country_id=4</url></country-item>
+<country-item><selected>1</selected><item>Германия</item><code>5</code><url>Order.jsp?country_id=5</url></country-item>
+<country-item><selected>1</selected><item>Швейцария</item><code>6</code><url>Order.jsp?country_id=6</url></country-item>
+<country-item><selected>1</selected><item>Франция</item><code>7</code><url>Order.jsp?country_id=7</url></country-item>
+<country-item><selected>1</selected><item>Испания</item><code>8</code><url>Order.jsp?country_id=8</url></country-item>
+<country-item><selected>1</selected><item>Италия</item><code>9</code><url>Order.jsp?country_id=9</url></country-item>
+<country-item><selected>1</selected><item>Австрия</item><code>10</code><url>Order.jsp?country_id=10</url></country-item>
+<country-item><selected>1</selected><item>Япония</item><code>11</code><url>Order.jsp?country_id=11</url></country-item>
+<country-item><selected>1</selected><item>Китай</item><code>12</code><url>Order.jsp?country_id=12</url></country-item>
+<country-item><selected>1</selected><item>Канада</item><code>13</code><url>Order.jsp?country_id=13</url></country-item>
+<country-item><selected>1</selected><item>Финляндия</item><code>14</code><url>Order.jsp?country_id=14</url></country-item>
+<country-item><selected>1</selected><item>Дания</item><code>15</code><url>Order.jsp?country_id=15</url></country-item>
+<country-item><selected>1</selected><item>Швеция</item><code>16</code><url>Order.jsp?country_id=16</url></country-item>
+<country-item><selected>1</selected><item>Турция</item><code>17</code><url>Order.jsp?country_id=17</url></country-item>
+<country-item><selected>1</selected><item>Греция</item><code>18</code><url>Order.jsp?country_id=18</url></country-item>
+<country-item><selected>1</selected><item>Индия</item><code>19</code><url>Order.jsp?country_id=19</url></country-item>
+<country-item><selected>1</selected><item>Австралия</item><code>20</code><url>Order.jsp?country_id=20</url></country-item>
+<country-item><selected>1</selected><item>Лихтенштейн</item><code>21</code><url>Order.jsp?country_id=21</url></country-item>
+<country-item><selected>1</selected><item>ЮАР</item><code>22</code><url>Order.jsp?country_id=22</url></country-item>
+</country>
+
+<city>
+<city-item><selected>1</selected><item></item><code>-1</code><url>Order.jsp?city_id=0</url></city-item>
+<city-item><selected>1</selected><item>Санкт-Петербург</item><code>1</code><url>Order.jsp?city_id=1</url></city-item>
+<city-item><selected>1</selected><item>Москва</item><code>2</code><url>Order.jsp?city_id=2</url></city-item>
+<city-item><selected>1</selected><item>Ангарск</item><code>3</code><url>Order.jsp?city_id=3</url></city-item>
+<city-item><selected>1</selected><item>Архангельск</item><code>4</code><url>Order.jsp?city_id=4</url></city-item>
+<city-item><selected>1</selected><item>Астрахань </item><code>5</code><url>Order.jsp?city_id=5</url></city-item>
+<city-item><selected>1</selected><item>Барнаул</item><code>6</code><url>Order.jsp?city_id=6</url></city-item>
+<city-item><selected>1</selected><item>Белгород</item><code>7</code><url>Order.jsp?city_id=7</url></city-item>
+<city-item><selected>1</selected><item>Благовещенск</item><code>8</code><url>Order.jsp?city_id=8</url></city-item>
+<city-item><selected>1</selected><item>Бийск</item><code>9</code><url>Order.jsp?city_id=9</url></city-item>
+<city-item><selected>1</selected><item>Брянск</item><code>10</code><url>Order.jsp?city_id=10</url></city-item>
+<city-item><selected>1</selected><item>Великий Новгород</item><code>11</code><url>Order.jsp?city_id=11</url></city-item>
+<city-item><selected>1</selected><item>Владикавказ</item><code>12</code><url>Order.jsp?city_id=12</url></city-item>
+<city-item><selected>1</selected><item>Владимир</item><code>13</code><url>Order.jsp?city_id=13</url></city-item>
+<city-item><selected>1</selected><item>Владивосток</item><code>14</code><url>Order.jsp?city_id=14</url></city-item>
+<city-item><selected>1</selected><item>Волгоград</item><code>15</code><url>Order.jsp?city_id=15</url></city-item>
+<city-item><selected>1</selected><item>Вологда</item><code>16</code><url>Order.jsp?city_id=16</url></city-item>
+<city-item><selected>1</selected><item>Воронеж</item><code>17</code><url>Order.jsp?city_id=17</url></city-item>
+<city-item><selected>1</selected><item>Волжский</item><code>18</code><url>Order.jsp?city_id=18</url></city-item>
+<city-item><selected>1</selected><item>Грозный</item><code>19</code><url>Order.jsp?city_id=19</url></city-item>
+<city-item><selected>1</selected><item>Екатеринбург</item><code>20</code><url>Order.jsp?city_id=20</url></city-item>
+<city-item><selected>1</selected><item>Иркутск</item><code>21</code><url>Order.jsp?city_id=21</url></city-item>
+<city-item><selected>1</selected><item>Иваново</item><code>22</code><url>Order.jsp?city_id=22</url></city-item>
+<city-item><selected>1</selected><item>Ижевск</item><code>23</code><url>Order.jsp?city_id=23</url></city-item>
+<city-item><selected>1</selected><item>Йошкар-Ола</item><code>24</code><url>Order.jsp?city_id=24</url></city-item>
+<city-item><selected>1</selected><item>Калининград</item><code>25</code><url>Order.jsp?city_id=25</url></city-item>
+<city-item><selected>1</selected><item>Калуга</item><code>26</code><url>Order.jsp?city_id=26</url></city-item>
+<city-item><selected>1</selected><item>Кав.Мин.Воды</item><code>27</code><url>Order.jsp?city_id=27</url></city-item>
+<city-item><selected>1</selected><item>Казань</item><code>28</code><url>Order.jsp?city_id=28</url></city-item>
+<city-item><selected>1</selected><item>Кемерово</item><code>29</code><url>Order.jsp?city_id=29</url></city-item>
+<city-item><selected>1</selected><item>Киров</item><code>30</code><url>Order.jsp?city_id=30</url></city-item>
+<city-item><selected>1</selected><item>Коломна</item><code>31</code><url>Order.jsp?city_id=31</url></city-item>
+<city-item><selected>1</selected><item>Комсомольск-на-Амуре</item><code>32</code><url>Order.jsp?city_id=32</url></city-item>
+<city-item><selected>1</selected><item>Кострома</item><code>33</code><url>Order.jsp?city_id=33</url></city-item>
+<city-item><selected>1</selected><item>Краснодар</item><code>34</code><url>Order.jsp?city_id=34</url></city-item>
+<city-item><selected>1</selected><item>Красноярск</item><code>35</code><url>Order.jsp?city_id=35</url></city-item>
+<city-item><selected>1</selected><item>Курган</item><code>36</code><url>Order.jsp?city_id=36</url></city-item>
+<city-item><selected>1</selected><item>Курск</item><code>37</code><url>Order.jsp?city_id=37</url></city-item>
+<city-item><selected>1</selected><item>Липецк</item><code>38</code><url>Order.jsp?city_id=38</url></city-item>
+<city-item><selected>1</selected><item>Махачкала</item><code>39</code><url>Order.jsp?city_id=39</url></city-item>
+<city-item><selected>1</selected><item>Магнитогорск </item><code>40</code><url>Order.jsp?city_id=40</url></city-item>
+<city-item><selected>1</selected><item>Магадан </item><code>41</code><url>Order.jsp?city_id=41</url></city-item>
+<city-item><selected>1</selected><item>Мурманск </item><code>42</code><url>Order.jsp?city_id=42</url></city-item>
+<city-item><selected>1</selected><item>Набережные Челны </item><code>43</code><url>Order.jsp?city_id=43</url></city-item>
+<city-item><selected>1</selected><item>Нальчик </item><code>44</code><url>Order.jsp?city_id=44</url></city-item>
+<city-item><selected>1</selected><item>Находка </item><code>45</code><url>Order.jsp?city_id=45</url></city-item>
+<city-item><selected>1</selected><item>Нижний Новгород </item><code>46</code><url>Order.jsp?city_id=46</url></city-item>
+<city-item><selected>1</selected><item>Нижний Тагил </item><code>47</code><url>Order.jsp?city_id=47</url></city-item>
+<city-item><selected>1</selected><item>Новокузнецк </item><code>48</code><url>Order.jsp?city_id=48</url></city-item>
+<city-item><selected>1</selected><item>Новоросскийск </item><code>49</code><url>Order.jsp?city_id=49</url></city-item>
+<city-item><selected>1</selected><item>Новосибирск </item><code>50</code><url>Order.jsp?city_id=50</url></city-item>
+<city-item><selected>1</selected><item>Норильск </item><code>51</code><url>Order.jsp?city_id=51</url></city-item>
+<city-item><selected>1</selected><item>Ноябрьск </item><code>52</code><url>Order.jsp?city_id=52</url></city-item>
+<city-item><selected>1</selected><item>Омск </item><code>53</code><url>Order.jsp?city_id=53</url></city-item>
+<city-item><selected>1</selected><item>Орел </item><code>54</code><url>Order.jsp?city_id=54</url></city-item>
+<city-item><selected>1</selected><item>Оренбург </item><code>55</code><url>Order.jsp?city_id=55</url></city-item>
+<city-item><selected>1</selected><item>Пенза </item><code>56</code><url>Order.jsp?city_id=56</url></city-item>
+<city-item><selected>1</selected><item>Пермь </item><code>57</code><url>Order.jsp?city_id=57</url></city-item>
+<city-item><selected>1</selected><item>Петрозаводск </item><code>58</code><url>Order.jsp?city_id=58</url></city-item>
+<city-item><selected>1</selected><item>Петропавловск-Камчатский </item><code>59</code><url>Order.jsp?city_id=59</url></city-item>
+<city-item><selected>1</selected><item>Псков </item><code>60</code><url>Order.jsp?city_id=60</url></city-item>
+<city-item><selected>1</selected><item>Ростов-на-Дону </item><code>61</code><url>Order.jsp?city_id=61</url></city-item>
+<city-item><selected>1</selected><item>Рязань </item><code>62</code><url>Order.jsp?city_id=62</url></city-item>
+<city-item><selected>1</selected><item>Самара </item><code>63</code><url>Order.jsp?city_id=63</url></city-item>
+<city-item><selected>1</selected><item>Саратов </item><code>64</code><url>Order.jsp?city_id=64</url></city-item>
+<city-item><selected>1</selected><item>Смоленск </item><code>65</code><url>Order.jsp?city_id=65</url></city-item>
+<city-item><selected>1</selected><item>Сочи </item><code>66</code><url>Order.jsp?city_id=66</url></city-item>
+<city-item><selected>1</selected><item>Ставрополь </item><code>67</code><url>Order.jsp?city_id=67</url></city-item>
+<city-item><selected>1</selected><item>Стерлитамак </item><code>68</code><url>Order.jsp?city_id=68</url></city-item>
+<city-item><selected>1</selected><item>Сыктывкар </item><code>69</code><url>Order.jsp?city_id=69</url></city-item>
+<city-item><selected>1</selected><item>Тамбов </item><code>70</code><url>Order.jsp?city_id=70</url></city-item>
+<city-item><selected>1</selected><item>Тольятти </item><code>71</code><url>Order.jsp?city_id=71</url></city-item>
+<city-item><selected>1</selected><item>Томск </item><code>72</code><url>Order.jsp?city_id=72</url></city-item>
+<city-item><selected>1</selected><item>Тула </item><code>73</code><url>Order.jsp?city_id=73</url></city-item>
+<city-item><selected>1</selected><item>Тверь </item><code>74</code><url>Order.jsp?city_id=74</url></city-item>
+<city-item><selected>1</selected><item>Тюмень </item><code>75</code><url>Order.jsp?city_id=75</url></city-item>
+<city-item><selected>1</selected><item>Уфа </item><code>76</code><url>Order.jsp?city_id=76</url></city-item>
+<city-item><selected>1</selected><item>Улан-Удэ </item><code>77</code><url>Order.jsp?city_id=77</url></city-item>
+<city-item><selected>1</selected><item>Ульяновск </item><code>78</code><url>Order.jsp?city_id=78</url></city-item>
+<city-item><selected>1</selected><item>Уссурийск </item><code>79</code><url>Order.jsp?city_id=79</url></city-item>
+<city-item><selected>1</selected><item>Хабаровск </item><code>80</code><url>Order.jsp?city_id=80</url></city-item>
+<city-item><selected>1</selected><item>Чебоксары </item><code>81</code><url>Order.jsp?city_id=81</url></city-item>
+<city-item><selected>1</selected><item>Челябинск </item><code>82</code><url>Order.jsp?city_id=82</url></city-item>
+<city-item><selected>1</selected><item>Череповец </item><code>83</code><url>Order.jsp?city_id=83</url></city-item>
+<city-item><selected>1</selected><item>Южнор-Сахалинск </item><code>84</code><url>Order.jsp?city_id=84</url></city-item>
+<city-item><selected>1</selected><item>Якутск </item><code>85</code><url>Order.jsp?city_id=85</url></city-item>
+<city-item><selected>1</selected><item>Ярославль </item><code>86</code><url>Order.jsp?city_id=86</url></city-item>
+</city>
+
+<paystatus>
+<paystatus-item><selected>0</selected><item></item><code>-1</code><url>Order.jsp?order_paystatus=0</url></paystatus-item>
+<paystatus-item><selected>0</selected><item>оплачен</item><code>1</code><url>Order.jsp?order_paystatus=1</url></paystatus-item>
+<paystatus-item><selected>0</selected><item>доствавлен</item><code>2</code><url>Order.jsp?order_paystatus=2</url></paystatus-item>
+<paystatus-item><selected>0</selected><item>не принят</item><code>3</code><url>Order.jsp?order_paystatus=3</url></paystatus-item>
+<paystatus-item><selected>0</selected><item>обрабатываеться
+</item><code>0</code><url>Order.jsp?order_paystatus=0</url></paystatus-item>
+</paystatus>
+
+<deliverystatus>
+<deliverystatus-item><selected>0</selected><item></item><code>-1</code><url>Order.jsp?order_deliverystatus=0</url></deliverystatus-item>
+<deliverystatus-item><selected>0</selected><item>выслан счёт</item><code>1</code><url>Order.jsp?order_deliverystatus=1</url></deliverystatus-item>
+<deliverystatus-item><selected>0</selected><item>оплачен</item><code>2</code><url>Order.jsp?order_deliverystatus=2</url></deliverystatus-item>
+<deliverystatus-item><selected>0</selected><item>отправлен клиенту</item><code>3</code><url>Order.jsp?order_deliverystatus=3</url></deliverystatus-item>
+<deliverystatus-item><selected>0</selected><item>доставлен</item><code>4</code><url>Order.jsp?order_deliverystatus=4</url></deliverystatus-item>
+<deliverystatus-item><selected>0</selected><item>отказ</item><code>5</code><url>Order.jsp?order_deliverystatus=5</url></deliverystatus-item>
+<deliverystatus-item><selected>0</selected><item>возврат</item><code>6</code><url>Order.jsp?order_deliverystatus=6</url></deliverystatus-item>
+<deliverystatus-item><selected>0</selected><item>несформирован
+</item><code>0</code><url>Order.jsp?order_deliverystatus=0</url></deliverystatus-item>
+</deliverystatus>
+
+   <!--  for members -->
+   <do_form_1>
+                <form-header>
+                <name>login</name>
+		<method>post</method>
+		<action>Authorization.jsp</action>
+                </form-header>
+
+                <fields>
+                <ref_1>/login</ref_1>
+                <ref_2>/passwdord</ref_2>
+                <ref_3>/lang_cd</ref_3>
+                <ref_4>product/currency_cd</ref_4>
+                </fields>
+   </do_form_1>
+
+
+   <do_form_2>
+   <!-- become new member -->
+                <form-header>
+                <name>registration</name>
+		<method>post</method>
+		<action>RegPage.jsp</action>
+                </form-header>
+   </do_form_2>
+
+
+</document>

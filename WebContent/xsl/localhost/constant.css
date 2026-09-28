@@ -1,0 +1,70 @@
+* {
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 0px; 
+	PADDING-TOP: 0px
+}
+HTML {
+	HEIGHT: 100%
+}
+BODY {
+	TEXT-ALIGN: center
+}
+TABLE {
+	BORDER-TOP-WIDTH: 0px; 
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-BOTTOM-WIDTH: 0px; 
+	WIDTH: 100%; 
+	BORDER-COLLAPSE: collapse; 
+	BORDER-RIGHT-WIDTH: 0px
+}
+TD {
+	VERTICAL-ALIGN: top
+}
+TH {
+	VERTICAL-ALIGN: top; 
+	TEXT-ALIGN: left
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+IMG {
+	BORDER-TOP-STYLE: none; 
+	BORDER-RIGHT-STYLE: none; 
+	BORDER-LEFT-STYLE: none; 
+	BORDER-BOTTOM-STYLE: none
+}
+H2 {
+	FONT-SIZE: 120%
+}
+H3 {
+	FONT-SIZE: 110%
+}
+H4 {
+	FONT-SIZE: 110%
+}
+P {
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 10px; 
+	PADDING-TOP: 0px
+}
+TEXTAREA .inputbox {
+	MARGIN: 0px 0px 5px; 
+	WIDTH: 300px; 
+	HEIGHT: 100px
+}
+SELECT {
+	MARGIN: 0px 0px 2px; 
+	VERTICAL-ALIGN: middle; 
+	HEIGHT: auto;
+	width:150px;
+}
+.width {
+	WIDTH: 100%
+}
+.main {
+	MARGIN: auto; 
+	TEXT-ALIGN: left
+}

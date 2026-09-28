@@ -1,0 +1,6 @@
+ol	{ list-style-type:upper-roman ; list-style-position:inside }
+ul	{ list-style-type:square }
+li	{ list-style-position:inherit }
+td,th	{ border-width:1px ; border-color:black ; border-style:solid ; text-align:center }
+h1	{ color:red ; text-align:center ; font-weight:bold ; font-size:large }
+.nav	{  text-align:center ; font-size:small ; color:purple }

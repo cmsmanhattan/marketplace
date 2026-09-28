@@ -1,0 +1,48 @@
+Dear @FirstName @LastName.
+
+The Center Business Solutions Inc company congratulates you that  your internet shop was made  on Amazon Web Services.
+You automatically receive a start packet for business.
+That enters into a start packet:
+1. free creation of an e-commerce shop with standard design;
+2. free use of mail service;
+3. The hosting of your e-commerce is free 
+4. Accept bank card payment is not free  ( please fill Marchant account application on www.siteforyou.net to get card payments http://www.siteforyou.net/Merchant.jsp )
+
+
+
+Your registration data in system the Internet of shops:
+Free domain: www.@Login.irr.bz
+Login: @Login
+Password: @Password
+
+Now you can enter content and buy domain for internet shop or use default domain that below
+You can use already existing domain or to order the domain in us http://www.siteforyou.net/Domain.jsp 
+If you have no domain, we can offer the domain of the second level free of charge 
+type: www.@Login.irr.bz which will be created in 3 days automatically
+
+
+How can i edit pages on my internet shop ?
+Do next:
+1. login on www.siteforyou.net
+2. click  link My Shop in BOX my office.
+
+
+
+
+Your registration data in support  mail service:
+Mail: @Login@siteforyou.net
+Login: @Login
+Password: @EmailPassword
+
+
+
+CENTER BUSINESS SOLUTIONS INC 
+88 McLoughlin St, GLEN COVE, NY, US, 11542 
+US: +1(516)342-7222 
+
+Mail: support@siteforyou.net 
+
+
+Yours faithfully Center Business Solutions Inc team.
+http://www.siteforyou.net
+

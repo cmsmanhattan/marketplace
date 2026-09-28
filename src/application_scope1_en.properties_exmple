@@ -1,0 +1,38 @@
+#################################################################################
+#
+#    GBS Controller for load classes in application scope 
+#
+#    On load web modul this classes  will load  from  classes_load.properties  config
+#
+#    EXAPLE: ID = CLASS  ( application.setAttribute(id,class)  )  
+#
+#    !!!  It will generated dynamically via Maven install command in compile time
+#    Just use annotation  @PageModel( Id="accountHistoryBeanId" , scope=Scope.APPICATION ) 
+#    the file will packet in compile time in war file 
+#
+#################################################################################
+
+
+authorizationPageFaced = com.cbsinc.cms.faceds.AuthorizationPageFaced
+
+##sendMailAgent = com.cbsinc.cms.services.smtp.SendMailAgent
+
+#CurrencyHashBeanId = com.cbsinc.cms.CurrencyHash
+
+productlistFaced =  com.cbsinc.cms.faceds.ProductlistFaced
+
+policyFaced  = com.cbsinc.cms.faceds.PolicyFaced
+
+orderFaced = com.cbsinc.cms.faceds.OrderFaced
+
+###checkPaymentResultYandex = com.cbsinc.cms.CheckPaymentResultYandex
+
+productPostAllFaced = com.cbsinc.cms.faceds.ProductPostAllFaced
+
+##CkeckCurrencyId =  com.cbsinc.cms.CkeckCurrency
+
+creteriaFaced = com.cbsinc.cms.faceds.CreteriaFaced
+
+folderFaced = com.cbsinc.cms.faceds.FolderFaced
+
+##updateDomains = com.cbsinc.cms.UpdateDomains

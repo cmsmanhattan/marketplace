@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<?xml-stylesheet type="text/xsl" href="en/policy.xsl"?>
+<document>
+   <version>1.0</version>
+   <name>Policy</name>
+
+   <title>Policy test </title>
+   <subject_site></subject_site>
+   <site_name></site_name>
+   <host>shops.online-spb.com</host>
+
+   <admin>
+   <post_manager></post_manager>
+   <post_manager_img></post_manager_img>
+   <post_manager_text></post_manager_text>
+   </admin>
+
+   <role_id>0</role_id>
+   <user_site_id>-1</user_site_id>
+   <internet>false</internet>
+   <login>user</login>
+   <shoping_url>Productlist.jsp</shoping_url>
+   <message></message>
+   <shoping_url>Productlist.jsp</shoping_url>
+   <balans>-900.0</balans>
+   <to_account_history>AccountHistory.jsp</to_account_history>
+   <to_login>Authorization.jsp</to_login>
+   <to_registration>RegPage.jsp</to_registration>
+   <to_order>Order.jsp</to_order>
+   <to_order_hist>OrderList.jsp</to_order_hist>
+   <to_pay>PrePay.jsp</to_pay>
+   <owner_user_id>483</owner_user_id>
+   <site_id>2</site_id>
+   <show_blog>false</show_blog>
+   <show_rating1>false</show_rating1> 
+   <show_rating2>false</show_rating2>
+   <show_rating3>false</show_rating3>   
+
+   
+
+<product>
+<page_url>http://www.online-spb.com:80/ProductInfo.jsp?policy_byproductid=2406</page_url>
+<product_id>2406</product_id>
+<name>1red terakot</name>
+<file_exist>true</file_exist>
+<icon>imgpositions/327.gif</icon>
+<image>big_imgpositions/291.gif</image>
+<image_type>gif</image_type>
+<product_url>http://www.online-spb.com:80/</product_url>
+<back_url>ProductInfo.jsp?policy_byproductid=2406</back_url>
+<description>
+<r><![CDATA[ red terakot ]]></r></description>
+<amount>0.0</amount>
+<currency>
+ <code>RUR</code>
+ <description>Рубли</description>
+</currency>
+<statistic>21</statistic>  
+<cdate>13/09/2009</cdate>  
+<creator_info_user_id>482</creator_info_user_id>
+</product>
+
+<rating1>
+<show_star_1>no</show_star_1>
+<show_star_2>no</show_star_2>
+<show_star_3>no</show_star_3>
+<show_star_4>no</show_star_4>
+<show_star_5>no</show_star_5>
+<show_star_6>no</show_star_6>
+<show_star_7>no</show_star_7>
+<show_star_8>no</show_star_8>
+<show_star_9>no</show_star_9>
+<show_star_10>no</show_star_10>
+</rating1>
+
+<currencies>
+<currencies-item><selected>RUR</selected><item></item><code>-1</code><url>ProductInfo.jsp=0</url></currencies-item>
+<currencies-item><selected>RUR</selected><item>Нет</item><code>0</code><url>ProductInfo.jsp=0</url></currencies-item>
+<currencies-item><selected>RUR</selected><item>Доллар</item><code>USD</code><url>ProductInfo.jsp=USD</url></currencies-item>
+<currencies-item><selected>RUR</selected><item>Евро</item><code>EURO</code><url>ProductInfo.jsp=EURO</url></currencies-item>
+<currencies-item><selected>RUR</selected><item>Рубли</item><code>RUR</code><url>ProductInfo.jsp=RUR</url></currencies-item>
+</currencies>
+
+<extpolicy_productlist1>
+</extpolicy_productlist1>
+
+<extpolicy_productlist2>
+</extpolicy_productlist2>
+
+
+<extpolicy_file_list>
+</extpolicy_file_list>
+
+<extpolicy_list_tabs>
+</extpolicy_list_tabs>
+
+
+<product_blog_list>
+</product_blog_list>
+
+<newslist>
+<news>
+<product_id>987</product_id>
+<row_id>0</row_id>
+<name>3Хостинг CMS</name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>ProductInfo.jsp?policy_byproductid=987</policy_url>
+<description>
+<r><![CDATA[ 3Вы получаете у нас хостинг CMS за 1000 рублей месяц ]]></r></description>
+<amount>1.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+</news>
+<news>
+<product_id>986</product_id>
+<row_id>1</row_id>
+<name> Реклама </name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>ProductInfo.jsp?policy_byproductid=986</policy_url>
+<description><r><![CDATA[  Блоки рекламы на портале  ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Нет</version>
+</news>
+<news>
+<product_id>985</product_id>
+<row_id>2</row_id>
+<name> Блок новости сайта </name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>ProductInfo.jsp?policy_byproductid=985</policy_url>
+<description><r><![CDATA[  Блок новости сайта  ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Нет</version>
+</news>
+<news>
+<product_id>984</product_id>
+<row_id>3</row_id>
+<name> Форум </name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>ProductInfo.jsp?policy_byproductid=984</policy_url>
+<description><r><![CDATA[  В портал встроен форум  ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Нет</version>
+</news>
+<news>
+<product_id>983</product_id>
+<row_id>4</row_id>
+<name> Изменение информации на сайте  </name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>ProductInfo.jsp?policy_byproductid=983</policy_url>
+<description><r><![CDATA[  Изменение содержания перед началом  ]]></r><r><![CDATA[  работы портала. ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Нет</version>
+</news>
+<news>
+<product_id>982</product_id>
+<row_id>5</row_id>
+<name> Поисковая система портала  </name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>ProductInfo.jsp?policy_byproductid=982</policy_url>
+<description><r><![CDATA[ Настройка поиска перед началом  ]]></r><r><![CDATA[  работы портала . ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Нет</version>
+</news>
+</newslist>
+
+
+   <!-- ????????? ?????? ???????? ??? ???   -->
+   <empty_page_ext1>true</empty_page_ext1>
+   <!-- ????????? ?????? ???????? ??? ???   -->
+   <empty_page_ext2>true</empty_page_ext2>
+   
+   <catalog>
+<catalog-item><selected>-2</selected><item></item><code>-1</code><url>Productlist.jsp?catalog_id=0</url><subcatalog-item><subselected></subselected><subitem></subitem><subcode></subcode><suburl></suburl></subcatalog-item>
+</catalog-item>
+<catalog-item><selected>-2</selected><item>News </item><code>-1</code><url>Productlist.jsp?catalog_id=-1</url><subcatalog-item><subselected></subselected><subitem></subitem><subcode></subcode><suburl></suburl></subcatalog-item>
+</catalog-item>
+<catalog-item><selected>-2</selected><item>Main page</item><code>-2</code><url>Productlist.jsp?catalog_id=-2</url><subcatalog-item><subselected></subselected><subitem></subitem><subcode></subcode><suburl></suburl></subcatalog-item>
+</catalog-item>
+<catalog-item><selected>-2</selected><item>Items </item><code>568</code><url>Productlist.jsp?catalog_id=568</url><subcatalog-item><subselected></subselected><subitem></subitem><subcode></subcode><suburl></suburl></subcatalog-item>
+</catalog-item>
+<catalog-item><selected>-2</selected><item>Documentation</item><code>570</code><url>Productlist.jsp?catalog_id=570</url><subcatalog-item><subselected></subselected><subitem></subitem><subcode></subcode><suburl></suburl></subcatalog-item>
+</catalog-item>
+<catalog-item><selected>-2</selected><item>New Items</item><code>572</code><url>Productlist.jsp?catalog_id=572</url><subcatalog-item><subselected></subselected><subitem></subitem><subcode></subcode><suburl></suburl></subcatalog-item>
+</catalog-item>
+</catalog>
+
+   <parent>
+<parent-item><selected>0</selected><item>Catalog list</item><code>-2</code><url>Productlist.jsp?catalog_id=-2</url></parent-item>
+</parent>
+
+
+</document>

@@ -1,0 +1,27 @@
+####################################################################################
+#
+#  Advantage of CMS MVC Frame work as Web service response support for Asynchronous UI Technologies such as AJAX etc
+#  This is setting for  VIEW from  MVC Pattern  concept for CMS Controllers
+#  VIEW data could generate in many formats via xslt technology such as XML , HTML , JSON , PDF etc for UI as Web service or HTML page
+# 
+#  !!!  It will generated dynamically via Maven install command in compile time
+#  Just use annotation @PageXsltView( xsltName="accountHistory.xslt" , responseType=Type.XML ) 
+#  the file will packet in compile time in war file 
+#
+#
+################################################################################## 
+#pay_addressurl.xsl
+#shoplist.xsl
+##Productlist.jsp=Productlist.xsl
+##Authorization.jsp=authorization.xsl
+##Policy.jsp=policy.xsl
+AccountHistory.jsp=accounthistory.xsl
+AccountHistoryDetal.jsp=accounthistorydetal.xsl
+##Order.jsp=order.xsl
+##OrderList.jsp=orderlist.xsl
+Pay.jsp=pay.xsl
+PrePay.jsp=prepay.xsl
+RegPage.jsp=authorization.xsl
+Install.jsp=install.xsl
+
+

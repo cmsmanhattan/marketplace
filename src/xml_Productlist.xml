@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<?xml-stylesheet type="text/xsl" href="Productlist.xsl"?>
+<document>
+   <version>1.0</version>
+   <name>Catalog</name>
+
+   <title>Catalog test </title>
+   <reklama>Here may be your reklama</reklama>
+   <subject_site></subject_site>
+   <site_name></site_name>
+   <host>shops.online-spb.com</host>
+   <message></message>
+   <login>user</login>
+   <passwdord></passwdord>
+   <balans>-900</balans>
+   <search_value></search_value>
+   <search_query>0</search_query	>
+   <fromcost> 0 </fromcost>
+   <tocost> 0  </tocost>
+   <to_navigator>wCatalog.jsp</to_navigator>
+   <to_navigator_location>NavigatorLocation.jsp</to_navigator_location>
+   <to_account_history>wAccountHist.jsp</to_account_history>
+   <to_pay>PrePay.jsp</to_pay>
+   <to_order>Order.jsp</to_order>
+   <to_order_hist>OrderList.jsp</to_order_hist>
+   <to_login>Authorization.jsp</to_login>
+   <to_registration>RegPage.jsp</to_registration>
+   <owner_user_id>483</owner_user_id>
+   <role_id>0</role_id>
+   <user_site_id>-1</user_site_id>
+   <site_id>2</site_id>
+   <![CDATA[]]>
+   <path>Список разделов</path>
+
+   <dialog>true</dialog>
+   <is_advanced_search_open>true</is_advanced_search_open>
+   <is_forum_open>true</is_forum_open>
+   <internet>false</internet>
+
+
+   <admin>
+   <post_manager></post_manager>
+   <post_manager_img></post_manager_img>
+   <post_manager_text></post_manager_text>
+   </admin>
+
+   <xslstyle>
+<!-- javascript:window.open('xsl.html' ,'New','width=400,height=210,scrollbars=yes,screenX=100,screenY=100'); -->
+   <xsl_url></xsl_url>
+   <xsl_url_text></xsl_url_text>
+   </xslstyle>
+
+
+
+<list>
+<product>
+<rigth>
+<product_id>2406</product_id>
+<row_id>0</row_id>
+<name>1red terakot</name>
+<type_id>0</type_id>
+<icon>imgpositions/327.gif</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=2406</policy_url>
+<description>
+<r><![CDATA[ red terakot ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</rigth>
+<left>
+<product_id>2284</product_id>
+<row_id>1</row_id>
+<name>22Orange Оттенок фисташка</name>
+<type_id>0</type_id>
+<icon>imgpositions/310.JPG</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=2284</policy_url>
+<description>
+<r><![CDATA[ Оттенок фисташка222 ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</left>
+</product>
+<product>
+<rigth>
+<product_id>2007</product_id>
+<row_id>2</row_id>
+<name>11Orange Оттенок фисташка</name>
+<type_id>0</type_id>
+<icon>imgpositions/310.JPG</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=2007</policy_url>
+<description>
+<r><![CDATA[ Оттенок фисташка111 ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</rigth>
+<left>
+<product_id>2006</product_id>
+<row_id>3</row_id>
+<name>Orange Оттенок бирюза</name>
+<type_id>0</type_id>
+<icon>imgpositions/310.JPG</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=2006</policy_url>
+<description>
+<r><![CDATA[ Оттенок бирюза ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</left>
+</product>
+<product>
+<rigth>
+<product_id>2005</product_id>
+<row_id>4</row_id>
+<name>Orange Оттенок баклажан</name>
+<type_id></type_id>
+<icon>imgpositions/310.JPG</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=2005</policy_url>
+<description>
+<r><![CDATA[ Оттенок баклажан ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</rigth>
+<left>
+<product_id>1981</product_id>
+<row_id>5</row_id>
+<name>Orange Оттенок бордо</name>
+<type_id>0</type_id>
+<icon>imgpositions/310.JPG</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=1981</policy_url>
+<description>
+<r><![CDATA[ Оттенок бордо ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</left>
+</product>
+<product>
+<rigth>
+<product_id>1007</product_id>
+<row_id>6</row_id>
+<name>Черный деловой дизаин</name>
+<type_id>0</type_id>
+<icon>imgpositions/316.gif</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=1007</policy_url>
+<description>
+<r><![CDATA[ Черный деловой дизаин ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</rigth>
+<left>
+<product_id>1006</product_id>
+<row_id>7</row_id>
+<name>Серо-глубой дизаин</name>
+<type_id>0</type_id>
+<icon>imgpositions/315.JPG</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=1006</policy_url>
+<description>
+<r><![CDATA[ Серо-глубой дизаин ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</left>
+</product>
+<product>
+<rigth>
+<product_id>994</product_id>
+<row_id>8</row_id>
+<name>Краный дизаин</name>
+<type_id>0</type_id>
+<icon>imgpositions/307.JPG</icon>
+<image></image>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=994</policy_url>
+<description>
+<r><![CDATA[ Краный дизаин ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</rigth>
+<left>
+<product_id>993</product_id>
+<row_id>9</row_id>
+<name>Голубой дизаин </name>
+<type_id>0</type_id>
+<icon>imgpositions/308.JPG</icon>
+<image></image>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=993</policy_url>
+<description>
+<r><![CDATA[ Бизнес слить.Голубой дизаин ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</left>
+</product>
+</list>
+
+<product_list>
+<product>
+<product_id>2406</product_id>
+<row_id>0</row_id>
+<name>1red terakot</name>
+<type_id>0</type_id>
+<icon>imgpositions/327.gif</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=2406</policy_url>
+<description>
+<r><![CDATA[ red terakot ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</product>
+<product>
+<product_id>2284</product_id>
+<row_id>1</row_id>
+<name>22Orange Оттенок фисташка</name>
+<type_id>0</type_id>
+<icon>imgpositions/310.JPG</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=2284</policy_url>
+<description>
+<r><![CDATA[ Оттенок фисташка222 ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</product>
+<product>
+<product_id>2007</product_id>
+<row_id>2</row_id>
+<name>11Orange Оттенок фисташка</name>
+<type_id>0</type_id>
+<icon>imgpositions/310.JPG</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=2007</policy_url>
+<description>
+<r><![CDATA[ Оттенок фисташка111 ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</product>
+<product>
+<product_id>2006</product_id>
+<row_id>3</row_id>
+<name>Orange Оттенок бирюза</name>
+<type_id>0</type_id>
+<icon>imgpositions/310.JPG</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=2006</policy_url>
+<description>
+<r><![CDATA[ Оттенок бирюза ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</product>
+<product>
+<product_id>2005</product_id>
+<row_id>4</row_id>
+<name>Orange Оттенок баклажан</name>
+<type_id></type_id>
+<icon>imgpositions/310.JPG</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=2005</policy_url>
+<description>
+<r><![CDATA[ Оттенок баклажан ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</product>
+<product>
+<product_id>1981</product_id>
+<row_id>5</row_id>
+<name>Orange Оттенок бордо</name>
+<type_id>0</type_id>
+<icon>imgpositions/310.JPG</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=1981</policy_url>
+<description>
+<r><![CDATA[ Оттенок бордо ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</product>
+<product>
+<product_id>1007</product_id>
+<row_id>6</row_id>
+<name>Черный деловой дизаин</name>
+<type_id>0</type_id>
+<icon>imgpositions/316.gif</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=1007</policy_url>
+<description>
+<r><![CDATA[ Черный деловой дизаин ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</product>
+<product>
+<product_id>1006</product_id>
+<row_id>7</row_id>
+<name>Серо-глубой дизаин</name>
+<type_id>0</type_id>
+<icon>imgpositions/315.JPG</icon>
+<image></image>
+<user_id>482</user_id>
+<policy_url>Policy.jsp?policy_byproductid=1006</policy_url>
+<description>
+<r><![CDATA[ Серо-глубой дизаин ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</product>
+<product>
+<product_id>994</product_id>
+<row_id>8</row_id>
+<name>Краный дизаин</name>
+<type_id>0</type_id>
+<icon>imgpositions/307.JPG</icon>
+<image></image>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=994</policy_url>
+<description>
+<r><![CDATA[ Краный дизаин ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</product>
+<product>
+<product_id>993</product_id>
+<row_id>9</row_id>
+<name>Голубой дизаин </name>
+<type_id>0</type_id>
+<icon>imgpositions/308.JPG</icon>
+<image></image>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=993</policy_url>
+<description>
+<r><![CDATA[ Бизнес слить.Голубой дизаин ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<creteria1>Не выбрано</creteria1>
+<creteria2>Не выбрано</creteria2>
+<creteria3>Не выбрано</creteria3>
+<creteria4>Не выбрано</creteria4>
+<creteria5>Не выбрано</creteria5>
+<creteria6>Не выбрано</creteria6>
+<creteria7>Не выбрано</creteria7>
+<creteria8>Не выбрано</creteria8>
+<creteria9>Не выбрано</creteria9>
+<creteria10>Не выбрано</creteria10>
+<color></color>
+</product>
+</product_list>
+
+<coproductlist1>
+<coproduct1>
+<product_id>1000</product_id>
+<row_id>0</row_id>
+<name>CMS Business One</name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=1000</policy_url>
+<product_url>downloadservletbyrowid?productid=1000</product_url>
+<description>
+<r><![CDATA[ 111Получи уже настроиную CMS с хорошим строиным дизаном беплатно. ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+</coproduct1>
+<coproduct1>
+<product_id>997</product_id>
+<row_id>1</row_id>
+<name>Домены net , com , biz</name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=997</policy_url>
+<product_url>downloadservletbyrowid?productid=997</product_url>
+<description>
+<r><![CDATA[ У нас вы можете заказать домен в зоне  net , com , biz , info , org за 24 доллара в год . ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+</coproduct1>
+</coproductlist1>
+
+<coproductlist2>
+<coproduct2>
+<product_id>1002</product_id>
+<row_id>0</row_id>
+<name>Электронный архив</name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=1002</policy_url>
+<product_url>downloadservletbyrowid?productid=1002</product_url>
+<description>
+<r><![CDATA[ 2222CMS Business One  поддерживает электронный архив документов ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+</coproduct2>
+<coproduct2>
+<product_id>1001</product_id>
+<row_id>1</row_id>
+<name>CMS поддержка Portlet specification 2.0 </name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=1001</policy_url>
+<product_url>downloadservletbyrowid?productid=1001</product_url>
+<description><r><![CDATA[  CMS Business One  поддерживает Portlet спецификацию JSR-286 через Pluto Portal Driver. ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Нет</version>
+</coproduct2>
+<coproduct2>
+<product_id>999</product_id>
+<row_id>2</row_id>
+<name>Основные возможности </name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=999</policy_url>
+<product_url>downloadservletbyrowid?productid=999</product_url>
+<description>
+<r><![CDATA[ Основные возможности портала . CMS поддерживает фунции харанения и поиска офисных документов и сканированные документы тоже. ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+</coproduct2>
+<coproduct2>
+<product_id>998</product_id>
+<row_id>3</row_id>
+<name>CMS и сервера приложений  </name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=998</policy_url>
+<product_url>downloadservletbyrowid?productid=998</product_url>
+<description>
+<r><![CDATA[ CMS Business One CMS поддерживает все типы серверов приложений cподдежкой J2EE ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+</coproduct2>
+</coproductlist2>
+
+<product_blog_list>
+<product_blog>
+<product_id>1494</product_id>
+<row_id>0</row_id>
+<name>qqaaaaaaaaaa</name>
+<parent_title>Гриндрей дизаин</parent_title>
+<product_parent_id>988</product_parent_id>
+<icon></icon>
+<image></image>
+<user_id>498</user_id>
+<author>red red</author>
+<company>red</company>
+<policy_url>Policy.jsp?policy_byproductid=988</policy_url>
+<description>
+<r><![CDATA[ qqaaaaaaaaaa ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<statistic>0</statistic>
+<cdate>27/08/2009</cdate>
+</product_blog>
+<product_blog>
+<product_id>1493</product_id>
+<row_id>1</row_id>
+<name>qq</name>
+<parent_title>Гриндрей дизаин</parent_title>
+<product_parent_id>988</product_parent_id>
+<icon></icon>
+<image></image>
+<user_id>498</user_id>
+<author>red red</author>
+<company>red</company>
+<policy_url>Policy.jsp?policy_byproductid=988</policy_url>
+<description>
+<r><![CDATA[ qq ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<statistic>0</statistic>
+<cdate>11/07/2009</cdate>
+</product_blog>
+<product_blog>
+<product_id>1492</product_id>
+<row_id>2</row_id>
+<name>qq</name>
+<parent_title>Гриндрей дизаин</parent_title>
+<product_parent_id>988</product_parent_id>
+<icon></icon>
+<image></image>
+<user_id>498</user_id>
+<author>red red</author>
+<company>red</company>
+<policy_url>Policy.jsp?policy_byproductid=988</policy_url>
+<description>
+<r><![CDATA[ qq ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<statistic>0</statistic>
+<cdate>11/07/2009</cdate>
+</product_blog>
+<product_blog>
+<product_id>1491</product_id>
+<row_id>3</row_id>
+<name>2222222</name>
+<parent_title>Черный деловой дизаин</parent_title>
+<product_parent_id>1007</product_parent_id>
+<icon></icon>
+<image></image>
+<user_id>498</user_id>
+<author>red red</author>
+<company>red</company>
+<policy_url>Policy.jsp?policy_byproductid=1007</policy_url>
+<description>
+<r><![CDATA[ 22222 ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<statistic>0</statistic>
+<cdate>11/07/2009</cdate>
+</product_blog>
+<product_blog>
+<product_id>1490</product_id>
+<row_id>4</row_id>
+<name>test111</name>
+<parent_title>Черный деловой дизаин</parent_title>
+<product_parent_id>1007</product_parent_id>
+<icon></icon>
+<image></image>
+<user_id>498</user_id>
+<author>red red</author>
+<company>red</company>
+<policy_url>Policy.jsp?policy_byproductid=1007</policy_url>
+<description>
+<r><![CDATA[ test111 ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<statistic>0</statistic>
+<cdate>11/07/2009</cdate>
+</product_blog>
+<product_blog>
+<product_id>1241</product_id>
+<row_id>5</row_id>
+<name>test1</name>
+<parent_title>Черный деловой дизаин</parent_title>
+<product_parent_id>1007</product_parent_id>
+<icon></icon>
+<image></image>
+<user_id>487</user_id>
+<author>black black</author>
+<company>black</company>
+<policy_url>Policy.jsp?policy_byproductid=1007</policy_url>
+<description>
+<r><![CDATA[ test ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+<statistic>0</statistic>
+<cdate>09/05/2009</cdate>
+</product_blog>
+<product_blog>
+<product_id>995</product_id>
+<row_id>6</row_id>
+<name>Вопросы и ответы </name>
+<parent_title></parent_title>
+<product_parent_id></product_parent_id>
+<icon></icon>
+<image></image>
+<user_id></user_id>
+<author> </author>
+<company></company>
+<policy_url>Policy.jsp?policy_byproductid=</policy_url>
+<description><r><![CDATA[  Вы можете вести дискусии по товару или новостям и прайс листу  ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Нет</version>
+<statistic>0</statistic>
+<cdate>05/03/2009</cdate>
+</product_blog>
+<product_blog>
+<product_id>996</product_id>
+<row_id>7</row_id>
+<name>Спасибо за выбор моей CMS </name>
+<parent_title></parent_title>
+<product_parent_id></product_parent_id>
+<icon></icon>
+<image></image>
+<user_id></user_id>
+<author> </author>
+<company></company>
+<policy_url>Policy.jsp?policy_byproductid=</policy_url>
+<description><r><![CDATA[  Спасибо от автора Константина Грабко что воспользовались CMS Business One ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Нет</version>
+<statistic>0</statistic>
+<cdate>05/03/2009</cdate>
+</product_blog>
+</product_blog_list>
+
+<newslist>
+<news>
+<product_id>987</product_id>
+<row_id>0</row_id>
+<name>3Хостинг CMS</name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=987</policy_url>
+<description>
+<r><![CDATA[ 3Вы получаете у нас хостинг CMS за 1000 рублей месяц ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Рубли</version>
+</news>
+<news>
+<product_id>986</product_id>
+<row_id>1</row_id>
+<name> Реклама </name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=986</policy_url>
+<description><r><![CDATA[  Блоки рекламы на портале  ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Нет</version>
+</news>
+<news>
+<product_id>985</product_id>
+<row_id>2</row_id>
+<name> Блок новости сайта </name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=985</policy_url>
+<description><r><![CDATA[  Блок новости сайта  ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Нет</version>
+</news>
+<news>
+<product_id>984</product_id>
+<row_id>3</row_id>
+<name> Форум </name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=984</policy_url>
+<description><r><![CDATA[  В портал встроен форум  ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Нет</version>
+</news>
+<news>
+<product_id>983</product_id>
+<row_id>4</row_id>
+<name> Изменение информации на сайте  </name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=983</policy_url>
+<description><r><![CDATA[  Изменение содержания перед началом  ]]></r><r><![CDATA[  работы портала. ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Нет</version>
+</news>
+<news>
+<product_id>982</product_id>
+<row_id>5</row_id>
+<name> Поисковая система портала  </name>
+<icon></icon>
+<image></image>
+<big_image_type></big_image_type>
+<icon_type></icon_type>
+<user_id></user_id>
+<policy_url>Policy.jsp?policy_byproductid=982</policy_url>
+<description><r><![CDATA[ Настройка поиска перед началом  ]]></r><r><![CDATA[  работы портала . ]]></r></description>
+<amount>0.0</amount>
+<currency>
+<code></code>
+<description>dollar us</description>
+</currency>
+<version>Нет</version>
+</news>
+</newslist>
+
+
+   <!-- ????????? ?????? ???????? ??? ???   -->
+   <empty_page_co1>false</empty_page_co1>
+   <!-- ????????? ?????? ???????? ??? ???   -->
+   <empty_page_co2>false</empty_page_co2>
+   <!-- ????????? ?????? ???????? ??? ???   -->
+   <empty_page>false</empty_page>
+   <!-- ?????????? ???????    -->
+   <quantity_products>15</quantity_products>
+   <!-- ?????????? Offset   -->
+   <offset>0</offset>
+
+<next>Productlist.jsp?offset=10</next>
+<prev>Productlist.jsp?offset=0</prev>
+
+<criteria1_label>Критерий1</criteria1_label>
+<criteria2_label>Критерий2</criteria2_label>
+<criteria3_label>Критерий3</criteria3_label>
+<criteria4_label>Критерий4</criteria4_label>
+<criteria5_label>Критерий5</criteria5_label>
+<criteria6_label>Критерий6</criteria6_label>
+<criteria7_label>Критерий7</criteria7_label>
+<criteria8_label>Критерий8</criteria8_label>
+<criteria9_label>Критерий9</criteria9_label>
+<criteria10_label>Критерий10</criteria10_label>
+
+
+<currencies>
+<currencies-item><selected></selected><item></item><code>-1</code><url>Productlist.jsp?currency_cd=0</url></currencies-item>
+<currencies-item><selected></selected><item>Нет</item><code>0</code><url>Productlist.jsp?currency_cd=0</url></currencies-item>
+<currencies-item><selected></selected><item>Доллар</item><code>USD</code><url>Productlist.jsp?currency_cd=USD</url></currencies-item>
+<currencies-item><selected></selected><item>Евро</item><code>EURO</code><url>Productlist.jsp?currency_cd=EURO</url></currencies-item>
+<currencies-item><selected></selected><item>Рубли</item><code>RUR</code><url>Productlist.jsp?currency_cd=RUR</url></currencies-item>
+</currencies>
+
+
+<catalog>
+<catalog-item><selected>-2</selected><item></item><code>-1</code><url>Productlist.jsp?catalog_id=0</url><subcatalog-item><subselected></subselected><subitem></subitem><subcode></subcode><suburl></suburl></subcatalog-item>
+</catalog-item>
+<catalog-item><selected>-2</selected><item>Новости</item><code>-1</code><url>Productlist.jsp?catalog_id=-1</url><subcatalog-item><subselected></subselected><subitem></subitem><subcode></subcode><suburl></suburl></subcatalog-item>
+</catalog-item>
+<catalog-item><selected>-2</selected><item>Главная страница</item><code>-2</code><url>Productlist.jsp?catalog_id=-2</url><subcatalog-item><subselected></subselected><subitem></subitem><subcode></subcode><suburl></suburl></subcatalog-item>
+</catalog-item>
+<catalog-item><selected>-2</selected><item>Интернет магазины</item><code>568</code><url>Productlist.jsp?catalog_id=568</url><subcatalog-item><subselected></subselected><subitem></subitem><subcode></subcode><suburl></suburl></subcatalog-item>
+</catalog-item>
+<catalog-item><selected>-2</selected><item>Документация</item><code>570</code><url>Productlist.jsp?catalog_id=570</url><subcatalog-item><subselected></subselected><subitem></subitem><subcode></subcode><suburl></suburl></subcatalog-item>
+</catalog-item>
+<catalog-item><selected>-2</selected><item>Серверы</item><code>572</code><url>Productlist.jsp?catalog_id=572</url><subcatalog-item><subselected></subselected><subitem></subitem><subcode></subcode><suburl></suburl></subcatalog-item>
+</catalog-item>
+</catalog>
+
+
+<creteria1>
+<creteria1-item><selected>0</selected><item></item><code>-1</code><url>Productlist.jsp?creteria1_id=0</url></creteria1-item>
+<creteria1-item><selected>0</selected><item>Не выбрано</item><code>1</code><url>Productlist.jsp?creteria1_id=1</url></creteria1-item>
+<creteria1-item><selected>0</selected><item>Тест1</item><code>2</code><url>Productlist.jsp?creteria1_id=2</url></creteria1-item>
+<creteria1-item><selected>0</selected><item>Тест2</item><code>3</code><url>Productlist.jsp?creteria1_id=3</url></creteria1-item>
+</creteria1>
+
+<creteria2>
+<creteria2-item><selected>0</selected><item></item><code>-1</code><url>Productlist.jsp?creteria2_id=0</url></creteria2-item>
+<creteria2-item><selected>0</selected><item>Не выбрано</item><code>1</code><url>Productlist.jsp?creteria2_id=1</url></creteria2-item>
+</creteria2>
+
+<creteria3>
+<creteria3-item><selected>0</selected><item></item><code>-1</code><url>Productlist.jsp?creteria3_id=0</url></creteria3-item>
+<creteria3-item><selected>0</selected><item>Не выбрано</item><code>1</code><url>Productlist.jsp?creteria3_id=1</url></creteria3-item>
+</creteria3>
+
+<creteria4>
+<creteria4-item><selected>0</selected><item></item><code>-1</code><url>Productlist.jsp?creteria4_id=0</url></creteria4-item>
+<creteria4-item><selected>0</selected><item>Не выбрано</item><code>1</code><url>Productlist.jsp?creteria4_id=1</url></creteria4-item>
+</creteria4>
+
+<creteria5>
+<creteria5-item><selected>0</selected><item></item><code>-1</code><url>Productlist.jsp?creteria5_id=0</url></creteria5-item>
+<creteria5-item><selected>0</selected><item>Не выбрано</item><code>1</code><url>Productlist.jsp?creteria5_id=1</url></creteria5-item>
+</creteria5>
+
+<creteria6>
+<creteria6-item><selected>0</selected><item></item><code>-1</code><url>Productlist.jsp?creteria6_id=0</url></creteria6-item>
+<creteria6-item><selected>0</selected><item>Не выбрано</item><code>1</code><url>Productlist.jsp?creteria6_id=1</url></creteria6-item>
+</creteria6>
+
+<creteria7>
+<creteria7-item><selected>0</selected><item></item><code>-1</code><url>Productlist.jsp?creteria7_id=0</url></creteria7-item>
+<creteria7-item><selected>0</selected><item>Не выбрано</item><code>1</code><url>Productlist.jsp?creteria7_id=1</url></creteria7-item>
+</creteria7>
+
+<creteria8>
+<creteria8-item><selected>0</selected><item></item><code>-1</code><url>Productlist.jsp?creteria8_id=0</url></creteria8-item>
+<creteria8-item><selected>0</selected><item>Не выбрано</item><code>1</code><url>Productlist.jsp?creteria8_id=1</url></creteria8-item>
+</creteria8>
+
+<creteria9>
+<creteria9-item><selected>0</selected><item></item><code>-1</code><url>Productlist.jsp?creteria9_id=0</url></creteria9-item>
+<creteria9-item><selected>0</selected><item>Не выбрано</item><code>1</code><url>Productlist.jsp?creteria9_id=1</url></creteria9-item>
+</creteria9>
+
+<creteria10>
+<creteria10-item><selected>0</selected><item></item><code>-1</code><url>Productlist.jsp?creteria10_id=0</url></creteria10-item>
+<creteria10-item><selected>0</selected><item>Не выбрано</item><code>1</code><url>Productlist.jsp?creteria10_id=1</url></creteria10-item>
+</creteria10>
+
+
+<dayfrom>
+<dayfrom-item><selected>22</selected><item></item><code>-1</code><url>Productlist.jsp?dayfrom_id=1</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>1</item><code>1</code><url>Productlist.jsp?dayfrom_id=1</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>2</item><code>2</code><url>Productlist.jsp?dayfrom_id=2</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>3</item><code>3</code><url>Productlist.jsp?dayfrom_id=3</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>4</item><code>4</code><url>Productlist.jsp?dayfrom_id=4</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>5</item><code>5</code><url>Productlist.jsp?dayfrom_id=5</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>6</item><code>6</code><url>Productlist.jsp?dayfrom_id=6</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>7</item><code>7</code><url>Productlist.jsp?dayfrom_id=7</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>8</item><code>8</code><url>Productlist.jsp?dayfrom_id=8</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>9</item><code>9</code><url>Productlist.jsp?dayfrom_id=9</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>10</item><code>10</code><url>Productlist.jsp?dayfrom_id=10</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>11</item><code>11</code><url>Productlist.jsp?dayfrom_id=11</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>12</item><code>12</code><url>Productlist.jsp?dayfrom_id=12</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>13</item><code>13</code><url>Productlist.jsp?dayfrom_id=13</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>14</item><code>14</code><url>Productlist.jsp?dayfrom_id=14</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>15</item><code>15</code><url>Productlist.jsp?dayfrom_id=15</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>16</item><code>16</code><url>Productlist.jsp?dayfrom_id=16</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>17</item><code>17</code><url>Productlist.jsp?dayfrom_id=17</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>18</item><code>18</code><url>Productlist.jsp?dayfrom_id=18</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>19</item><code>19</code><url>Productlist.jsp?dayfrom_id=19</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>20</item><code>20</code><url>Productlist.jsp?dayfrom_id=20</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>21</item><code>21</code><url>Productlist.jsp?dayfrom_id=21</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>22</item><code>22</code><url>Productlist.jsp?dayfrom_id=22</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>23</item><code>23</code><url>Productlist.jsp?dayfrom_id=23</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>24</item><code>24</code><url>Productlist.jsp?dayfrom_id=24</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>25</item><code>25</code><url>Productlist.jsp?dayfrom_id=25</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>26</item><code>26</code><url>Productlist.jsp?dayfrom_id=26</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>27</item><code>27</code><url>Productlist.jsp?dayfrom_id=27</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>28</item><code>28</code><url>Productlist.jsp?dayfrom_id=28</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>29</item><code>29</code><url>Productlist.jsp?dayfrom_id=29</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>30</item><code>30</code><url>Productlist.jsp?dayfrom_id=30</url></dayfrom-item>
+<dayfrom-item><selected>22</selected><item>31</item><code>31</code><url>Productlist.jsp?dayfrom_id=31</url></dayfrom-item>
+</dayfrom>
+
+<mountfrom>
+<mountfrom-item><selected>9</selected><item></item><code>-1</code><url>Productlist.jsp?mountfrom_id=1</url></mountfrom-item>
+<mountfrom-item><selected>9</selected><item>1</item><code>1</code><url>Productlist.jsp?mountfrom_id=1</url></mountfrom-item>
+<mountfrom-item><selected>9</selected><item>2</item><code>2</code><url>Productlist.jsp?mountfrom_id=2</url></mountfrom-item>
+<mountfrom-item><selected>9</selected><item>3</item><code>3</code><url>Productlist.jsp?mountfrom_id=3</url></mountfrom-item>
+<mountfrom-item><selected>9</selected><item>4</item><code>4</code><url>Productlist.jsp?mountfrom_id=4</url></mountfrom-item>
+<mountfrom-item><selected>9</selected><item>5</item><code>5</code><url>Productlist.jsp?mountfrom_id=5</url></mountfrom-item>
+<mountfrom-item><selected>9</selected><item>6</item><code>6</code><url>Productlist.jsp?mountfrom_id=6</url></mountfrom-item>
+<mountfrom-item><selected>9</selected><item>7</item><code>7</code><url>Productlist.jsp?mountfrom_id=7</url></mountfrom-item>
+<mountfrom-item><selected>9</selected><item>8</item><code>8</code><url>Productlist.jsp?mountfrom_id=8</url></mountfrom-item>
+<mountfrom-item><selected>9</selected><item>9</item><code>9</code><url>Productlist.jsp?mountfrom_id=9</url></mountfrom-item>
+<mountfrom-item><selected>9</selected><item>10</item><code>10</code><url>Productlist.jsp?mountfrom_id=10</url></mountfrom-item>
+<mountfrom-item><selected>9</selected><item>11</item><code>11</code><url>Productlist.jsp?mountfrom_id=11</url></mountfrom-item>
+<mountfrom-item><selected>9</selected><item>12</item><code>12</code><url>Productlist.jsp?mountfrom_id=12</url></mountfrom-item>
+</mountfrom>
+
+<yearfrom>
+<yearfrom-item><selected>2009</selected><item></item><code>-1</code><url>Productlist.jsp?yearfrom_id=1</url></yearfrom-item>
+<yearfrom-item><selected>2009</selected><item>2006</item><code>2006</code><url>Productlist.jsp?yearfrom_id=2006</url></yearfrom-item>
+<yearfrom-item><selected>2009</selected><item>2007</item><code>2007</code><url>Productlist.jsp?yearfrom_id=2007</url></yearfrom-item>
+<yearfrom-item><selected>2009</selected><item>2008</item><code>2008</code><url>Productlist.jsp?yearfrom_id=2008</url></yearfrom-item>
+<yearfrom-item><selected>2009</selected><item>2009</item><code>2009</code><url>Productlist.jsp?yearfrom_id=2009</url></yearfrom-item>
+<yearfrom-item><selected>2009</selected><item>2010</item><code>2010</code><url>Productlist.jsp?yearfrom_id=2010</url></yearfrom-item>
+<yearfrom-item><selected>2009</selected><item>2011</item><code>2011</code><url>Productlist.jsp?yearfrom_id=2011</url></yearfrom-item>
+<yearfrom-item><selected>2009</selected><item>2012</item><code>2012</code><url>Productlist.jsp?yearfrom_id=2012</url></yearfrom-item>
+<yearfrom-item><selected>2009</selected><item>2013</item><code>2013</code><url>Productlist.jsp?yearfrom_id=2013</url></yearfrom-item>
+<yearfrom-item><selected>2009</selected><item>2014</item><code>2014</code><url>Productlist.jsp?yearfrom_id=2014</url></yearfrom-item>
+<yearfrom-item><selected>2009</selected><item>2015</item><code>2015</code><url>Productlist.jsp?yearfrom_id=2015</url></yearfrom-item>
+</yearfrom>
+
+
+<dayto>
+<dayto-item><selected>22</selected><item></item><code>-1</code><url>Productlist.jsp?dayto_id=1</url></dayto-item>
+<dayto-item><selected>22</selected><item>1</item><code>1</code><url>Productlist.jsp?dayto_id=1</url></dayto-item>
+<dayto-item><selected>22</selected><item>2</item><code>2</code><url>Productlist.jsp?dayto_id=2</url></dayto-item>
+<dayto-item><selected>22</selected><item>3</item><code>3</code><url>Productlist.jsp?dayto_id=3</url></dayto-item>
+<dayto-item><selected>22</selected><item>4</item><code>4</code><url>Productlist.jsp?dayto_id=4</url></dayto-item>
+<dayto-item><selected>22</selected><item>5</item><code>5</code><url>Productlist.jsp?dayto_id=5</url></dayto-item>
+<dayto-item><selected>22</selected><item>6</item><code>6</code><url>Productlist.jsp?dayto_id=6</url></dayto-item>
+<dayto-item><selected>22</selected><item>7</item><code>7</code><url>Productlist.jsp?dayto_id=7</url></dayto-item>
+<dayto-item><selected>22</selected><item>8</item><code>8</code><url>Productlist.jsp?dayto_id=8</url></dayto-item>
+<dayto-item><selected>22</selected><item>9</item><code>9</code><url>Productlist.jsp?dayto_id=9</url></dayto-item>
+<dayto-item><selected>22</selected><item>10</item><code>10</code><url>Productlist.jsp?dayto_id=10</url></dayto-item>
+<dayto-item><selected>22</selected><item>11</item><code>11</code><url>Productlist.jsp?dayto_id=11</url></dayto-item>
+<dayto-item><selected>22</selected><item>12</item><code>12</code><url>Productlist.jsp?dayto_id=12</url></dayto-item>
+<dayto-item><selected>22</selected><item>13</item><code>13</code><url>Productlist.jsp?dayto_id=13</url></dayto-item>
+<dayto-item><selected>22</selected><item>14</item><code>14</code><url>Productlist.jsp?dayto_id=14</url></dayto-item>
+<dayto-item><selected>22</selected><item>15</item><code>15</code><url>Productlist.jsp?dayto_id=15</url></dayto-item>
+<dayto-item><selected>22</selected><item>16</item><code>16</code><url>Productlist.jsp?dayto_id=16</url></dayto-item>
+<dayto-item><selected>22</selected><item>17</item><code>17</code><url>Productlist.jsp?dayto_id=17</url></dayto-item>
+<dayto-item><selected>22</selected><item>18</item><code>18</code><url>Productlist.jsp?dayto_id=18</url></dayto-item>
+<dayto-item><selected>22</selected><item>19</item><code>19</code><url>Productlist.jsp?dayto_id=19</url></dayto-item>
+<dayto-item><selected>22</selected><item>20</item><code>20</code><url>Productlist.jsp?dayto_id=20</url></dayto-item>
+<dayto-item><selected>22</selected><item>21</item><code>21</code><url>Productlist.jsp?dayto_id=21</url></dayto-item>
+<dayto-item><selected>22</selected><item>22</item><code>22</code><url>Productlist.jsp?dayto_id=22</url></dayto-item>
+<dayto-item><selected>22</selected><item>23</item><code>23</code><url>Productlist.jsp?dayto_id=23</url></dayto-item>
+<dayto-item><selected>22</selected><item>24</item><code>24</code><url>Productlist.jsp?dayto_id=24</url></dayto-item>
+<dayto-item><selected>22</selected><item>25</item><code>25</code><url>Productlist.jsp?dayto_id=25</url></dayto-item>
+<dayto-item><selected>22</selected><item>26</item><code>26</code><url>Productlist.jsp?dayto_id=26</url></dayto-item>
+<dayto-item><selected>22</selected><item>27</item><code>27</code><url>Productlist.jsp?dayto_id=27</url></dayto-item>
+<dayto-item><selected>22</selected><item>28</item><code>28</code><url>Productlist.jsp?dayto_id=28</url></dayto-item>
+<dayto-item><selected>22</selected><item>29</item><code>29</code><url>Productlist.jsp?dayto_id=29</url></dayto-item>
+<dayto-item><selected>22</selected><item>30</item><code>30</code><url>Productlist.jsp?dayto_id=30</url></dayto-item>
+<dayto-item><selected>22</selected><item>31</item><code>31</code><url>Productlist.jsp?dayto_id=31</url></dayto-item>
+</dayto>
+
+<mountto>
+<mountto-item><selected>9</selected><item></item><code>-1</code><url>Productlist.jsp?mountto_id=1</url></mountto-item>
+<mountto-item><selected>9</selected><item>1</item><code>1</code><url>Productlist.jsp?mountto_id=1</url></mountto-item>
+<mountto-item><selected>9</selected><item>2</item><code>2</code><url>Productlist.jsp?mountto_id=2</url></mountto-item>
+<mountto-item><selected>9</selected><item>3</item><code>3</code><url>Productlist.jsp?mountto_id=3</url></mountto-item>
+<mountto-item><selected>9</selected><item>4</item><code>4</code><url>Productlist.jsp?mountto_id=4</url></mountto-item>
+<mountto-item><selected>9</selected><item>5</item><code>5</code><url>Productlist.jsp?mountto_id=5</url></mountto-item>
+<mountto-item><selected>9</selected><item>6</item><code>6</code><url>Productlist.jsp?mountto_id=6</url></mountto-item>
+<mountto-item><selected>9</selected><item>7</item><code>7</code><url>Productlist.jsp?mountto_id=7</url></mountto-item>
+<mountto-item><selected>9</selected><item>8</item><code>8</code><url>Productlist.jsp?mountto_id=8</url></mountto-item>
+<mountto-item><selected>9</selected><item>9</item><code>9</code><url>Productlist.jsp?mountto_id=9</url></mountto-item>
+<mountto-item><selected>9</selected><item>10</item><code>10</code><url>Productlist.jsp?mountto_id=10</url></mountto-item>
+<mountto-item><selected>9</selected><item>11</item><code>11</code><url>Productlist.jsp?mountto_id=11</url></mountto-item>
+<mountto-item><selected>9</selected><item>12</item><code>12</code><url>Productlist.jsp?mountto_id=12</url></mountto-item>
+</mountto>
+
+<yearto>
+<yearto-item><selected>2009</selected><item></item><code>-1</code><url>Productlist.jsp?yearto_id=1</url></yearto-item>
+<yearto-item><selected>2009</selected><item>2006</item><code>2006</code><url>Productlist.jsp?yearto_id=2006</url></yearto-item>
+<yearto-item><selected>2009</selected><item>2007</item><code>2007</code><url>Productlist.jsp?yearto_id=2007</url></yearto-item>
+<yearto-item><selected>2009</selected><item>2008</item><code>2008</code><url>Productlist.jsp?yearto_id=2008</url></yearto-item>
+<yearto-item><selected>2009</selected><item>2009</item><code>2009</code><url>Productlist.jsp?yearto_id=2009</url></yearto-item>
+<yearto-item><selected>2009</selected><item>2010</item><code>2010</code><url>Productlist.jsp?yearto_id=2010</url></yearto-item>
+<yearto-item><selected>2009</selected><item>2011</item><code>2011</code><url>Productlist.jsp?yearto_id=2011</url></yearto-item>
+<yearto-item><selected>2009</selected><item>2012</item><code>2012</code><url>Productlist.jsp?yearto_id=2012</url></yearto-item>
+<yearto-item><selected>2009</selected><item>2013</item><code>2013</code><url>Productlist.jsp?yearto_id=2013</url></yearto-item>
+<yearto-item><selected>2009</selected><item>2014</item><code>2014</code><url>Productlist.jsp?yearto_id=2014</url></yearto-item>
+<yearto-item><selected>2009</selected><item>2015</item><code>2015</code><url>Productlist.jsp?yearto_id=2015</url></yearto-item>
+</yearto>
+
+
+<parent>
+</parent>
+
+
+
+
+</document>

@@ -1,0 +1,411 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>CMS-Manhattan</groupId>
+	<artifactId>cms-manhattan-one</artifactId>
+	<version>0.0.54</version>
+	<packaging>war</packaging>
+	<name>cms</name>
+	<description>CMS-Manhattan. It is xslt template CMS . Author is Konstantin
+		Grabko . konstantin.grabko@yahoo.com </description>
+
+	<properties>
+		<java.version>17</java.version>
+		<maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<spring-cloud.version>2023.0.3</spring-cloud.version>
+	</properties>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>test</testSourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>17</source>
+					<target>17</target>
+				</configuration>
+			</plugin>
+			<!-- FIX (pass 35): run the JUnit 5 unit tests added under test/. -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.5</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.1</version>
+				<configuration>
+
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+						</manifest>
+					</archive>
+
+					<warSourceDirectory>WebContent</warSourceDirectory>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<webResources>
+						<resource>
+							<!-- this is relative to the pom.xml directory -->
+							<!-- <directory>WebContent</directory> -->
+							<directory>src</directory>
+							<targetPath>WEB-INF/classes</targetPath>
+							<includes>
+								<include>**/*.properties</include>
+								<include>**/*.xml</include>
+								<include>**/*.dtd</include>
+							</includes>
+						</resource>
+					</webResources>
+				</configuration>
+			</plugin>
+
+
+
+        <plugin>
+            <groupId>com.spotify</groupId>
+            <artifactId>dockerfile-maven-plugin</artifactId>
+            <version>1.4.13</version>
+            <executions>
+		
+                <execution>
+                    <id>tag-latest</id>
+                    <goals>
+                        <goal>build</goal>
+                        <goal>tag</goal>
+                        <goal>push</goal>
+                    </goals>
+                    <configuration>
+                        <tag>latest</tag>
+                    </configuration>
+                </execution>
+        
+                <execution>
+                    <id>tag-version</id>
+                    <goals>
+                        <goal>build</goal>
+                        <goal>tag</goal>
+                        <goal>push</goal>
+                    </goals>
+                    <configuration>
+                        <tag>${project.version}</tag>
+                    </configuration>
+                </execution>
+            </executions>
+            <configuration>
+			    <repository>cmsmanhattan/cmsone</repository>
+			    <tag>${project.version}</tag>
+			    <buildArgs>
+			      <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+			    </buildArgs>
+			  </configuration>
+        </plugin>
+
+			<!--  It works before String boot compile phase  -->
+			<!--  https://www.youtube.com/watch?v=JJoBUdMJf1I-->
+			<!-- https://sterl.org/2019/02/angular-spring-boot/ -->
+			<!--
+			https://www.springcloud.io/post/2022-03/springboot-docker/#gsc.tab=0 -->
+<!--
+         <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <executable>ng</executable>
+
+                    <workingDirectory>publisher_ui</workingDirectory>
+                    <arguments>
+                        <argument>build</argument>
+                    </arguments>
+                </configuration>
+            </plugin>-->
+
+
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<id>sonatype.snapshots</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		</repository>
+		<repository>
+			<id>java.net</id>
+			<url>http://download.java.net/maven/2</url>
+		</repository>
+		<repository>
+			<id>maven.org</id>
+			<url>http://repo1.maven.org/maven2</url>
+		</repository>
+		<repository>
+			<id>jvnet-nexus-releases</id>
+			<name>jvnet-nexus-releases</name>
+			<url>https://maven.java.net/content/repositories/releases</url>
+		</repository>
+		<repository>
+			<id>jvnet-nexus-snapshots</id>
+			<name>jvnet-nexus-snapshots</name>
+			<url>https://maven.java.net/content/repositories/snapshots/</url>
+		</repository>
+		<repository>
+			<id>apache.org</id>
+			<url>https://repository.apache.org/content/repositories/snapshots</url>
+		</repository>
+		<repository>
+			<id>liferay.previews</id>
+			<url>
+				https://repository.liferay.com/nexus/content/repositories/liferay-previews</url>
+		</repository>
+
+		<repository>
+			<id>com.springsource.repository.bundles.external</id>
+			<name>SpringSource Enterprise Bundle Repository - External Bundle
+				Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/external</url>
+		</repository>
+
+	</repositories>
+
+	<dependencies>
+		<!-- FIX (pass 35): JUnit 5 for the unit tests added in this pass. -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.10.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.cbsinc.cms</groupId>
+			<artifactId>annotations</artifactId>
+			<version>0.0.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.james</groupId>
+			<artifactId>james-server-data-api</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+
+<!--		<dependency>
+			<groupId>javax.media.jai</groupId>
+			<artifactId>com.springsource.javax.media.jai.core</artifactId>
+			<version>1.1.3</version>
+		</dependency>-->
+
+
+<!--		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+		</dependency>-->
+
+
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.1</version>
+			<!--
+			<exclusions>
+	        <exclusion>
+		            <groupId>xml-apis</groupId>
+		            <artifactId>xml-apis</artifactId>
+		        </exclusion>
+		        <exclusion>
+		            <groupId>java.xml</groupId>
+		            <artifactId>java.xml</artifactId>
+		        </exclusion>
+		    </exclusions>
+		    -->
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+			<!-- 	<type>bundle</type> -->
+		</dependency>
+
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>5.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.perf4j</groupId>
+			<artifactId>perf4j</artifactId>
+			<version>0.9.16</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.12</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.8.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils-core</artifactId>
+			<version>1.8.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils-bean-collections</artifactId>
+			<version>1.8.2</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>8.1-404.jdbc3</version>
+		</dependency>
+
+		<!--
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.45</version>
+    <scope>runtime</scope>
+</dependency>
+-->
+		<!--
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
+</dependency>
+-->
+
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.11</version>
+		</dependency>
+
+
+		<!-- com.cbsinc.cms.card -->
+		<dependency>
+			<groupId>soap</groupId>
+			<artifactId>soap</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+
+		<!-- xslt transform 
+  <dependency>
+	<groupId>xml-apis</groupId>
+	<artifactId>xmlParserAPIs</artifactId>
+	<version>2.0.2</version>
+  </dependency>
+-->
+
+
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-catalina</artifactId>
+			<version>10.1.24</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-coyote</artifactId>
+			<version>10.1.24</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+	    	<groupId>org.apache.tomcat</groupId>
+	    	<artifactId>tomcat-util</artifactId>
+	    	<version>10.1.24</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>2.1.4</version>
+		</dependency>
+		<!-- Thanks for using https://jar-download.com -->
+
+
+		<dependency>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
+			<version>6.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!--
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20190722</version>
+</dependency>
+-->
+
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20231013</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.3.30.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.13.3</version>
+		</dependency>
+		
+		<!-- Add the Eureka Client dependency -->
+
+
+
+       <dependency>
+		    <groupId>com.netflix.eureka</groupId>
+		    <artifactId>eureka-core</artifactId>
+		    <version>1.10.17</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.netflix.eureka</groupId>
+		    <artifactId>eureka-client</artifactId>
+		    <version>1.10.17</version>
+		</dependency>
+
+
+
+
+
+
+	</dependencies>
+</project>

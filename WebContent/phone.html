@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<script language="JavaScript">
+<!--
+
+
+function openlamellar() 
+{
+doPostOnServer(false); 
+clearTimeout(timer);
+timer=setTimeout("closelamellar()",600);
+}
+
+
+
+
+
+function initRequest() 
+{
+       if (window.XMLHttpRequest) 
+       {
+           return new XMLHttpRequest();
+       }
+       else if (window.ActiveXObject) 
+       {
+           return new ActiveXObject("Microsoft.XMLHTTP");
+       }
+}
+
+
+function doPostOnServer(ispost) 
+
+{
+	  var url = 'chatclient'  ;     
+
+           var req = initRequest();
+
+           req.onreadystatechange = function() 
+	   {
+               if (req.readyState == 4) 
+	       {
+                   if (req.status == 200) 
+		    {
+			parseMessages(req.responseXML);
+                    }
+               }
+           };
+
+           req.open("POST", url, true);
+	   req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+           req.send("message=" + encodeURIComponent(document.all("message").value )) ;
+           document.all("message").value = '' ;
+}
+
+
+
+function parseMessages(responseXML) 
+{
+    var doc = responseXML.getElementsByTagName("document")[0];
+    var message = doc.getElementsByTagName("message")[0];
+
+    if(document.all["textArea"] != null  && message != null )
+    {
+
+      document.all["textArea"].value  =  message.childNodes[0].nodeValue ;
+
+    }	
+
+}
+
+
+function handlePagerPress(evt)
+{
+  if (evt.keyCode == 13) 
+  {
+    doPostOnServer(true);
+  }
+}  
+
+
+
+//-->
+</script>
+
+
+</head>
+
+<body onload="openlamellar()" > 
+
+<OBJECT 
+     classid = "clsid:8AD9C840-044E-11D1-B3E9-00805F499D93"
+     codebase = "http://java.sun.com/products/plugin/autodl/jinstall-1_5-windows-i586.cab#Version=1,4,0,0"
+     WIDTH = 310 HEIGHT = 120 >
+     <PARAM NAME = CODE VALUE = "local.media.AppletPhone.class" >
+     <PARAM NAME = ARCHIVE VALUE = "ua.jar, sip.jar" >
+     <PARAM NAME = "type" VALUE = "application/x-java-applet;version=1.5">
+     <PARAM NAME = "scriptable" VALUE = "false">
+     <PARAM NAME = "config_url" VALUE = "http://dvd.gvidons.net/sipclientsettings">
+
+<COMMENT>
+<EMBED 
+     type = "application/x-java-applet;version=1.5" 
+     CODE = "local.media.AppletPhone.class" 
+     ARCHIVE = "ua.jar, sip.jar" 
+     WIDTH = 310 
+     HEIGHT = 120 
+     scriptable = false 
+     config_url =  "http://dvd.gvidons.net/sipclientsettings" 
+     pluginspage = "http://java.sun.com/products/plugin/index.html#download">
+<NOEMBED>
+
+</NOEMBED>
+</EMBED>
+</COMMENT>
+</OBJECT>
+
+<form  onsubmit="false" >
+<textarea  id='textArea' rows="25" cols="37" ></textarea>
+</br>
+<input type="text" name="message"  id="message"  size="38" onkeypress="return handlePagerPress(event)"   ></input>
+<input type="button" name="button"  value="send"   onclick="doPostOnServer(true)"  ></input>
+</form>
+
+
+</body>
+</html>

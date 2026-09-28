@@ -1,0 +1,22 @@
+Dear @FirstName @LastName!
+
+You use the @PaySystem payment system.
+You made the order @NumberOfOrder  and the order is containing @ProductCount of items.
+The payment amount is @Amount @Currency. 
+
+Your details below:
+
+IP: @IPAddress
+
+Also you specified:
+
+Address of the receiver: @Contry, of @City, @Address 
+E-mail address: @CustomerEmail.
+Phone: @Phone.
+Fax: @CustomerFax.
+Contact person: @ContactPerson.  
+Comments by request: @CustomerCommentariy.
+
+Yours faithfully, internet shop team.
+www.@Login.irr.bz
+@Login@siteforyou.net

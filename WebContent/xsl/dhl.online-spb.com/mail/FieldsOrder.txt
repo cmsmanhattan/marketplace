@@ -1,0 +1,14 @@
+Èìÿ @FirstName
+@LastName
+@NumberOfOrder
+@ContactPerson
+@Balan
+@Phone
+@Address
+@City
+@Contry
+@CustomerEmail
+@CustomerFax
+@CustomerCommentariy
+@ProductCount
+

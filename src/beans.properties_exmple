@@ -1,0 +1,25 @@
+# ###################################################################
+# 
+# CMS DI Feature
+#
+####################################################################
+#
+# CMS dependency support as Spring framework for business logic layer
+#
+# It is CMS dependency injection list of beans for singleton pattern
+# It will generated dynamically via Maven install command 
+# Just use annotation SingletonBean to generate it file SingletonBean 
+# and Inject the singleton Bean via @Singleton annotation
+# the file will packet in compile time in war file 
+#
+#
+#
+
+
+
+
+
+
+
+
+

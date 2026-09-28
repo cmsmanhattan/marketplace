@@ -1,0 +1,10 @@
+Dear @FirstName @LastName!
+
+Your order at the number @NumberOfOrder was placed successfully and will be processed soon.
+
+The order consists of @ProductCount of line items for total amount of @Amount @Currency.
+
+Yours faithfully, e-commerce shop administration.
+Link to http://www.@Login.irr.bz/Productlist.jsp shop? site = SiteId
+Contact e-mail @ShopEmail
+

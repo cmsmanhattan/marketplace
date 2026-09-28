@@ -1,0 +1,12 @@
+[PropertyInfo]
+answer,RateInfo,false,false, , ,false,<default>
+currency,String,false,false, , ,false,<default>
+date,String,false,false, , ,false,<default>
+login,String,false,false, , ,false,<default>
+password,String,false,false, , ,false,<default>
+shop_id,String,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

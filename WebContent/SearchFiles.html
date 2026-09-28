@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<script language="JavaScript">
+<!--
+
+function say() 
+{
+doPostOnServer(false); 
+setTimeout('say()',2000);
+}
+
+
+function initRequest() 
+{
+       if (window.XMLHttpRequest) 
+       {
+           return new XMLHttpRequest();
+       }
+       else if (window.ActiveXObject) 
+       {
+           return new ActiveXObject("Microsoft.XMLHTTP");
+       }
+}
+
+
+function doPostOnServer(ispost) 
+
+{
+	  var url = 'searchfiles'  ;     
+
+           var req = initRequest();
+
+           req.onreadystatechange = function() 
+	   {
+               if (req.readyState == 4) 
+	       {
+                   if (req.status == 200) 
+		    {
+			parseMessages(req.responseXML);
+                    }
+               }
+           };
+
+       req.open("POST", url, true);
+	   req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+	if(ispost)
+	{
+           req.send("dir=" + encodeURIComponent(document.all("dir").value )) ;
+           //document.all("dir").value = '' ;
+           setTableHead();
+	}
+	else 
+	{
+           req.send("dir=") ;
+
+	}
+
+
+
+}
+
+
+
+function parseMessages(responseXML) 
+{
+    var doc = responseXML.getElementsByTagName("document")[0];
+    if(doc == null) return ;
+     for (loop = 0; loop < doc.childNodes.length; loop++) 
+	 {
+	      var file_tag = doc.childNodes[loop];
+		  if( file_tag.nodeName == 'file'  )
+		  { 
+           var path = file_tag.getElementsByTagName('path')[0];
+           var date = file_tag.getElementsByTagName('date')[0];
+           var time = file_tag.getElementsByTagName('time')[0];
+           var length  = file_tag.getElementsByTagName('length')[0];
+
+		   // alert('path1 - ' +  path1.childNodes[0].nodeValue);
+
+		   var tbl = document.getElementById('table_control');
+			var lastRow = tbl.rows.length;
+			var iteration = lastRow;
+		    var row = tbl.insertRow(lastRow);
+		    
+		     //  cell 1
+			var cell1 = row.insertCell(0);
+			var textNode1 = document.createTextNode(iteration);
+			cell1.appendChild(textNode1);
+		     //  cell 2
+			var cell2 = row.insertCell(1);
+			var textNode2 = document.createTextNode(path.childNodes[0].nodeValue);
+			cell2.appendChild(textNode2);
+
+		     //  cell 3
+			var cell3 = row.insertCell(2);
+			var textNode3 = document.createTextNode(date.childNodes[0].nodeValue);
+			cell3.appendChild(textNode3);
+
+		     //  cell 4
+			var cell4 = row.insertCell(3);
+			var textNode4 = document.createTextNode(time.childNodes[0].nodeValue);
+			cell4.appendChild(textNode4);
+
+		     //  cell 5
+			var cell5 = row.insertCell(4);
+			var textNode5 = document.createTextNode(length.childNodes[0].nodeValue);
+			cell5.appendChild(textNode5);
+
+		   }
+     }
+}
+
+
+
+
+function  setTableHead()
+{
+
+			var tbl = document.getElementById('table_control');
+			var lastRow = tbl.rows.length  ;
+			var iteration = lastRow;
+		    var row = tbl.insertRow(0);
+		    
+		     //  cell 1
+			var cell1 = row.insertCell(0);
+			cell1.width=10 ; 
+			var textNode = document.createTextNode("");
+			cell1.appendChild(textNode);
+		     //  cell 2
+			var cell2 = row.insertCell(1);
+			cell2.width=200 ; 
+			var textNode = document.createTextNode("Path");
+			cell2.appendChild(textNode);
+
+		     //  cell 3
+			var cell3 = row.insertCell(2);
+			cell3.width=20 ; 			
+			var textNode = document.createTextNode("Date");
+			cell3.appendChild(textNode);
+
+		     //  cell 4
+			var cell4 = row.insertCell(3);
+			cell4.width=40 ; 			
+			var textNode = document.createTextNode("Time");
+			cell4.appendChild(textNode);
+
+		     //  cell 5
+			var cell5 = row.insertCell(4);
+			cell3.width=20 ; 			
+			var textNode = document.createTextNode("size");
+			cell5.appendChild(textNode);
+		  
+}
+
+function handlePagerPress(evt)
+{
+  if (evt.keyCode == 13) 
+  {
+    doPostOnServer(true);
+  }
+}  
+
+
+
+//-->
+</script>
+
+</head>
+
+<body onload="say()" > 
+
+<form  onsubmit="false" >
+<h1>Search file form </h1>
+
+</br>
+
+<table  border="1" bordercolor="black" > 
+<tr>
+<td>
+<table border="0" bordercolor="black" > 
+<tr>
+<td></td><td>Dir</td>
+<td></td>
+<td><input size="50" type="text" name="dir"  id="dir"  value="C://"  onkeypress="return handlePagerPress(event)"   ></input></td>
+<td></td>
+</tr>
+<tr>
+<td></td><td>Search in subdirectories</td>
+<td></td>
+<td><input  type="checkbox" name="subdirectories"  id="subdirectories"   checked="checked"  ></input></td>
+<td></td>
+</tr>
+<tr>
+<td></td><td>Search by substring</td>
+<td></td>
+<td><input size="50" type="text" name="substring"  id="substring"  value=""  onkeypress="return handlePagerPress(event)"   ></input></td>
+<td></td>
+</tr>
+<tr>
+<td></td><td>file size from</td>
+<td></td>
+<td><input size="5" type="text" name="leng_from"  id="leng"  value="0"  onkeypress="return handlePagerPress(event)"   ></input> </td>
+<td></td>
+</tr>
+<tr>
+<td></td><td>file size to</td>
+<td></td>
+<td><input size="5" type="text" name="leng_to"  id="leng"  value="1000000"  onkeypress="return handlePagerPress(event)"   ></input> </td>
+<td></td>
+</tr>
+
+<tr>
+<td></td><td>.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td  valign="top" align="center"  colspan="5" ><input type="button" name="button1"  value="search"  site="30"  onclick="doPostOnServer(true)"  ></input></td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+</form>
+<br/>
+<table id="table_control"  border="1" bordercolor="black" > </table>
+
+
+
+</body>
+</html>

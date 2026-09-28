@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<?xml-stylesheet type="text/xsl" href="en/orderlist.xsl"?>
+<document>
+   <version>1.0</version>
+   <name>GBS ltd.</name>
+
+   <title>OrderList</title>
+   <subject_site></subject_site>
+   <site_name></site_name>
+   <host>shops.online-spb.com</host>
+   <login>33</login>
+   <role_id>2</role_id>
+   <passwdord></passwdord>
+   <shoping_url>Productlist.jsp</shoping_url>
+   <message></message>
+   <shoping_url>Productlist.jsp</shoping_url>
+   <balans>0</balans>
+   <to_navigator>wCatalog.jsp</to_navigator>
+   <to_navigator_location>NavigatorLocation.jsp</to_navigator_location>
+   <to_account_history>AccountHistory.jsp</to_account_history>
+   <to_login>Authorization.jsp</to_login>
+   <to_registration>RegPage.jsp</to_registration>
+   <to_order>Order.jsp</to_order>
+   <to_order_hist>OrderList.jsp?searchquery=0</to_order_hist>
+   <to_pay>PrePay.jsp</to_pay>
+   <datefrom_formated>03/09/2009</datefrom_formated>
+   <dateto_formated>03/09/2009</dateto_formated>
+   <datefrom>1251921600000</datefrom>
+   <dateto>1252094400000</dateto>
+   <date_format>dd/MM/yyyy</date_format>
+   <list>
+<order>
+<order_id>1</order_id>
+<end_amount>10</end_amount>
+<cdate>05/09/2009</cdate>
+<paystatus_id>0</paystatus_id>
+<paystatus_lable>обрабатываеться
+</paystatus_lable>
+<currency_lable>Рубли</currency_lable>
+</order>
+<order>
+<order_id>2</order_id>
+<end_amount>20</end_amount>
+<cdate>05/09/2009</cdate>
+<paystatus_id>0</paystatus_id>
+<paystatus_lable>обрабатываеться
+</paystatus_lable>
+<currency_lable>Рубли</currency_lable>
+</order>
+</list>
+
+
+<next>OrderList.jsp?offset=10</next>
+<prev>OrderList.jsp?offset=0</prev>
+
+   <!--  for members -->
+   <do_form_1>
+                <form-header>
+                <name>login</name>
+		<method>post</method>
+		<action>Authorization.jsp</action>
+                </form-header>
+
+                <fields>
+                <ref_1>/login</ref_1>
+                <ref_2>/passwdord</ref_2>
+                <ref_3>/lang_cd</ref_3>
+                <ref_4>product/currency_cd</ref_4>
+                </fields>
+   </do_form_1>
+
+   <do_form_2>
+   <!-- become new member -->
+                <form-header>
+                <name>registration</name>
+		<method>post</method>
+		<action>RegPage.jsp</action>
+                </form-header>
+   </do_form_2>
+
+</document>
