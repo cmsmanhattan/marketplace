@@ -1,0 +1,64 @@
+# Summary: Mounting S3 (Lightsail) on Ubuntu via Rclone
+
+## 1. Installing Tools
+```bash
+sudo apt update
+sudo apt install rclone fuse3 -y
+```
+
+## 2. Remote Configuration
+Run the `rclone config` utility and create a new remote (`n`):
+* **Name:** `mys3`
+* **Type:** `s3`
+* **Provider:** `AWS`
+* **Access/Secret Keys:** Paste your keys from the Lightsail console.
+* **Region:** `us-east-1` (or your region).
+* **Endpoint:** `s3.us-east-1.amazonaws.com` (for Lightsail).
+* **ACL:** Leave blank or set to `private` (Lightsail blocks public-read-write).
+
+## 3. Preparing the Directory
+```bash
+mkdir -p /root/s3-mount
+# Clean up if the folder was already in use
+fusermount -uz /root/s3-mount
+```
+
+## 4. Creating an Autostart Service (Systemd)
+Create the file `/etc/systemd/system/rclone-s3.service`:
+
+```ini
+[Unit]
+Description=RClone S3 Mount
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rclone mount mys3:cmsmanhattan-mail-light /root/s3-mount \
+  --vfs-cache-mode full \
+  --vfs-cache-max-size 10G \
+  --allow-other \
+  --s3-acl private \
+  --config /root/.config/rclone/rclone.conf
+ExecStop=/bin/fusermount -uz /root/s3-mount
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+
+## 5. Launch and Verification
+```bash
+systemctl daemon-reload
+systemctl enable rclone-s3.service
+systemctl start rclone-s3.service
+
+# Check connection
+rclone ls mys3:cmsmanhattan-mail-light
+ls -la /root/s3-mount
+```
+
+## Important Notes for Your RAG System:
+* **Docker:** To let the container see the data, add `- /root/s3-mount:/app/data` to your volumes.
+* **Databases:** Never store active Postgres/MariaDB data files on this S3 mount (it will cause locking errors). Use it exclusively for documents and backups.
+* **Security:** If your keys were exposed publicly (such as in this chat), make sure to rotate them in the Lightsail control panel and update your config.
