@@ -26,9 +26,11 @@ import java.sql.SQLException;
 import org.apache.log4j.Logger;
 
 import com.cbsinc.cms.annotations.PageModel;
+import com.cbsinc.cms.annotations.PageXsltView;
 import com.cbsinc.cms.annotations.Scope;
+import com.cbsinc.cms.annotations.Type;
 
-//@PageXsltView( jspName = "AccountHistoryDetal.jsp" , xsltName="accounthistorydetal.xsl" , responseType= Type.XML  )
+@PageXsltView( jspName = "AccountHistoryDetal.jsp" , xsltName="accounthistorydetal.xsl" , responseType= Type.XML  )
 @PageModel(Id = "accountHistoryDetalBeanId", scope = Scope.SESSION)
 public class AccountHistoryDetalBean extends com.cbsinc.cms.WebControls implements java.io.Serializable {
 

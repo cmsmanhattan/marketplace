@@ -7,7 +7,9 @@ import java.util.ResourceBundle;
 import org.apache.log4j.Logger;
 
 import com.cbsinc.cms.annotations.PageModel;
+import com.cbsinc.cms.annotations.PageXsltView;
 import com.cbsinc.cms.annotations.Scope;
+import com.cbsinc.cms.annotations.Type;
 
 /**
  * <p>
@@ -30,6 +32,9 @@ import com.cbsinc.cms.annotations.Scope;
  * @version 1.0
  */
 @PageModel(Id = "operationAmountBeanId", scope = Scope.SESSION)
+// Vestigial: this bean is a service helper (used by PayAction / FDPayAction),
+// it does not render Pay.jsp - PayBean does. Commented out like the other
+// non-view beans (ActionBidsBean, PayGatewayBean).
 //@PageXsltView(jspName = "Pay.jsp", xsltName = "pay.xsl", responseType = Type.XML)
 public class OperationAmountBean implements java.io.Serializable {
 

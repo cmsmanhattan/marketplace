@@ -7,7 +7,9 @@ import java.util.Locale;
 import org.apache.log4j.Logger;
 
 import com.cbsinc.cms.annotations.PageModel;
+import com.cbsinc.cms.annotations.PageXsltView;
 import com.cbsinc.cms.annotations.Scope;
+import com.cbsinc.cms.annotations.Type;
 
 /**
  * <p>

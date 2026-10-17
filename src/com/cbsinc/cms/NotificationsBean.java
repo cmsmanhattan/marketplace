@@ -7,7 +7,9 @@ import java.util.Locale;
 import org.apache.log4j.Logger;
 
 import com.cbsinc.cms.annotations.PageModel;
+import com.cbsinc.cms.annotations.PageXsltView;
 import com.cbsinc.cms.annotations.Scope;
+import com.cbsinc.cms.annotations.Type;
 
 /**
  * <p>
@@ -30,7 +32,7 @@ import com.cbsinc.cms.annotations.Scope;
  * @version 1.0
  */
 @PageModel(Id = "notificationsBeanId", scope = Scope.SESSION)
-//@PageXsltView(jspName = "Notifications.jsp", xsltName = "pay.xsl", responseType = Type.XML)
+@PageXsltView(jspName = "Notifications.jsp", xsltName = "notifications.xsl", responseType = Type.XML)
 public class NotificationsBean extends com.cbsinc.cms.WebControls implements java.io.Serializable {
 
 	private static final long serialVersionUID = -2914463718097618262L;

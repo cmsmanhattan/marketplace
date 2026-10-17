@@ -27,7 +27,9 @@ import java.util.ResourceBundle;
 import org.apache.log4j.Logger;
 
 import com.cbsinc.cms.annotations.PageModel;
+import com.cbsinc.cms.annotations.PageXsltView;
 import com.cbsinc.cms.annotations.Scope;
+import com.cbsinc.cms.annotations.Type;
 import com.cbsinc.cms.controllers.ServiceLocator;
 import com.cbsinc.cms.controllers.SiteType;
 import com.cbsinc.cms.faceds.AuthorizationPageFaced;
@@ -55,7 +57,7 @@ import jakarta.servlet.ServletContext;
  * @version 1.0
  */
 @PageModel(Id = "authorizationPageBeanId", scope = Scope.SESSION)
-//@PageXsltView(jspName = "Authorization.jsp", xsltName = "authorization.xsl", responseType = Type.XML)
+@PageXsltView(jspName = "Authorization.jsp", xsltName = "authorization.xsl", responseType = Type.XML)
 public class AuthorizationPageBean implements java.io.Serializable {
 
 	private static final long serialVersionUID = -7953241588509729879L;

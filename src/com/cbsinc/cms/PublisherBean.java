@@ -5,7 +5,9 @@ import java.io.UnsupportedEncodingException;
 import org.apache.log4j.Logger;
 
 import com.cbsinc.cms.annotations.PageModel;
+import com.cbsinc.cms.annotations.PageXsltView;
 import com.cbsinc.cms.annotations.Scope;
+import com.cbsinc.cms.annotations.Type;
 
 /**
  * <p>
@@ -29,7 +31,10 @@ import com.cbsinc.cms.annotations.Scope;
  */
 
 @PageModel(Id = "publisherBeanId", scope = Scope.SESSION)
-//@PageXsltView(jspName = "Productlist.jsp", xsltName = "Productlist.xsl", responseType = Type.XML)
+// Vestigial: PublisherBean is a shared session bean reused by the many
+// *Post.jsp pages, it is not the view for Productlist.jsp (that is
+// ProductlistBean). Commented out like the other non-view beans.
+//@PageXsltView(jspName = "Productlist.jsp", xsltName = "Productlist.xsl", responseType = Type.XML))
 public class PublisherBean extends com.cbsinc.cms.WebControls implements java.io.Serializable {
 
 	private static final long serialVersionUID = -4418477184811109279L;

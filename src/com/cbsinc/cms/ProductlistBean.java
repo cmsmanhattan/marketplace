@@ -29,7 +29,7 @@ import com.cbsinc.cms.annotations.Type;
  * @author Konstantin Grabko
  * @version 1.0
  */
-//@PageXsltView(jspName = "Pay.jsp", xsltName = "pay.xsl", responseType = Type.XML)
+@PageXsltView(jspName = "Productlist.jsp", xsltName = "Productlist.xsl", responseType = Type.XML)
 public class ProductlistBean implements java.io.Serializable {
 
 	private static final long serialVersionUID = -7111281778620430929L;

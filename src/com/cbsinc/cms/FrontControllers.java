@@ -478,6 +478,7 @@ public class FrontControllers implements Filter, ITransformationService {
 						Source xmlSource = new StreamSource(sr);
 						transformer.transform(xmlSource, result);
 						htmlData = caw.toString();
+						response.setContentType("text/html; charset=UTF-8");
 						// FIX (stored XSS): the two lines removed here were
 						//     htmlData = htmlData.replaceAll("&lt;", "<");
 						//     htmlData = htmlData.replaceAll("&gt;", ">");

@@ -1,10 +1,12 @@
 package com.cbsinc.cms;
 
 import com.cbsinc.cms.annotations.PageModel;
+import com.cbsinc.cms.annotations.PageXsltView;
 import com.cbsinc.cms.annotations.Scope;
+import com.cbsinc.cms.annotations.Type;
 
 @PageModel(Id = "prePayBeanId", scope = Scope.SESSION)
-//@PageXsltView(jspName = "PrePay.jsp", xsltName = "pay.xsl", responseType = Type.XML)
+@PageXsltView(jspName = "PrePay.jsp", xsltName = "prepay.xsl", responseType = Type.XML)
 public class PrePayBean extends com.cbsinc.cms.WebControls implements java.io.Serializable {
 
 	private static final long serialVersionUID = 6234842953899930459L;

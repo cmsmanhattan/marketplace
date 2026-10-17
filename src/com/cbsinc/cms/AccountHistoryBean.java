@@ -6,7 +6,9 @@ import java.text.NumberFormat;
 import org.apache.log4j.Logger;
 
 import com.cbsinc.cms.annotations.PageModel;
+import com.cbsinc.cms.annotations.PageXsltView;
 import com.cbsinc.cms.annotations.Scope;
+import com.cbsinc.cms.annotations.Type;
 
 /**
  * <p>
@@ -29,7 +31,7 @@ import com.cbsinc.cms.annotations.Scope;
  * @version 1.0
  */
 
-//@PageXsltView( jspName = "AccountHistory.jsp" , xsltName="accounthistory.xsl" , responseType= Type.XML  )
+@PageXsltView( jspName = "AccountHistory.jsp" , xsltName="accounthistory.xsl" , responseType= Type.XML  )
 @PageModel(Id = "accountHistoryBeanId", scope = Scope.SESSION)
 public class AccountHistoryBean extends com.cbsinc.cms.WebControls implements java.io.Serializable {
 
