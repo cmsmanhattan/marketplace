@@ -1170,7 +1170,7 @@ curl -si 'http://<host>/Creteria.jsp?table_name=tuser' | head -1
 Продавец — владелец сайта (`site.owner`) или автор карточки. Обработчики
 в `PostProductBidAction` (`Action` здесь — контроллер): `do_bid`,
 `cancel_action`, `accept_win_bid`, `pay`; список ставок —
-`ActionBids.jsp`.
+`AuctionBids.jsp`.
 
 ## Найдено и исправлено
 
@@ -1204,10 +1204,10 @@ curl -si 'http://<host>/Creteria.jsp?table_name=tuser' | head -1
 В коде «action» в значении «аукцион» смешивалось с суффиксом `Action`
 контроллеров. Переименовано: `ActionStatus` → `AuctionBidStatus`
 (константы `PRODUCT_AUCTION_BID_*`), `ActionBidsBean` → `AuctionBidsBean`,
-`ActionBidsAction` → `AuctionBidsAction` (контроллер `ActionBids.jsp`),
+`ActionBidsAction` → `AuctionBidsAction` (контроллер `AuctionBids.jsp`),
 `ACTION_BID_CATALOG` → `AUCTION_BID_CATALOG`,
 `PORTLET_TYPE_PRODUCT_ACTION_BID` → `…AUCTION_BID`,
-`actionBidsBeanId`, `actionBids`, `actionBid`, `getActionBids*`,
+`auctionBidsBeanId`, `auctionBids`, `auctionBid`, `getAuctionBids*`,
 `selectActionBidsXML`, `actionBitAmount`/`actionMaxBitAmount` («bit» →
 «bid»), `addActionBid` → `addAuctionBid`, `doActionBid` → `placeAuctionBid`,
 `updateActionBibStatus` → `updateAuctionBidStatus`,
@@ -1217,7 +1217,7 @@ curl -si 'http://<host>/Creteria.jsp?table_name=tuser' | head -1
 
 Оставлено как есть (контракты): колонка `ACTION_BID_STATUS_ID`, таблица
 `actionbidstatus`, каталог `-13`, `soft.show_action`, файлы
-`ActionBids.jsp`, `action_bids.xsl`, `PostProductBidAction.jsp`, значения
+`AuctionBids.jsp`, `action_bids.xsl`, `PostProductBidAction.jsp`, значения
 параметра `action` (`do_bid`, `cancel_action`, `accept_win_bid`,
 `pay`), XML-элементы `actionBids/actionBid`, `actionBitAmount`,
 `actionMaxBitAmount`, `actionbid_status`. Класс `PostProductBidAction`
@@ -2542,10 +2542,10 @@ whitelist-ом имени таблицы и экранированием label. 
    вызываемых из JSP-скриптлетов, сверены с определениями в Java**. Исправлено.
 4. **Регрессия прошлых проходов: удалён используемый класс.** `ActionBidsBean`
    был удалён ранее как "мёртвый" на основе анализа только Java-кода, но
-   `ActionBids.jsp` объявляет его через `<jsp:useBean class="...">` — строковую
+   `AuctionBids.jsp` объявляет его через `<jsp:useBean class="...">` — строковую
    ссылку, невидимую для компилятора. Страница достижима: на неё есть
-   `@PageController(jspName = "ActionBids.jsp")` и живой
-   `response.sendRedirect("ActionBids.jsp")` в `PostProductBidAction` (ветка
+   `@PageController(jspName = "AuctionBids.jsp")` и живой
+   `response.sendRedirect("AuctionBids.jsp")` в `PostProductBidAction` (ветка
    "чужая ставка"). То есть попытка отменить чужую ставку приводила бы к HTTP
    500. Класс восстановлен и приведён к camelCase. Проверены **все 34 класса**,
    на которые ссылаются `jsp:useBean`.
@@ -2567,7 +2567,7 @@ whitelist-ом имени таблицы и экранированием label. 
   `...payGatewayListBeanId` — в качестве имени класса указан id бина. Эти
   страницы сломаны и в исходном проекте.
 - `Policy.jsp` ссылается на методы удалённого `PolicyBean`, но, в отличие от
-  `ActionBids.jsp`, на страницу нет маршрута из контроллеров — оставлена как
+  `AuctionBids.jsp`, на страницу нет маршрута из контроллеров — оставлена как
   есть; при необходимости решается отдельно.
 - В `DownloadServletBy*` и `ProductPostAllFaced` параметры `fileId`/`imageId`
   подставляются в SQL конкатенацией без параметризации — это тема аудита

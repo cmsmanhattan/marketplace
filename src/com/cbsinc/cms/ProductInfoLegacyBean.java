@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 
 /**
  * Formerly PolicyBean. In this code base "policy" always meant the product
- * information page (ProductInfo.jsp / Policy.jsp), not a legal policy. This
+ * information page (ProductInfo.jsp / Productlist.jsp), not a legal policy. This
  * class is no longer referenced anywhere; ItemDescriptionBean superseded it.
  */
 public class ProductInfoLegacyBean implements java.io.Serializable {

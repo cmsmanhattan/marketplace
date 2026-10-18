@@ -26,10 +26,11 @@ import java.sql.SQLException;
 import org.apache.log4j.Logger;
 
 import com.cbsinc.cms.annotations.PageModel;
+import com.cbsinc.cms.annotations.PageXsltView;
 import com.cbsinc.cms.annotations.Scope;
+import com.cbsinc.cms.annotations.Type;
 
 @PageModel(Id = "payGatewayBean", scope = Scope.SESSION)
-//@PageXsltView(jspName = "Pay.jsp", xsltName = "pay.xsl", responseType = Type.XML)
 public class PayGatewayBean extends com.cbsinc.cms.WebControls implements java.io.Serializable {
 
 	private static final long serialVersionUID = 338258813101694289L;

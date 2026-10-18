@@ -17,7 +17,6 @@
  
      <LINK rel="stylesheet" type="text/css"><xsl:attribute name="href"><xsl:value-of select="concat('xsl/',$host,'/template.css')"/></xsl:attribute></LINK> 
      <LINK rel="stylesheet" type="text/css"><xsl:attribute name="href"><xsl:value-of select="concat('xsl/',$host,'/constant.css')"/></xsl:attribute></LINK> 
-	 <SCRIPT type="text/javascript"><xsl:attribute name="src"><xsl:value-of select="concat('xsl/',$host,'/mootools.js')"/></xsl:attribute></SCRIPT>
 	 <SCRIPT type="text/javascript"><xsl:attribute name="src"><xsl:value-of select="concat('xsl/',$host,'/caption.js')"/></xsl:attribute></SCRIPT>
 	 <SCRIPT type="text/javascript"><xsl:attribute name="src"><xsl:value-of select="concat('xsl/',$host,'/caption.js')"/></xsl:attribute></SCRIPT>
 	 <link rel="stylesheet" type="text/css" media="screen"><xsl:attribute name="href"><xsl:value-of select="concat('xsl/',$host,'/menu.css')"/></xsl:attribute></link>
@@ -39,7 +38,7 @@
 				<IMG alt="Logo"><xsl:attribute name="src"><xsl:value-of select="concat('xsl/',$host,'/images/logo.gif')"/></xsl:attribute></IMG>
 			</div>
 	<div id="gradient">
-		<div style="width: 1400px;" class="main">
+		<div style="width: 960px"  class="main">
 			<div id="top">
 
 					<div id="topmenu">
@@ -65,7 +64,7 @@
 	  					</A>
 	  					</LI>
 	  					 -->
-	  				   <xsl:for-each select="document/menu/menu-item">
+	  						  				 <xsl:for-each select="document/menu/menu-item">
 	  				   <xsl:variable name="rowNum" select="position()" /> 
 											       <xsl:if test="item != ''">
 													   <xsl:if test="code != '-1'">
@@ -103,45 +102,14 @@
 	  					</A>
 	  					</LI>
 	  				
-		
-						 <LI>
+	      				 
+	      				 <LI>
 	      				 <A href="Order.jsp"> 
-	        			 <IMG border="0" alt="Cart" height="40" width="40"  style="margin: -10px;" >
+	        			 <IMG border="0" height="40" width="40"  style="margin: -10px;" >
 	        	 		 <xsl:attribute name="src"><xsl:value-of select="concat('xsl/',$host,'/images/empty-cart-light.png')"/></xsl:attribute></IMG>
 	        	 		 </A>
 	      				 </LI>
 	      				 
-	      				<LI >
-	  					<A href="Notifications.jsp">
-	  					<SPAN>	
-							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="M126-166v-126h68v-246q0-96 55.5-173T397-811v-20q0-34.58 24.21-58.79T480-914q34.58 0 58.79 24.21T563-831v20q93 23 148 99.5T766-538v246h68v126H126Zm354-329Zm1 460q-37.95 0-64.98-26.73Q389-88.46 389-126h183q0 38-26.73 64.5T481-35ZM320-292h320v-246q0-66-47-113t-113-47q-66 0-113 47t-47 113v246Z"/>
-							<title id="title">Notifications</title>
-							</svg>
-						</SPAN>
-	  					</A>
-	  					</LI>
-	  					
-	  					<LI >
-	  					<A href="EMail.jsp">
-	  					<SPAN>	
-							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="M172-126q-53 0-89.5-36.5T46-252v-456q0-53 36.5-89.5T172-834h616q53 0 89.5 36.5T914-708v456q0 53-36.5 89.5T788-126H172Zm308-271L172-597v345h616v-345L480-397Zm0-111 308-200H172l308 200Zm-308-89v-111 456-345Z"/>
-							<title id="title">Webmail</title>
-							</svg>
-						</SPAN>
-	  					</A>
-	  					</LI>
-	      				 
-	      				 <LI>
-	      				 <A href="#"> 
-	      				   <xsl:attribute name="onclick"><xsl:value-of select="concat('openDialog(&quot;http://',$virtual_host,':8096/index.html&quot;)')"/></xsl:attribute>
-	      				  <IMG border="0" height="40" width="40"  style="margin: -10px;" >
-	        	 		    <xsl:attribute name="src"><xsl:value-of select="concat('xsl/',$host,'/images/ai_icon.png')"/></xsl:attribute>
-	        	 		  </IMG>
-	        	 		 </A>
-	      				 </LI>
-	      				 
-	      				 
-
 	      				 
 	      				 <xsl:if test="document/role_id != 0">
 	        			 <LI ><A href="Productlist.jsp?action=logoff"  >
@@ -152,7 +120,7 @@
 	        	 		 </SPAN>
 	        	 		 </A>
 	        	 		 </LI>
-	      				 </xsl:if>
+	      				 </xsl:if>	 
 	      				 
 						</ul>
 						</div>
@@ -160,7 +128,7 @@
 			</div>
 
 
-			    <DIV class="indent" >
+			    <DIV class="indent" style="width: 960px">
 			    	<DIV class="moduletable">
 			     		<TABLE class="who_is_online" style="WIDTH: auto" align="right">
 			       			<TBODY>
@@ -262,486 +230,8 @@
 			
 			<div id="content">
 				<div class="width">
-					<div id="left">
-										
-					<div class="module_menu">
-					<div class="first">
-						<div class="sec">
-							<h3>News</h3>
-								<div class="box-indent">
-								<div class="width">
-								
-								 <xsl:if test="count(document/newslist/news) != 0">
-				                  <UL class="menu">
-				                  <xsl:for-each select="document/newslist/news">
-				                    <LI>                   
-									<A><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute>
-						        	
-								      <!-- ������������ ������� ������  -->
-						             
-							   		     <SPAN><xsl:for-each select="description/r">
-									      	<xsl:value-of select="."/><BR/>
-									     </xsl:for-each></SPAN></A>
-						             				
-									<!-- ������ ��������  , ������ -->
-									
-									<xsl:if test="/document/admin/post_manager != ''">
-									
-										<table style="width:150px">
-										    <tbody>
-										        <tr style="padding-bottom: 15px">
-										         <td style="padding-bottom: 5px">
-										         <form name="product_del" style="width:50px" action="Productlist.jsp" method="POST">
-												<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="action" VALUE="del"  ></INPUT>
-												<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="product_id"><xsl:attribute name="value"><xsl:value-of select="product_id"/></xsl:attribute></INPUT>
-												<INPUT class="button"  TYPE="submit" name="submit" value="Delete"></INPUT>
-										         </form>
-										         </td>
-										         <td width="5px"></td>
-										         <td>
-								
-										        <form name="product_edit" style="width:50px"  action="Productlist.jsp" method="POST">
-												<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="action" VALUE="edit"  ></INPUT>
-												<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="element" VALUE="news"  ></INPUT>
-												<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="product_id"><xsl:attribute name="value"><xsl:value-of select="product_id"/></xsl:attribute></INPUT>
-												<INPUT class="button" TYPE="submit" name="submit" value="Edit"></INPUT>
-										        </form>
-										         </td>
-										        </tr>
-										    </tbody>
-										</table>
-								
-								
-									</xsl:if>
-								   <!-- ������ ��������  , �����  -->
-				                    </LI>                    
-				                  </xsl:for-each> 
-				                  <LI>
-				                    <A title="All news" href="Productlist.jsp?catalog_id=-1">
-				                    <SPAN>News Archive</SPAN>
-				                    </A>
-				                    
-				                   
-				                  </LI> 
-				                  </UL>
-				                  </xsl:if>
-				                  
-                  
-													
-								</div>
-							</div>
-							
-						</div>
-					</div>
-					</div>
-								
-				
-				
-				    <xsl:if test="document/empty_page_ext1 = 'false'" >
-					<xsl:if test="count(document/extpolicy_productlist2/extpolicy_product2) != 0" >
-					<div class="module">
-					<div class="first">
-						<div class="sec">
-							<h3>More</h3>
-							<div class="box-indent">
-								<div class="width">
-								
-									<TABLE class="poll">
-						              <TBODY>
-						              <TR>
-						                <TD class="over">
-						                  <UL class="mostread_s3">
-						                  <xsl:for-each select="document/extpolicy_productlist2/extpolicy_product2">
-						                    <LI class="mostread_s3">
-						                    <xsl:if test="image != ''" >
-									   	        <xsl:if test="big_image_type != 'swf'">
-									   	           <xsl:if test="big_image_type != 'flv'">
-						                    <A class="mostread_s3"><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute><br/>
-										       <!-- ������������ ������� ������  -->
-										       <img  alt=""  width="147" border="0">
-										       <xsl:attribute name="src">
-										       <xsl:value-of select="image"/>
-										       </xsl:attribute>
-										       </img>
-								               <br/>
-								                <xsl:if test="count(description/r) > 1">
-							               		<xsl:if test="string-length(description/r[1]) > 3">
-									                	<IMG style="margin-right: 5px;margin-bottom:2px;">
-	                                       				<xsl:attribute name="src">
-	                                         			<xsl:value-of select="concat('xsl/',$host,'/images/list-item-bg.gif')"/>
-	                                      				</xsl:attribute>
-                                      			</IMG>
-                                      			</xsl:if>
-							              		</xsl:if>   
-                                     				
-								               <U>
-								   		       <xsl:for-each select="description/r">
-										       <xsl:value-of select="."/> 
-										       </xsl:for-each>
-								               </U>
-										       </A>
-								               </xsl:if>
-								               </xsl:if>
-								          
-									    </xsl:if>
-								
-								            <xsl:if test="image = ''" >
-								                <A class="mostread_s3"  ><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute><br/>
-										      <!-- ������������ ������� ������  -->
-										      <xsl:if test="count(description/r) > 1"> 
-							                  	<xsl:if test="string-length(description/r[1]) > 3">
-										              <IMG style="margin-right: 5px;margin-bottom:2px;">
-		                                       				<xsl:attribute name="src">
-		                                         			<xsl:value-of select="concat('xsl/',$host,'/images/list-item-bg.gif')"/>
-		                                      				</xsl:attribute>
-		                                     		  </IMG>
-                                     		  	 </xsl:if>
-                                     		  </xsl:if>	
-								              <U>
-									   		      <xsl:for-each select="description/r">
-											      <xsl:value-of select="."/> <br/>
-											      </xsl:for-each>
-								              </U>
-												</A>
-										   </xsl:if>	
-										 <!-- ������ ��������  , ������ -->
-										<xsl:if test="/document/admin/post_manager != ''">	
-										<table><tr><td width="60px" style="padding-bottom: 5px; padding-top: 5px">																
-											        <form name="product_del"  action="Productlist.jsp" method="POST">
-														<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="action" VALUE="del"  ></INPUT>
-														<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="product_id"><xsl:attribute name="value"><xsl:value-of select="product_id"/></xsl:attribute></INPUT>
-														<INPUT class="button" TYPE="submit" name="submit" value="Delete"></INPUT>
-											        </form>
-											        </td>
-											        <td width="5px">
-											        </td>
-											        <td style="padding-bottom: 5px; padding-top: 5px">
-											        <form name="product_edit"  action="Productlist.jsp" method="POST">
-														<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="action" VALUE="edit"  ></INPUT>
-														<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="element" VALUE="ext2" ></INPUT>
-														<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="product_id"><xsl:attribute name="value"><xsl:value-of select="product_id"/></xsl:attribute></INPUT>
-														<INPUT  class="button" TYPE="submit" name="submit" value="Edit" style="margin-left: 0px"></INPUT>
-											        </form>
-										</td></tr></table>	
-										</xsl:if>
-									   <!-- ������ ��������  , �����  -->														
-								        </LI>
-								        </xsl:for-each>      
-						               <LI class="mostread_s3" >
-						              	   <A class="mostread_s3"  title="All news"   href="Productlist.jsp?catalog_id=-1">
-									        	 <IMG style="margin-right: 5px;margin-bottom:2px;">
-                                       				<xsl:attribute name="src">
-                                         			<xsl:value-of select="concat('xsl/',$host,'/images/list-item-bg.gif')"/>
-                                      				</xsl:attribute>
-                                     			</IMG>	
-								                	
-								                <u>News Archive</u>
-									        </A>
-								        </LI> 
-								         
-						                              
-						            </UL></TD></TR></TBODY></TABLE>					
-								</div>
-							</div>
-						</div>
-					
-					</div>
-					
-				</div></xsl:if></xsl:if>
-			</div>
 			
-
-				
-				
-					<div id="right">
-					            <xsl:if test="document/login = 'user'">
-								<div class="module_s2">
-								<div class="first">
-								<div class="sec">
-
-								<h3>Authorization</h3>
-								<div class="box-indent">
-								<div class="width">
-										
-										<FORM action="Authorization.jsp"  method="post" id="form-login" class="form-login">
-						                  <FIELDSET class="input">
-						                  <P id="form-login-username">
-						                  <LABEL for="modlgn_username">Login</LABEL>
-						                  <BR/>
-						                  
-						                  <INPUT id="modlgn_username" title="User" class="inputbox" tabindex="10001"  AUTOCOMPLETE="off" TYPE="TEXT" NAME="Login" >
-														<xsl:attribute name="value">
-															<xsl:value-of select="document/login"/>
-														</xsl:attribute>		
-										  </INPUT> 
-										  </P>
-						                  
-						                  <P id="form-login-password">
-						                  <LABEL for="modlgn_passwd">Password</LABEL><BR/>
-						                  <INPUT class="inputbox" title="Password" id="modlgn_passwd" tabindex="10002" AUTOCOMPLETE="off" TYPE="PASSWORD" NAME="Passwd1" ></INPUT> 
-						                  </P>
-						                  
-						                  <div style="padding-left: 35px; padding-bottom: 5px;border: none; width: 100px">
-						                  	<INPUT class="button" type="submit" value="Enter" name="Submit"/> 
-						                  </div>
-						                  
-						                  </FIELDSET> 
-						                 </FORM>                  
-						                  
-						                  <UL class="log_list">
-						                  <LI>
-						                  <A href="Authorization.jsp?Login=newuser" style="COLOR: #072f3a">Forgot your password?
-						                  </A> 
-						                  </LI> 
-						                  <LI>
-						                  <A href="Authorization.jsp?Login=" style="COLOR: #072f3a">Registration
-						                  </A>
-						                  </LI>
-						                  </UL>
-											
-								</div>
-								</div>
-
-						</div>
-						</div>
-						</div>
-						</xsl:if>
-						
-						
-						<!-- ������� (��� ������) -->
-			            <xsl:if test="document/role_id != 0"><!--  ���� ����� -->
-			            <DIV class="module" style="margin-right:0px">
-			            <DIV class="first">
-			            <DIV class="sec">
-			            <DIV>
-			            <H3>My Account</H3>
-			          	
-						  	<div style="padding:5px 0px 26px"> 
-						  	<div class="cab" style="color: black;"><b>Available funds: </b> <xsl:value-of select="document/balans"/></div> 
-						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_order_hist"/></xsl:attribute>All orders</a></div>
-						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_order"/></xsl:attribute>The current order</a></div>	
-						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_account_history"/></xsl:attribute>Payments</a></div>
-						  	<div class="cab"><A HREF="Purchases.jsp" >  Purchases </A></div>
-							<div class="cab"><A HREF="Notifications.jsp" >Notifications </A></div>
-							<div class="cab"><A HREF="Offers.jsp" > Offers </A></div>
-							<div class="cab"><A HREF="ActionBids.jsp" >Action bids </A></div>					      												             		    								
-						  	</div> 
-						  	            
-			            </DIV>
-			            </DIV>
-			            </DIV>
-			            </DIV>
-			            
-			            
-			            <DIV style="">
-			            <DIV class="module" style="height : expression(parentNode.clientHeight > 300? '347px' : 'auto');max-height: 347px;height: auto;">
-						<DIV class="first"  >
-						<DIV class="sec" style="height : expression(parentNode.clientHeight > 300? '347px' : 'auto');max-height: 347px;height: auto;">
-						 <H3>Sections</H3>
-			            <TABLE>
-			            
-			            <TBODY>
-			              <TR>
-			                <TD class="over">
-			                <DIV class="module_scroll"  >
-								<DIV class="first_scroll" >
-			          				<br/>
-										<TABLE cellSpacing="0" cellPadding="0" width="159" >
-										   <TBODY>
-										   <xsl:for-each select="document/catalog/catalog-item">
-											       <xsl:if test="item != ''">
-													   <xsl:if test="code != '-1'">
-														   <xsl:if test="code != '-2'">
-																   <xsl:if test="code != '-3'">
-																         <xsl:if test="subcatalog-item/subitem = ''">
-																             <TR>
-																             <TD width="159" colspan="2"  height="10" >
-																             </TD>
-																             </TR>						
-																             <xsl:if test="code != selected">
-																	              <TR>
-																	              	<TD  width="25"    height="12" ></TD>
-																	             	 <TD  width="149"   height="12" >
-																					  <A ><xsl:attribute name="HREF"><xsl:value-of select="url"/></xsl:attribute>
-																					  <font size="2" ><xsl:value-of select="item"/></font>
-																					  </A>
-																				  </TD>
-																              </TR>
-																	     	</xsl:if>
-																		
-																		
-																		             <xsl:if test="code = selected">
-																		              <TR>
-																		                <TD  width="25"   height="12" ></TD>
-																		                <TD  width="149"   height="12" >
-																						<A ><xsl:attribute name="HREF"><xsl:value-of select="url"/></xsl:attribute>
-																				       	 <b><font size="2" ><xsl:value-of select="item"/></font></b>
-																				        </A>
-																						</TD>
-																		              </TR>
-																			     	</xsl:if>
-															
-															
-																     </xsl:if>
-														 </xsl:if>
-												 	 </xsl:if>
-											 	 </xsl:if>
-										 	 </xsl:if>
-										
-										
-										 	 <xsl:if test="subcatalog-item/subitem != ''">
-										       <TR>
-										          <TD   colspan="2"  height="10" style="text-align: left; padding-left: 5px">
-										              <TABLE cellSpacing="0" cellPadding="0" >
-											              <TBODY>
-											              <TR>
-											                <TD   width="25"  height="11" ></TD>
-												                <TD height="11" style="text-align: left; padding-right: 10px">
-													        		 <A ><xsl:attribute name="HREF"><xsl:value-of select="subcatalog-item/suburl"/></xsl:attribute>
-													           		<xsl:value-of select="subcatalog-item/subitem"/>
-													        		</A>
-																</TD>
-											              </TR>
-											  	         </TBODY>
-										  	  		 </TABLE>
-												 </TD>
-										    </TR>
-										    </xsl:if>
-										    
-									        </xsl:for-each>
-									</TBODY>
-								</TABLE>
-							
-							</DIV>
-							</DIV>
-			                </TD>
-			               </TR>
-			               </TBODY>
-			               </TABLE>
-			               </DIV>
-			               </DIV>
-			               </DIV>
-			               </DIV>
-			            </xsl:if>	
-						
-			<!-- �������������� ������ -->
-			
-			<xsl:if test="document/empty_page_ext1 = 'false'" >
-			<xsl:if test="count(document/extpolicy_productlist1/extpolicy_product1) != 0" >
-            <DIV class="module" style="margin-right:0px">
-            <DIV class="first">
-            <DIV class="sec">
-            <DIV>
-            <H3>More</H3>
-            <DIV class="box-indent">
-			<DIV class="width">
-			
-            <TABLE class="poll">
-              <TBODY>
-              <TR>
-                <TD class="over">
-                  <UL class="mostread_s3">
-                  <xsl:for-each select="document/extpolicy_productlist1/extpolicy_product1">
-                    <LI class="mostread_s3">
-                    <xsl:if test="image != ''" >
-                    
-			   	     <xsl:if test="big_image_type != 'swf'">
-			   	     <xsl:if test="big_image_type != 'flv'">
-                   	 <A class="mostread_s3">
-                   	 <xsl:attribute name="HREF">
-                   	 <xsl:value-of select="policy_url"/>
-                   	 </xsl:attribute>
-                   	 <br/>
-				       <!-- ������������ ������� ������  -->
-				       <img  alt=""  width="147" border="0">
-				       <xsl:attribute name="src">
-				       <xsl:value-of select="image"/>
-				       </xsl:attribute>
-				       </img>
-		                <br/>
- 						<xsl:if test="count(description/r) > 1"> 
-							 <xsl:if test="string-length(description/r[1]) > 3">
-							 	<IMG style="margin-right: 5px;margin-bottom:2px;">
-		                        <xsl:attribute name="src">
-		                        <xsl:value-of select="concat('xsl/',$host,'/images/list-item-bg.gif')"/>
-		                        </xsl:attribute>
-		                        </IMG>
-                             </xsl:if>
-                        </xsl:if>	
-		                 	 <U>
-				   		       <xsl:for-each select="description/r">
-						       <xsl:value-of select="."/> 
-						       </xsl:for-each>
-			                 </U>
-				        </A>
-		              </xsl:if>
-		              </xsl:if>
-		
-			    </xsl:if>
-		
-		            <xsl:if test="image = ''" >
-		                <A class="mostread_s3"  ><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute><br/>
-				      <!-- ������������ ������� ������  -->
- 						<xsl:if test="count(description/r) > 1"> 
-							 <xsl:if test="string-length(description/r[1]) > 3">
-							 	<IMG style="margin-right: 5px;margin-bottom:2px;">
-		                        <xsl:attribute name="src">
-		                        <xsl:value-of select="concat('xsl/',$host,'/images/list-item-bg.gif')"/>
-		                        </xsl:attribute>
-		                        </IMG>
-                             </xsl:if>
-                        </xsl:if>	
-		              <U>
-			   		      <xsl:for-each select="description/r">
-					      <xsl:value-of select="."/> <br/>
-					      </xsl:for-each>
-		              </U>
-					</A>
-			    </xsl:if>	
-				 <!-- ������ ��������  , ������ -->
-				<xsl:if test="/document/admin/post_manager != ''">	
-				<table><tr><td width="60px" style="padding-bottom: 5px;PADDING-TOP: 5px">																
-					        <form name="product_del"  action="Productlist.jsp" method="POST">
-								<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="action" VALUE="del"  ></INPUT>
-								<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="product_id"><xsl:attribute name="value"><xsl:value-of select="product_id"/></xsl:attribute></INPUT>
-								<INPUT class="button" TYPE="submit" name="submit" value="Delete"></INPUT>
-					        </form>
-					        </td>
-					        <td width="5px">
-					        </td>
-					        <td style="padding-bottom: 5px;PADDING-TOP: 5px">
-					        <form name="product_edit"  action="Productlist.jsp" method="POST">
-								<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="action" VALUE="edit"  ></INPUT>
-								<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="element" VALUE="ext1" ></INPUT>
-								<INPUT SIZE="0"  AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="product_id"><xsl:attribute name="value"><xsl:value-of select="product_id"/></xsl:attribute></INPUT>
-								<INPUT  class="button" TYPE="submit" name="submit" value="Edit" style="margin-left: 0px"></INPUT>
-					        </form>
-				</td></tr></table>	
-				</xsl:if>
-			   <!-- ������ ��������  , �����  -->														
-		        </LI>
-		        </xsl:for-each>      
-                <LI class="mostread_s3" >
-                	
-		        	<a title="All news" href="Productlist.jsp?catalog_id=-1">
-		        	<IMG style="margin-right: 5px;margin-bottom:2px;">
-                       		<xsl:attribute name="src">
-                       		<xsl:value-of select="concat('xsl/',$host,'/images/list-item-bg.gif')"/>
-                       		</xsl:attribute>
-					</IMG>
-		        	<u>News Archive</u>
-		        	</a>
-		        </LI>    
-                              
-            </UL></TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV></DIV></DIV></xsl:if>
-            </xsl:if>
-						
-							
-							
-			
-</div>
-			
-<div id="container">
+<div id="container" style="margin: 0px 21px;  margin-top: ;  margin-right: ; margin-bottom: ;  margin-left:"  >
 <div class="comp-cont">
 		<table class="blog" cellpadding="0" cellspacing="0">
 			<tr>
@@ -770,24 +260,7 @@
 						              <TR>
 						              <TD >					              
 						               <DIV class="contentArticle" >
-						               	 
-									       <FORM  name="order" id="order" action="ProductInfo.jsp" method="POST">
-				                        	<table><tr>
-				                        		<td width="90%" align="right"  >
-				            						 <INPUT AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="product_id"  ><xsl:attribute name="value"><xsl:value-of select="document/product/product_id"/></xsl:attribute></INPUT>
-													  <INPUT AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="action"><xsl:attribute name="VALUE"><xsl:choose><xsl:when test="document/subscribed = 'true'">unsubscribe</xsl:when><xsl:otherwise>subscribe</xsl:otherwise></xsl:choose></xsl:attribute></INPUT>
-							            		</td>
-				                        		<td width="5%"  >
-				                        		</td>
-				                        		<td width="5%"  >
-							            		<a href="#" onclick="document.getElementById('order').submit();"><xsl:attribute name="title"><xsl:choose><xsl:when test="document/subscribed = 'true'">Stop following this product</xsl:when><xsl:otherwise>Follow this product: bids, offers, sale, order status</xsl:otherwise></xsl:choose></xsl:attribute><xsl:choose><xsl:when test="document/subscribed = 'true'"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z"/></svg></xsl:when><xsl:otherwise><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg></xsl:otherwise></xsl:choose></a>
-							            		</td>
-				                        	</tr></table>
-				                        	 <br/>
-				                        	 </FORM> 
-				                        <xsl:if test="document/show_action = 'false'">	 
-		                         		<table>
-		                         		<tr>
+		                         		<table><tr>
 			                        		<td><h2 style="color: #4C4B49; font-size: 20px;padding-bottom:10px;"><xsl:value-of select="document/product/name"/></h2></td>
 			                        		<td>
 				                        		<div class="cena2">
@@ -796,9 +269,7 @@
 												</xsl:if>
 												</div>
 			                        		</td>
-			                        	</tr>
-			                        	</table>
-			                        	
+			                        	</tr></table>
 			                        	<xsl:if test="document/product/amount != '0'"> 
 										<xsl:if test="document/product/amount != '0.0'"> 
 										 <br/>
@@ -816,11 +287,11 @@
  											            <INPUT class="button" AUTOCOMPLETE="off" TYPE="Submit" NAME="Submit" alt="Add to cart"  VALUE="Add to cart" ></INPUT>   
 						            		</td>
 			                        	</tr></table>
-			                        	 </FORM>
+			                        	 </FORM> 
+			                        	 <br/>
 			                        	</xsl:if>
-										</xsl:if>
-										</xsl:if>	
-			                        	  <xsl:if test="document/show_offer = 'true'"> 
+										</xsl:if>					
+			                        	  <xsl:if test="document/show_offer = 'true'">
 			                        	  <br/>
 									       <FORM  name="order" action="PostProductOffer.jsp" method="POST">
 				                        	<table><tr>
@@ -830,10 +301,10 @@
 													    <div class="cena2" style="padding:2px;margin:2px;" >Put your offer </div>
 							            		</td>
 				                        		<td width="5%"  >
-				       								    <INPUT AUTOCOMPLETE="off" type="price"  size="6" min="1" max="90000"  NAME="price"  ><xsl:attribute name="value"><xsl:value-of select="document/product/offerAmount"/></xsl:attribute></INPUT>
+				       								    <INPUT AUTOCOMPLETE="off" type="number"  size="6" min="1" max="90000"  NAME="price"  ><xsl:attribute name="value"><xsl:value-of select="document/product/offerAmount"/></xsl:attribute></INPUT>
 				                        		</td>
 				                        		<td width="5%"  >
-	 											            <INPUT class="button" AUTOCOMPLETE="off" TYPE="Submit" NAME="Submit" alt="Submit offer"  VALUE="Submit offer" ></INPUT>   
+	 											            <INPUT class="button" AUTOCOMPLETE="off" TYPE="Submit" NAME="Submit" alt="Submit offer"  VALUE="Submit offer" ></INPUT>
 							            		</td>
 				                        	</tr></table>
 				                        	 </FORM> 
@@ -854,16 +325,19 @@
 													    <div class="cena2" style="padding:2px;margin:2px;" >Put your Action bid </div>
 							            		</td>
 				                        		<td width="5%"  >
-				       								    <INPUT AUTOCOMPLETE="off" type="price"  size="6" min="1" max="90000"  NAME="price"  ><xsl:attribute name="value"><xsl:value-of select="document/product/actionBitAmount"/></xsl:attribute></INPUT>
+				       								    <INPUT AUTOCOMPLETE="off" type="number"  size="6" min="1" max="90000"  NAME="price"  ><xsl:attribute name="value"><xsl:value-of select="document/product/actionBitAmount"/></xsl:attribute></INPUT>
 				                        		</td>
 				                        		<td width="5%"  >
-	 											            <INPUT class="button" AUTOCOMPLETE="off" TYPE="Submit" NAME="Submit" alt="Submit Bid"  VALUE="Submit Bid" ></INPUT>   
+	 											            <INPUT class="button" AUTOCOMPLETE="off" TYPE="Submit" NAME="Submit" alt="Submit Bid"  VALUE="Submit Bid" ></INPUT>
 							            		</td>
 				                        	</tr></table>
 				                        	 </FORM> 
 			                        	  </xsl:if>
-			                        	 <br/>
-				
+									       <FORM  name="follow" id="follow" action="ProductInfo.jsp" method="POST">
+				            					    <INPUT AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="product_id"  ><xsl:attribute name="value"><xsl:value-of select="document/product/product_id"/></xsl:attribute></INPUT>
+											    <INPUT AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="action"><xsl:attribute name="VALUE"><xsl:choose><xsl:when test="document/subscribed = 'true'">unsubscribe</xsl:when><xsl:otherwise>subscribe</xsl:otherwise></xsl:choose></xsl:attribute></INPUT>
+										    <a href="#" onclick="document.getElementById('follow').submit();"><xsl:attribute name="title"><xsl:choose><xsl:when test="document/subscribed = 'true'">Stop following this product</xsl:when><xsl:otherwise>Follow this product</xsl:otherwise></xsl:choose></xsl:attribute><xsl:choose><xsl:when test="document/subscribed = 'true'">Unfollow</xsl:when><xsl:otherwise>Follow</xsl:otherwise></xsl:choose></a>
+				                        	 </FORM>
 									  <FORM  name="order" action="Order.jsp" method="POST">
 									  <INPUT AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="position"  ><xsl:attribute name="value"><xsl:value-of select="document/product/product_id"/></xsl:attribute></INPUT>
 									  <INPUT AUTOCOMPLETE="off" TYPE="HIDDEN" NAME="action" VALUE="add" ></INPUT>
@@ -906,57 +380,7 @@
 										   	   </div> 
 										  	</xsl:if>
 										
-			                        	        <div class="cena2">
-												<xsl:if test="document/creteriaName1 != 'Not selected'">
-													<label><xsl:value-of select="document/creteriaLabel1"/>:</label><span><xsl:value-of select="document/creteriaName1"/></span>
-												</xsl:if>
-												</div>
-												<div class="cena2">
-												<xsl:if test="document/creteriaName2 != 'Not selected'">
-													<label><xsl:value-of select="document/creteriaLabel2"/>:</label><span><xsl:value-of select="document/creteriaName2"/></span>
-												</xsl:if>
-												</div>
-			                        	        <div class="cena2">
-												<xsl:if test="document/creteriaName3 != 'Not selected'">
-													<label><xsl:value-of select="document/creteriaLabel3"/>:</label><span><xsl:value-of select="document/creteriaName3"/></span>
-												</xsl:if>
-												</div>
-												<div class="cena2">
-												<xsl:if test="document/creteriaName4 != 'Not selected'">
-													<label><xsl:value-of select="document/creteriaLabel4"/>:</label><span><xsl:value-of select="document/creteriaName4"/></span>
-												</xsl:if>
-												</div>
-			                        	        <div class="cena2">
-												<xsl:if test="document/creteriaName5 != 'Not selected'">
-													<label><xsl:value-of select="document/creteriaLabel5"/>:</label><span><xsl:value-of select="document/creteriaName5"/></span>
-												</xsl:if>
-												</div>
-												<div class="cena2">
-												<xsl:if test="document/creteriaName6 != 'Not selected'">
-													<label><xsl:value-of select="document/creteriaLabel6"/>:</label><span><xsl:value-of select="document/creteriaName6"/></span>
-												</xsl:if>
-												</div>
-			                        	        <div class="cena2">
-												<xsl:if test="document/creteriaName7 != 'Not selected'">
-													<label><xsl:value-of select="document/creteriaLabel7"/>:</label><span><xsl:value-of select="document/creteriaLabel7"/></span>
-												</xsl:if>
-												</div>
-												<div class="cena2">
-												<xsl:if test="document/creteriaName8 != 'Not selected'">
-													<label><xsl:value-of select="document/creteriaLabel8"/>:</label><span><xsl:value-of select="document/creteriaName8"/></span>
-												</xsl:if>
-												</div>
-			                        	        <div class="cena2">
-												<xsl:if test="document/creteriaName9 != 'Not selected'">
-													<label><xsl:value-of select="document/creteriaLabel9"/>:</label><span><xsl:value-of select="document/creteriaName9"/></span>
-												</xsl:if>
-												</div>
-			                        	        <div class="cena2">
-												<xsl:if test="document/creteriaName10 != 'Not selected'">
-													<label><xsl:value-of select="document/creteriaLabel10"/>:</label><span><xsl:value-of select="document/creteriaName10"/></span>
-												</xsl:if>
-												</div>																								
-												
+										
 										       <p class="policy_main_product">
 
 										   	    
@@ -1101,7 +525,7 @@
 												<DIV style="text-align: left; color: #3b7ecc; font-size: 11px">
 												<table width="100%">
 												<tr>
-													<td style="font-size: 12px; vertical-align: middle; width: 720px">															
+													<td style="font-size: 12px; vertical-align: middle; width: 420px">															
 															<div class="readmore">
 																<a HREF = "#" onClick="javascript:history.back()" class="readon">
 																	<strong>Back</strong>				
@@ -1586,16 +1010,10 @@
 		</DIV>
 	</DIV>
 	
-    <div id="overlay"></div>
+	<div id="overlay"></div>
     <div id="dialog">
         <iframe id="iframe" src=""></iframe>
-        <button class="top-right-button" onclick="closeDialog()">X</button>
-    </div>
-    
-    <div id="overlay_mail"></div>
-    <div id="dialog_mail">
-        <iframe id="iframe_mail" src=""></iframe>
-        <button class="top-right-button" onclick="closeDialogMail()">X</button>
+        <button onclick="closeDialog()">Close</button>
     </div>
 
 </body>

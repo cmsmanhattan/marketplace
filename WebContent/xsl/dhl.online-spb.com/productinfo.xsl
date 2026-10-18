@@ -166,24 +166,24 @@
 			       			<TBODY>
 			        			<TR>
 			          				<TD>
-			        				<xsl:if test="document/login != ''">   <!--  ���������� ���� ���� ����� -->
+			        				<xsl:if test="document/login != ''">   <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
 									<B>User</B> 
 									 <a href="Authorization.jsp" style="margin-left: 5px; text-decoration: none">				                
 									
-								 	<xsl:if test="document/login = 'user'">   <!--  ���������� ���� ��� ������ -->
+								 	<xsl:if test="document/login = 'user'">   <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ -->
 									<font class="user0">
 										<xsl:value-of select="document/login"/>
 									</font>
 									</xsl:if>
 									
-									<xsl:if test="document/login != 'user'">   <!--  ���������� ���� ���� ����� -->
-									<xsl:if test="document/role_id = 1"> <!--  ��������� ���� ���� -->
+									<xsl:if test="document/login != 'user'">   <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
+									<xsl:if test="document/role_id = 1"> <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ -->
 										<font class="user1">
 											<xsl:value-of select="document/login"/>
 									</font>
 								</xsl:if>
 											 			
-								<xsl:if test="document/role_id = 2"><!--  ������� ���� ����� -->
+								<xsl:if test="document/role_id = 2"><!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
 									<font class="user2">
 									<xsl:value-of select="document/login"/>
 									</font>
@@ -277,13 +277,13 @@
 				                    <LI>                   
 									<A><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute>
 						        	
-								      <!-- ������������ ������� ������  -->
+								      <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 						             
 							   		     <SPAN><xsl:for-each select="description/r">
 									      	<xsl:value-of select="."/><BR/>
 									     </xsl:for-each></SPAN></A>
 						             				
-									<!-- ������ ��������  , ������ -->
+									<!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 									
 									<xsl:if test="/document/admin/post_manager != ''">
 									
@@ -313,7 +313,7 @@
 								
 								
 									</xsl:if>
-								   <!-- ������ ��������  , �����  -->
+								   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->
 				                    </LI>                    
 				                  </xsl:for-each> 
 				                  <LI>
@@ -357,7 +357,7 @@
 									   	        <xsl:if test="big_image_type != 'swf'">
 									   	           <xsl:if test="big_image_type != 'flv'">
 						                    <A class="mostread_s3"><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute><br/>
-										       <!-- ������������ ������� ������  -->
+										       <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 										       <img  alt=""  width="147" border="0">
 										       <xsl:attribute name="src">
 										       <xsl:value-of select="image"/>
@@ -387,7 +387,7 @@
 								
 								            <xsl:if test="image = ''" >
 								                <A class="mostread_s3"  ><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute><br/>
-										      <!-- ������������ ������� ������  -->
+										      <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 										      <xsl:if test="count(description/r) > 1"> 
 							                  	<xsl:if test="string-length(description/r[1]) > 3">
 										              <IMG style="margin-right: 5px;margin-bottom:2px;">
@@ -404,7 +404,7 @@
 								              </U>
 												</A>
 										   </xsl:if>	
-										 <!-- ������ ��������  , ������ -->
+										 <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 										<xsl:if test="/document/admin/post_manager != ''">	
 										<table><tr><td width="60px" style="padding-bottom: 5px; padding-top: 5px">																
 											        <form name="product_del"  action="Productlist.jsp" method="POST">
@@ -424,7 +424,7 @@
 											        </form>
 										</td></tr></table>	
 										</xsl:if>
-									   <!-- ������ ��������  , �����  -->														
+									   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->														
 								        </LI>
 								        </xsl:for-each>      
 						               <LI class="mostread_s3" >
@@ -508,8 +508,8 @@
 						</xsl:if>
 						
 						
-						<!-- ������� (��� ������) -->
-			            <xsl:if test="document/role_id != 0"><!--  ���� ����� -->
+						<!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ) -->
+			            <xsl:if test="document/role_id != 0"><!--  пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
 			            <DIV class="module" style="margin-right:0px">
 			            <DIV class="first">
 			            <DIV class="sec">
@@ -522,10 +522,9 @@
 						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_order"/></xsl:attribute>The current order</a></div>	
 						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_account_history"/></xsl:attribute>Payments</a></div>
 						  	<div class="cab"><A HREF="Purchases.jsp" >  Purchases </A></div>
-						  	<div class="cab"><A HREF="Productlist.jsp?site=-4" > Resolution center </A></div>
 							<div class="cab"><A HREF="Notifications.jsp" >Notifications </A></div>
 							<div class="cab"><A HREF="Offers.jsp" > Offers </A></div>
-							<div class="cab"><A HREF="ActionBids.jsp" >Action bids </A></div>					      												             		    								
+							<div class="cab"><A HREF="AuctionBids.jsp" >Action bids </A></div>					      												             		    								
 						  	</div> 
 						  	            
 			            </DIV>
@@ -625,7 +624,7 @@
 			               </DIV>
 			            </xsl:if>	
 						
-			<!-- �������������� ������ -->
+			<!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ -->
 			
 			<xsl:if test="document/empty_page_ext1 = 'false'" >
 			<xsl:if test="count(document/extpolicy_productlist1/extpolicy_product1) != 0" >
@@ -653,7 +652,7 @@
                    	 <xsl:value-of select="policy_url"/>
                    	 </xsl:attribute>
                    	 <br/>
-				       <!-- ������������ ������� ������  -->
+				       <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 				       <img  alt=""  width="147" border="0">
 				       <xsl:attribute name="src">
 				       <xsl:value-of select="image"/>
@@ -682,7 +681,7 @@
 		
 		            <xsl:if test="image = ''" >
 		                <A class="mostread_s3"  ><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute><br/>
-				      <!-- ������������ ������� ������  -->
+				      <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
  						<xsl:if test="count(description/r) > 1"> 
 							 <xsl:if test="string-length(description/r[1]) > 3">
 							 	<IMG style="margin-right: 5px;margin-bottom:2px;">
@@ -699,7 +698,7 @@
 		              </U>
 					</A>
 			    </xsl:if>	
-				 <!-- ������ ��������  , ������ -->
+				 <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 				<xsl:if test="/document/admin/post_manager != ''">	
 				<table><tr><td width="60px" style="padding-bottom: 5px;PADDING-TOP: 5px">																
 					        <form name="product_del"  action="Productlist.jsp" method="POST">
@@ -719,7 +718,7 @@
 					        </form>
 				</td></tr></table>	
 				</xsl:if>
-			   <!-- ������ ��������  , �����  -->														
+			   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->														
 		        </LI>
 		        </xsl:for-each>      
                 <LI class="mostread_s3" >
@@ -756,7 +755,7 @@
 					              <TBODY>
 							              <TR>
 								            <TD align="center">									
-											    <!-- �������� ������ ��� ���������� ������ , ������  -->				
+											    <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ , пїЅпїЅпїЅпїЅпїЅпїЅ  -->				
 											    <xsl:if test="document/role_id = '2'">											    
 														<div style="font-size: 12px">
 														This is the button to edit the site<br/>
@@ -962,7 +961,7 @@
 
 										   	    
 										            
-										  	    <!-- ������������ ������� ������  --> 
+										  	    <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  --> 
 												  <xsl:for-each select="document/product/description/r">
 													<xsl:value-of select="."/><br style="line-height: 0px"/>
 											  	  </xsl:for-each>
@@ -1439,7 +1438,7 @@
 															     												
 															
 													
-										   <!-- ������ �������� , ������ ��� ������  -->
+										   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ , пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 										<xsl:choose>
 										<xsl:when test="/document/role_id = 2">
 											<table style="width:200px; padding-left: 20px">
@@ -1465,9 +1464,9 @@
 											    </tbody>
 											</table>
 										</xsl:when>
-									   <!-- ������ ��������  , �����  ��� ������  -->
+									   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 							
-									   <!-- ������ �������� , ������ ��� ������  -->
+									   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ , пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 							
 							         <xsl:otherwise>
 										<xsl:if  test="user_id = string(number($user_id))">
@@ -1546,7 +1545,7 @@
 											</A>
 											
 
-								        	<!-- ������ ��������  , ������ -->
+								        	<!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 											<xsl:if test="/document/admin/post_manager != ''">
 											<br/>
 											<table>
@@ -1572,7 +1571,7 @@
 											    </tbody>
 											</table>
 											</xsl:if>
-							           		<!-- ������ ��������  , �����  -->
+							           		<!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->
 										</td>
 					  	    	</xsl:for-each>
 	 <td width="20%"></td></tr>

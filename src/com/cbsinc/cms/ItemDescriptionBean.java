@@ -2247,8 +2247,8 @@ public class ItemDescriptionBean implements java.io.Serializable {
 	}
 
 
-	// RESTORED: these five methods are called by Policy.jsp (a reachable page:
-	// @PageController(jspName="Policy.jsp") + sendRedirect + policy_url links in 50 XSL
+	// RESTORED: these five methods are called by Productlist.jsp (a reachable page:
+	// @PageController(jspName="Productlist.jsp") + sendRedirect + policy_url links in 50 XSL
 	// templates). They were removed by an earlier pass as "dead" based on Java-only
 	// analysis, which cannot see JSP scriptlet calls.
 

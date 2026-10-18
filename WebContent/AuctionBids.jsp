@@ -1,6 +1,6 @@
 <%@ page errorPage="error.jsp" %>
 <jsp:useBean id="productlistBeanId" scope="request" class="com.cbsinc.cms.ProductlistBean" />
-<jsp:useBean id="actionBidsBeanId" scope="request" class="com.cbsinc.cms.ActionBidsBean" />
+<jsp:useBean id="auctionBidsBeanId" scope="request" class="com.cbsinc.cms.AuctionBidsBean" />
 <jsp:useBean id="authorizationPageBeanId" scope="session" class="com.cbsinc.cms.AuthorizationPageBean" />
 <%@page import="java.util.PropertyResourceBundle,java.util.ResourceBundle,java.io.*"%>
 
@@ -64,7 +64,7 @@ printWriter.println(tmp);
    <shoping_url>Productlist.jsp</shoping_url>
    <message><%= authorizationPageBeanId.getStrMessage() %></message>
    <shoping_url>Productlist.jsp</shoping_url>
-   <balans><%=  actionBidsBeanId.getStrBalans(authorizationPageBeanId.getIntUserID()) %></balans>
+   <balans><%=  auctionBidsBeanId.getStrBalans(authorizationPageBeanId.getIntUserID()) %></balans>
    <to_navigator>wCatalog.jsp</to_navigator>
    <to_navigator_location>NavigatorLocation.jsp</to_navigator_location>
    <to_account_history>AccountHistory.jsp</to_account_history>
@@ -73,15 +73,15 @@ printWriter.println(tmp);
    <to_order>Order.jsp</to_order>
    <to_order_hist>OrderList.jsp?searchquery=0</to_order_hist>
    <to_pay>PrePay.jsp</to_pay>
-   <datefrom_formated><%=actionBidsBeanId.getFormatedDateFrom(request.getLocale()) %></datefrom_formated>
-   <dateto_formated><%=actionBidsBeanId.getFormatedDateFrom(request.getLocale()) %></dateto_formated>
-   <datefrom><%=actionBidsBeanId.getDateFrom() %></datefrom>
-   <dateto><%=actionBidsBeanId.getDateTo() %></dateto>
-   <date_format><%=actionBidsBeanId.getDatePattern()%></date_format>
-   <%=actionBidsBeanId.getSelectActionBidsXML()  %>
+   <datefrom_formated><%=auctionBidsBeanId.getFormatedDateFrom(request.getLocale()) %></datefrom_formated>
+   <dateto_formated><%=auctionBidsBeanId.getFormatedDateFrom(request.getLocale()) %></dateto_formated>
+   <datefrom><%=auctionBidsBeanId.getDateFrom() %></datefrom>
+   <dateto><%=auctionBidsBeanId.getDateTo() %></dateto>
+   <date_format><%=auctionBidsBeanId.getDatePattern()%></date_format>
+   <%=auctionBidsBeanId.getSelectAuctionBidsXML()  %>
  
-<next><jsp:getProperty name="actionBidsBeanId" property="listup" /></next>
-<prev><jsp:getProperty name="actionBidsBeanId" property="listdown" /></prev>
+<next><jsp:getProperty name="auctionBidsBeanId" property="listup" /></next>
+<prev><jsp:getProperty name="auctionBidsBeanId" property="listdown" /></prev>
 
    <!--  for members -->
    <do_form_1>
@@ -108,6 +108,6 @@ printWriter.println(tmp);
                 </form-header>
    </do_form_2>
    
- <%=  actionBidsBeanId.getSelectMenuCatalog()	 %>
+ <%=  auctionBidsBeanId.getSelectMenuCatalog()	 %>
 
 </document>

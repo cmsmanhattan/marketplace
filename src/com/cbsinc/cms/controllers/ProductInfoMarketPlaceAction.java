@@ -42,7 +42,7 @@ import jakarta.servlet.http.HttpSession;
 @PageController(jspName = "ProductInfoMarketPlace.jsp")
 public class ProductInfoMarketPlaceAction implements IAction {
 
-	transient static private Logger log = Logger.getLogger(ProductInfoPageAction.class);
+	transient static private Logger log = Logger.getLogger(ProductInfoAction.class);
 	private ProductInfoFaced productInfoFaced = null;
 	private ProductlistFaced productlistFaced = null;
 

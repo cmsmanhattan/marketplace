@@ -240,7 +240,7 @@
 						  	<div style="padding:5px 0px 26px"> 
 						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_order_hist"/></xsl:attribute>All orders</a></div>
 						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_order"/></xsl:attribute>The current order</a></div>	
-						  	<div class="cab"><a href="Policy.jsp?page=pay">Pay Order</a></div>
+						  	<div class="cab"><a href="ProductInfo.jsp?page=pay">Pay Order</a></div>
 							<div class="cab"><a href="Productlist.jsp?catalog_id=-2">Catalogue of the goods</a></div>               
 						  	<!-- <div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_account_history"/></xsl:attribute>Monetary operations</a></div>				      												             		    								
 						  	<div class="cab" style="color: black;"><b>Available funds: </b> <xsl:value-of select="document/balans"/>$.</div> -->
@@ -257,7 +257,7 @@
 			            <DIV>
 			            <H3>Pay Order</H3>
 			          	<P class="text" style="padding:10px 20px 13px;">
-			          	 <A href="Policy.jsp?page=pay">  How can I pay my order </A>
+			          	 <A href="ProductInfo.jsp?page=pay">  How can I pay my order </A>
 			          	</P>
 		                <div style="padding:0px 20px 17px;">
 		                <A>
@@ -563,7 +563,7 @@
 
 
 																
-														<TR><TD><input size="40"  AUTOCOMPLETE="off" TYPE="hidden" NAME="redirect" VALUE="Policy.jsp">   </input>
+														<TR><TD><input size="40"  AUTOCOMPLETE="off" TYPE="hidden" NAME="redirect" VALUE="Productlist.jsp">   </input>
 														<input size="40"  AUTOCOMPLETE="off" TYPE="hidden" NAME="action" VALUE="save">   </input></TD> <TD></TD></TR>
 														
 														<TR  align="right" style="padding-top: 15px">

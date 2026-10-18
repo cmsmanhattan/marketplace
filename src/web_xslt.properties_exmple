@@ -14,7 +14,7 @@
 #shoplist.xsl
 ##Productlist.jsp=Productlist.xsl
 ##Authorization.jsp=authorization.xsl
-##Policy.jsp=policy.xsl
+##ProductInfo.jsp=productinfo.xsl
 AccountHistory.jsp=accounthistory.xsl
 AccountHistoryDetal.jsp=accounthistorydetal.xsl
 ##Order.jsp=order.xsl

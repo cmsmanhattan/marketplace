@@ -37,16 +37,16 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 /**
- * Controller of ActionBids.jsp: lists the auction bids placed or received by
+ * Controller of AuctionBids.jsp: lists the auction bids placed or received by
  * the current user, with paging and search by date or status.
  *
  * <p>"Action" in the original code, the database (ACTION_BID_STATUS_ID, table
- * actionbidstatus, catalog -13), the JSP name ActionBids.jsp and the
+ * actionbidstatus, catalog -13), the JSP name AuctionBids.jsp and the
  * request values do_bid / cancel_action / accept_win_bid all mean AUCTION,
  * not an Action controller. Java identifiers were renamed to "auction";
  * database and template names were left as they are.
  */
-@PageController(jspName = "ActionBids.jsp")
+@PageController(jspName = "AuctionBids.jsp")
 public class AuctionBidsAction implements IAction {
 
 	ProductlistFaced productlistFaced ;

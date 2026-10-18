@@ -2,7 +2,7 @@ package com.cbsinc.cms.controllers;
 
 /**
  * "Action" in the original code, the database (ACTION_BID_STATUS_ID, table
- * actionbidstatus, catalog -13), the JSP name ActionBids.jsp and the
+ * actionbidstatus, catalog -13), the JSP name AuctionBids.jsp and the
  * request values do_bid / cancel_action / accept_win_bid all mean AUCTION,
  * not an Action controller. Java identifiers were renamed to "auction";
  * database and template names were left as they are.

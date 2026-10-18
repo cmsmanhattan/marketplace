@@ -479,7 +479,7 @@
 						  	<div class="cab"><A HREF="Productlist.jsp?site=-4" > Resolution center </A></div>
 							<div class="cab"><A HREF="Notifications.jsp" >Notifications </A></div>
 							<div class="cab"><A HREF="Offers.jsp" > Offers </A></div>
-							<div class="cab"><A HREF="ActionBids.jsp" >Action bids </A></div>					      												             		    								
+							<div class="cab"><A HREF="AuctionBids.jsp" >Action bids </A></div>					      												             		    								
 						  	</div> 
 						  	            
 			            </DIV>

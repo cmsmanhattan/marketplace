@@ -57,7 +57,7 @@ import jakarta.servlet.http.HttpSession;
  */
 /**
  * Formerly PolicyFilter. Selects the product-information template
- * (policy.xsl). Not registered in web.xml.
+ * (productinfo.xsl). Not registered in web.xml.
  */
 public class ProductInfoTemplateFilter implements Filter {
 	private FilterConfig filterConfig;
@@ -96,7 +96,7 @@ public class ProductInfoTemplateFilter implements Filter {
 
 		StringBuffer buffString = new StringBuffer("/xsl/");
 		buffString.append(authorizationPageBeanId.getSiteDir().trim());
-		buffString.append("/policy.xsl");
+		buffString.append("/productinfo.xsl");
 		this.xsltFileName = filterConfig.getServletContext().getRealPath(buffString.toString());
 		if (this.xsltFileName == null || !new File(this.xsltFileName).exists()) {
 			throw new UnavailableException("Unable to locate stylesheet: " + this.xsltFileName, 30);

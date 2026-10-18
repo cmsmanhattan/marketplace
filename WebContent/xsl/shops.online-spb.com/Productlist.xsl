@@ -942,7 +942,7 @@
 						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_order"/></xsl:attribute>The current order</a></div>	
 						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_account_history"/></xsl:attribute>Payments</a></div>	
 						  	<div class="cab"><A HREF="Offers.jsp" > Offers </A></div>
-							<div class="cab"><A HREF="ActionBids.jsp" >Action bids </A></div>			      												             		    								
+							<div class="cab"><A HREF="AuctionBids.jsp" >Action bids </A></div>			      												             		    								
 						  
 							<xsl:if test="document/role_id = 2">
 							<!--  <div class="cab"><a href="Domain.jsp">Domain registration</a></div>  -->

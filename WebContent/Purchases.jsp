@@ -1,5 +1,5 @@
 <%@ page errorPage="error.jsp" %>
-<jsp:useBean id="orderListBeanId" scope="session" class="com.cbsinc.cms.OrderListBean" />
+<jsp:useBean id="purchasesBeanId" scope="session" class="com.cbsinc.cms.OrderListBean" />
 <jsp:useBean id="authorizationPageBeanId" scope="session" class="com.cbsinc.cms.AuthorizationPageBean" />
 <%@page import="java.util.PropertyResourceBundle,java.util.ResourceBundle,java.io.*"%>
 
@@ -61,7 +61,7 @@ printWriter.println(tmp);
    <shoping_url>Productlist.jsp</shoping_url>
    <message><%= authorizationPageBeanId.getStrMessage() %></message>
    <shoping_url>Productlist.jsp</shoping_url>
-   <balans><%=  orderListBeanId.getStrBalans(authorizationPageBeanId.getIntUserID()) %></balans>
+   <balans><%=  purchasesBeanId.getStrBalans(authorizationPageBeanId.getIntUserID()) %></balans>
    <to_navigator>wCatalog.jsp</to_navigator>
    <to_navigator_location>NavigatorLocation.jsp</to_navigator_location>
    <to_account_history>AccountHistory.jsp</to_account_history>
@@ -70,17 +70,17 @@ printWriter.println(tmp);
    <to_order>Order.jsp</to_order>
    <to_order_hist>OrderList.jsp?searchquery=0</to_order_hist>
    <to_pay>PrePay.jsp</to_pay>
-   <datefrom_formated><%=orderListBeanId.getFormatedDateFrom(request.getLocale()) %></datefrom_formated>
-   <dateto_formated><%=orderListBeanId.getFormatedDateFrom(request.getLocale()) %></dateto_formated>
-   <datefrom><%=orderListBeanId.getDateFrom() %></datefrom>
-   <dateto><%=orderListBeanId.getDateTo() %></dateto>
-   <date_format><%=orderListBeanId.getDatePattern()%></date_format>
-   <%=orderListBeanId.getSelectPurchasesXML()  %>
-   <%=orderListBeanId.getSelectPaystatus() %>
-   <%=orderListBeanId.getSelectItemDeliverystatus() %>
+   <datefrom_formated><%=purchasesBeanId.getFormatedDateFrom(request.getLocale()) %></datefrom_formated>
+   <dateto_formated><%=purchasesBeanId.getFormatedDateFrom(request.getLocale()) %></dateto_formated>
+   <datefrom><%=purchasesBeanId.getDateFrom() %></datefrom>
+   <dateto><%=purchasesBeanId.getDateTo() %></dateto>
+   <date_format><%=purchasesBeanId.getDatePattern()%></date_format>
+   <%=purchasesBeanId.getSelectPurchasesXML()  %>
+   <%=purchasesBeanId.getSelectPaystatus() %>
+   <%=purchasesBeanId.getSelectItemDeliverystatus() %>
  
-<next><jsp:getProperty name="orderListBeanId" property="listup" /></next>
-<prev><jsp:getProperty name="orderListBeanId" property="listdown" /></prev>
+<next><jsp:getProperty name="purchasesBeanId" property="listup" /></next>
+<prev><jsp:getProperty name="purchasesBeanId" property="listdown" /></prev>
 
    <!--  for members -->
    <do_form_1>
@@ -107,6 +107,6 @@ printWriter.println(tmp);
                 </form-header>
    </do_form_2>
    
- <%=  orderListBeanId.getSelectMenuCatalog()	 %>
+ <%=  purchasesBeanId.getSelectMenuCatalog()	 %>
 
 </document>

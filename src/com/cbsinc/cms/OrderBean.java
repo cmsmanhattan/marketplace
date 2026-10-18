@@ -6,6 +6,9 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
+import com.cbsinc.cms.annotations.PageXsltView;
+import com.cbsinc.cms.annotations.Type;
+
 /**
  * <p>
  * Title: Content Manager System
@@ -27,6 +30,7 @@ import org.apache.log4j.Logger;
  * @version 1.0
  */
 
+@PageXsltView(jspName = "Order.jsp", xsltName = "Productlist.xsl", responseType = Type.XML)
 public class OrderBean implements java.io.Serializable {
 
 	transient private static final long serialVersionUID = 2520644735859729809L;

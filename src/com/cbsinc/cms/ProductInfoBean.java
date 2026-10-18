@@ -5,6 +5,10 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
+import com.cbsinc.cms.annotations.PageXsltView;
+import com.cbsinc.cms.annotations.Type;
+
+@PageXsltView(jspName = "ProductInfo.jsp", xsltName = "productinfo.xsl", responseType = Type.XML)
 public class ProductInfoBean implements java.io.Serializable {
 
 	private static final long serialVersionUID = -4538742603892275854L;

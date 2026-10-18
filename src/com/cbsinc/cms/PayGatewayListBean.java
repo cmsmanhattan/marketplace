@@ -33,9 +33,6 @@ import com.cbsinc.cms.annotations.Scope;
 import com.cbsinc.cms.annotations.Type;
 
 @PageModel(Id = "payGatewayListBeanId", scope = Scope.SESSION)
-// Vestigial: PayGatewayList.jsp is a plain HTML page, it does not render
-// through XSLT. Commented out like the other non-view beans.
-//@PageXsltView(jspName = "PayGatewayList.jsp", xsltName = "pay.xsl", responseType = Type.XML)
 public class PayGatewayListBean implements Serializable {
 
 	private static final long serialVersionUID = -1197050877775233920L;

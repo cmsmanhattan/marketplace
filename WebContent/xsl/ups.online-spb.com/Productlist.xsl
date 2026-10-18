@@ -245,24 +245,24 @@
 			       			<TBODY>
 			        			<TR>
 			          				<TD>
-			        				<xsl:if test="document/login != ''">   <!--  ���������� ���� ���� ����� -->
+			        				<xsl:if test="document/login != ''">   <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
 									<B>User</B> 
 									 <a href="Authorization.jsp" style="margin-left: 5px; text-decoration: none">				                
 									
-								 	<xsl:if test="document/login = 'user'">   <!--  ���������� ���� ��� ������ -->
+								 	<xsl:if test="document/login = 'user'">   <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ -->
 									<font class="user0">
 										<xsl:value-of select="document/login"/>
 									</font>
 									</xsl:if>
 									
-									<xsl:if test="document/login != 'user'">   <!--  ���������� ���� ���� ����� -->
-									<xsl:if test="document/role_id = 1"> <!--  ��������� ���� ���� -->
+									<xsl:if test="document/login != 'user'">   <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
+									<xsl:if test="document/role_id = 1"> <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ -->
 										<font class="user0">
 											<xsl:value-of select="document/login"/>
 									</font>
 								</xsl:if>
 											 			
-								<xsl:if test="document/role_id = 2"><!--  ������� ���� ����� -->
+								<xsl:if test="document/role_id = 2"><!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
 									<font class="user0">
 									<xsl:value-of select="document/login"/>
 									</font>
@@ -800,7 +800,7 @@
 								
 								            <xsl:if test="image = ''" >
 								                <A class="mostread_s3"  ><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute><br/>
-										      <!-- ������������ ������� ������  -->
+										      <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 											 <xsl:if test="count(description/r) > 1"> 
 												 <xsl:if test="string-length(description/r[1]) > 3">
 												 	<IMG style="margin-right: 5px;margin-bottom:2px;">
@@ -817,7 +817,7 @@
 								              </U>
 												</A>
 										   </xsl:if>	
-										 <!-- ������ ��������  , ������ -->
+										 <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 										<xsl:if test="/document/admin/post_manager != ''">	
 										<table><tr><td width="60px" style="padding-bottom: 5px; padding-top: 5px">																
 											        <form name="product_del"  action="Productlist.jsp" method="POST">
@@ -837,7 +837,7 @@
 											        </form>
 										</td></tr></table>	
 										</xsl:if>
-									   <!-- ������ ��������  , �����  -->														
+									   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->														
 								        </LI>
 								        </xsl:for-each>      
 						               <LI class="mostread_s3" >
@@ -921,8 +921,8 @@
 						
 						
 						
-						<!-- ������� (��� ������) -->
-			            <xsl:if test="document/role_id != 0"><!--  ���� ����� -->
+						<!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ) -->
+			            <xsl:if test="document/role_id != 0"><!--  пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
 			            <DIV class="module" style="margin-right:0px">
 			            <DIV class="first">
 			            <DIV class="sec">
@@ -942,7 +942,7 @@
 						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_order"/></xsl:attribute>The current order</a></div>	
 						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_account_history"/></xsl:attribute>Payments</a></div>	
 						  	<div class="cab"><A HREF="Offers.jsp" > Offers </A></div>
-							<div class="cab"><A HREF="ActionBids.jsp" >Action bids </A></div>			      												             		    								
+							<div class="cab"><A HREF="AuctionBids.jsp" >Action bids </A></div>			      												             		    								
 						  
 							<xsl:if test="document/role_id = 2">
 							<!--  <div class="cab"><a href="Domain.jsp">Domain registration</a></div>  -->
@@ -988,7 +988,7 @@
 									     </xsl:for-each></SPAN><br/>
 									 </A>
 						             				
-									<!-- ������ ��������  , ������ -->
+									<!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 									
 									<xsl:if test="/document/admin/post_manager != ''">
 									
@@ -1018,7 +1018,7 @@
 								
 								
 									</xsl:if>
-								   <!-- ������ ��������  , �����  -->
+								   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->
 				                    </LI>                    
 				                  </xsl:for-each> 
 				                  <LI>
@@ -1039,7 +1039,7 @@
 					</div>
 					</div>			
 						
-			<!-- �������������� ������ -->
+			<!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ -->
             <DIV class="module" style="margin-right:0px">
             <DIV class="first">
             <DIV class="sec">
@@ -1064,7 +1064,7 @@
                    	 <xsl:value-of select="policy_url"/>
                    	 </xsl:attribute>
                    	 <br/>
-				       <!-- ������������ ������� ������  -->
+				       <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 				       <img  alt=""  width="147" border="0">
 				       <xsl:attribute name="src">
 				       <xsl:value-of select="image"/>
@@ -1094,7 +1094,7 @@
 		
 		            <xsl:if test="image = ''" >
 		                <A class="mostread_s3"  ><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute><br/>
-				      <!-- ������������ ������� ������  -->
+				      <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
           				 <xsl:if test="count(description/r) > 1"> 
 						 <xsl:if test="string-length(description/r[1]) > 3">
 						 	<IMG style="margin-right: 5px;margin-bottom:2px;">
@@ -1111,7 +1111,7 @@
 		              </U>
 					</A>
 			    </xsl:if>	
-				 <!-- ������ ��������  , ������ -->
+				 <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 				<xsl:if test="/document/admin/post_manager != ''">	
 				<table><tr><td width="60px" style="padding-bottom: 5px;PADDING-TOP: 5px">																
 					        <form name="product_del"  action="Productlist.jsp" method="POST">
@@ -1131,7 +1131,7 @@
 					        </form>
 				</td></tr></table>	
 				</xsl:if>
-			   <!-- ������ ��������  , �����  -->														
+			   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->														
 		        </LI>
 		        </xsl:for-each>      
                 <LI class="mostread_s3" >
@@ -1167,7 +1167,7 @@
 					              <TBODY>
 							              <TR>
 								            <TD align="center">									
-											    <!-- �������� ������ ��� ���������� ������ , ������  -->				
+											    <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ , пїЅпїЅпїЅпїЅпїЅпїЅ  -->				
 											    <xsl:if test="document/role_id = '2'">											    
 														<div style="font-size: 12px">
 														Button to edit the site<br/>
@@ -1753,7 +1753,7 @@
 															     												
 															
 													
-										   <!-- ������ �������� , ������ ��� ������  -->
+										   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ , пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 										<xsl:choose>
 										<xsl:when test="/document/role_id = 2">
 											<table style="width:200px; padding-left: 20px">
@@ -1779,9 +1779,9 @@
 											    </tbody>
 											</table>
 										</xsl:when>
-									   <!-- ������ ��������  , �����  ��� ������  -->
+									   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 							
-									   <!-- ������ �������� , ������ ��� ������  -->
+									   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ , пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 							
 							         <xsl:otherwise>
 										<xsl:if  test="user_id = string(number($user_id))">
@@ -1859,7 +1859,7 @@
 											</A>
 											
 
-								        	<!-- ������ ��������  , ������ -->
+								        	<!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 											<xsl:if test="/document/admin/post_manager != ''">
 											<br/>
 											<table>
@@ -1885,7 +1885,7 @@
 											    </tbody>
 											</table>
 											</xsl:if>
-							           		<!-- ������ ��������  , �����  -->
+							           		<!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->
 										</td>
 					  	    	</xsl:for-each>
 	 <td width="20%"></td></tr>
@@ -2100,7 +2100,7 @@
 					<div>
 					<xsl:choose> 
 
-									   <!-- ������ ��������  , ������ -->
+									   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 									       <xsl:when test="/document/role_id = '2'">									
 									       
 										
@@ -2129,12 +2129,12 @@
 									
 									       
 								    </xsl:when> 
-								    <!-- ������ ��������  , �����  -->
+								    <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->
 								
 								
 								
 								
-								  <!--  for Edit  User context  ������ ��������  , ������ -->
+								  <!--  for Edit  User context  пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 								   <xsl:when test="/document/role_id = '1'">
 									<xsl:variable name="user_id" select="number(/document/owner_user_id)"/> 
 									<xsl:variable name="owner_id" select="number(/document/product_list/product[$position]/user_id)"/>
@@ -2166,7 +2166,7 @@
 								
 								   </xsl:choose> 
 								
-								    <!-- ������ ��������  , �����  -->	
+								    <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->	
 					
 					</div>
 					<xsl:if test="($position) &lt; (($prCount)-1)">
@@ -2179,7 +2179,7 @@
 					<div>
 					<xsl:choose> 
 
-									   <!-- ������ ��������  , ������ -->
+									   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 									       <xsl:when test="/document/role_id = '2'">								
 									      
 										
@@ -2206,12 +2206,12 @@
 											</table>									            
 									       	
 								    </xsl:when> 
-								    <!-- ������ ��������  , �����  -->
+								    <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->
 								
 								
 								
 								
-								  <!--  for Edit  User context  ������ ��������  , ������ -->
+								  <!--  for Edit  User context  пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 								   <xsl:when test="/document/role_id = '1'">
 									<xsl:variable name="user_id" select="number(/document/owner_user_id)"/> 
 									<xsl:variable name="owner_id" select="number(/document/product_list/product[$position+1]/user_id)"/>
@@ -2243,7 +2243,7 @@
 								
 								   </xsl:choose> 
 								
-								    <!-- ������ ��������  , �����  -->	
+								    <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->	
 					
 					</div>	
 					<xsl:if test="($position) &lt; (($prCount)-3)">
@@ -2257,7 +2257,7 @@
 					<div>
 					<xsl:choose> 
 
-									   <!-- ������ ��������  , ������ -->
+									   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 									       <xsl:when test="/document/role_id = '2'">								
 									      
 										
@@ -2284,12 +2284,12 @@
 											</table>									            
 									       	
 								    </xsl:when> 
-								    <!-- ������ ��������  , �����  -->
+								    <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->
 								
 								
 								
 								
-								  <!--  for Edit  User context  ������ ��������  , ������ -->
+								  <!--  for Edit  User context  пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 								   <xsl:when test="/document/role_id = '1'">
 									<xsl:variable name="user_id" select="number(/document/owner_user_id)"/> 
 									<xsl:variable name="owner_id" select="number(/document/product_list/product[$position+2]/user_id)"/>
@@ -2321,7 +2321,7 @@
 								
 								   </xsl:choose> 
 								
-								    <!-- ������ ��������  , �����  -->	
+								    <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->	
 					
 					</div>	
 					<xsl:if test="($position) &lt; (($prCount)-3)">
@@ -2335,7 +2335,7 @@
 					<div>
 					<xsl:choose> 
 
-									   <!-- ������ ��������  , ������ -->
+									   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 									       <xsl:when test="/document/role_id = '2'">								
 									      
 										
@@ -2362,12 +2362,12 @@
 											</table>									            
 									       	
 								    </xsl:when> 
-								    <!-- ������ ��������  , �����  -->
+								    <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->
 								
 								
 								
 								
-								  <!--  for Edit  User context  ������ ��������  , ������ -->
+								  <!--  for Edit  User context  пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 								   <xsl:when test="/document/role_id = '1'">
 									<xsl:variable name="user_id" select="number(/document/owner_user_id)"/> 
 									<xsl:variable name="owner_id" select="number(/document/product_list/product[$position+3]/user_id)"/>
@@ -2399,7 +2399,7 @@
 								
 								   </xsl:choose> 
 								
-								    <!-- ������ ��������  , �����  -->	
+								    <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->	
 					
 					</div>	
 					<xsl:if test="($position) &lt; (($prCount)-4)">

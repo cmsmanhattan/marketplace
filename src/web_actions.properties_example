@@ -17,7 +17,7 @@
 RegPage.jsp=com.cbsinc.cms.controllers.RegistrationAction
 Productlist.jsp=com.cbsinc.cms.controllers.ProductlistAction
 Authorization.jsp=com.cbsinc.cms.controllers.AuthorizationAction
-Policy.jsp=com.cbsinc.cms.controllers.ProductInfoPageAction
+Productlist.jsp=com.cbsinc.cms.controllers.ProductInfoPageAction
 Order.jsp=com.cbsinc.cms.controllers.OrderAction
 ProductPostCre.jsp=com.cbsinc.cms.controllers.ProductPostCreAction
 ProductUserPost.jsp=com.cbsinc.cms.controllers.ProductUserPostAction

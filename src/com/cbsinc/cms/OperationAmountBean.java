@@ -32,10 +32,6 @@ import com.cbsinc.cms.annotations.Type;
  * @version 1.0
  */
 @PageModel(Id = "operationAmountBeanId", scope = Scope.SESSION)
-// Vestigial: this bean is a service helper (used by PayAction / FDPayAction),
-// it does not render Pay.jsp - PayBean does. Commented out like the other
-// non-view beans (ActionBidsBean, PayGatewayBean).
-//@PageXsltView(jspName = "Pay.jsp", xsltName = "pay.xsl", responseType = Type.XML)
 public class OperationAmountBean implements java.io.Serializable {
 
 	transient private static final long serialVersionUID = -5629328315307393690L;

@@ -140,24 +140,24 @@
 			       			<TBODY>
 			        			<TR>
 			          				<TD>
-			        				<xsl:if test="document/login != ''">   <!--  ���������� ���� ���� ����� -->
+			        				<xsl:if test="document/login != ''">   <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
 									<B>User</B> 
 									 <a href="Authorization.jsp" style="margin-left: 5px; text-decoration: none">				                
 									
-								 	<xsl:if test="document/login = 'user'">   <!--  ���������� ���� ��� ������ -->
+								 	<xsl:if test="document/login = 'user'">   <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ -->
 									<font class="user0">
 										<xsl:value-of select="document/login"/>
 									</font>
 									</xsl:if>
 									
-									<xsl:if test="document/login != 'user'">   <!--  ���������� ���� ���� ����� -->
-									<xsl:if test="document/role_id = 1"> <!--  ��������� ���� ���� -->
+									<xsl:if test="document/login != 'user'">   <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
+									<xsl:if test="document/role_id = 1"> <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ -->
 										<font class="user1">
 											<xsl:value-of select="document/login"/>
 									</font>
 								</xsl:if>
 											 			
-								<xsl:if test="document/role_id = 2"><!--  ������� ���� ����� -->
+								<xsl:if test="document/role_id = 2"><!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
 									<font class="user2">
 									<xsl:value-of select="document/login"/>
 									</font>
@@ -254,7 +254,7 @@
 					</div>
 					</div>
 					
-					<!-- � ����������� -->
+					<!-- пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ -->
 			           
 			            <DIV class="module" style="margin-right:0px">
 			            <DIV class="first">
@@ -286,7 +286,7 @@
 						  	<div class="cab"><A HREF="Purchases.jsp" >  Purchases </A></div>
 							<div class="cab"><A HREF="Notifications.jsp" >Notifications </A></div>
 							<div class="cab"><A HREF="Offers.jsp" > Offers </A></div>
-							<div class="cab"><A HREF="ActionBids.jsp" >Action bids </A></div>							  					      												             		    								
+							<div class="cab"><A HREF="AuctionBids.jsp" >Action bids </A></div>							  					      												             		    								
 						  	</div> 
 						  	            
 			            </DIV>
@@ -398,17 +398,17 @@
 													</table>
 													</xsl:for-each>										    
 												</DIV>
-											    </xsl:if>   <!-- ������� ������� � ������� �� ���� ��������   -->
+											    </xsl:if>   <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ   -->
 								                
-										        </xsl:if>  <!-- ������� ������� � �������  -->
+										        </xsl:if>  <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ  -->
 											</DIV>
 											<DIV style="border: 1px dashed black; width: 400px;">
 												<DIV>
 												<DIV style="float: left">
-												<A><xsl:attribute name="HREF"><xsl:value-of select="document/prev"/></xsl:attribute><IMG height="15" alt="�����" title="�����" src="" width="15" border="0"><xsl:attribute name="src"><xsl:value-of select="concat('xsl/',$host,'/images/previous.gif')"/></xsl:attribute></IMG></A>
+												<A><xsl:attribute name="HREF"><xsl:value-of select="document/prev"/></xsl:attribute><IMG height="15" alt="пїЅпїЅпїЅпїЅпїЅ" title="пїЅпїЅпїЅпїЅпїЅ" src="" width="15" border="0"><xsl:attribute name="src"><xsl:value-of select="concat('xsl/',$host,'/images/previous.gif')"/></xsl:attribute></IMG></A>
 											    </DIV>
 											    <DIV  style="float: right">
-											    <A><xsl:attribute name="HREF"><xsl:value-of select="document/next"/></xsl:attribute><IMG height="15" alt="���������" title="���������" src="" width="15" border="0"><xsl:attribute name="src"><xsl:value-of select="concat('xsl/',$host,'/images/next.gif')"/></xsl:attribute></IMG></A>
+											    <A><xsl:attribute name="HREF"><xsl:value-of select="document/next"/></xsl:attribute><IMG height="15" alt="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" title="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" src="" width="15" border="0"><xsl:attribute name="src"><xsl:value-of select="concat('xsl/',$host,'/images/next.gif')"/></xsl:attribute></IMG></A>
 											    </DIV>
 												</DIV>
 												<DIV style="text-align: center">

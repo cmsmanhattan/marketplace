@@ -6,7 +6,8 @@
 
 <xsl:template match="/">
 	<xsl:variable name="host" select="string(document/host)"/>
-	<xsl:variable name="user_id" select="string(/document/owner_user_id)"/> 
+	<xsl:variable name="page" select="number(document/offset)"/>
+	<xsl:variable name="user_id" select="number(/document/owner_user_id)"/> 
 	<xsl:variable name="role" select="document/role_id"/> 
 	<xsl:variable name="virtual_host" select="document/virtual_host"/> 
 <HTML>
@@ -121,7 +122,7 @@
 	  					</LI>
 	  					
 	  					<LI >
-	  					<A href="https://mail.cmsmanhattan.com">
+	  					<A href="EMail.jsp">
 	  					<SPAN>	
 							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="M172-126q-53 0-89.5-36.5T46-252v-456q0-53 36.5-89.5T172-834h616q53 0 89.5 36.5T914-708v456q0 53-36.5 89.5T788-126H172Zm308-271L172-597v345h616v-345L480-397Zm0-111 308-200H172l308 200Zm-308-89v-111 456-345Z"/>
 							<title id="title">Webmail</title>
@@ -132,7 +133,7 @@
 	      				 
 	      				 <LI>
 	      				 <A href="#"> 
-	      				   <xsl:attribute name="onclick"><xsl:value-of select="concat('openDialog(&quot;https://',$virtual_host,'/service-8096/index.html&quot;)')"/></xsl:attribute>
+	      				   <xsl:attribute name="onclick"><xsl:value-of select="concat('openDialog(&quot;http://',$virtual_host,':8096/index.html&quot;)')"/></xsl:attribute>
 	      				  <IMG border="0" height="40" width="40"  style="margin: -10px;" >
 	        	 		    <xsl:attribute name="src"><xsl:value-of select="concat('xsl/',$host,'/images/ai_icon.png')"/></xsl:attribute>
 	        	 		  </IMG>
@@ -165,24 +166,24 @@
 			       			<TBODY>
 			        			<TR>
 			          				<TD>
-			        				<xsl:if test="document/login != ''">   <!--  ���������� ���� ���� ����� -->
+			        				<xsl:if test="document/login != ''">   <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
 									<B>User</B> 
 									 <a href="Authorization.jsp" style="margin-left: 5px; text-decoration: none">				                
 									
-								 	<xsl:if test="document/login = 'user'">   <!--  ���������� ���� ��� ������ -->
+								 	<xsl:if test="document/login = 'user'">   <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ -->
 									<font class="user0">
 										<xsl:value-of select="document/login"/>
 									</font>
 									</xsl:if>
 									
-									<xsl:if test="document/login != 'user'">   <!--  ���������� ���� ���� ����� -->
-									<xsl:if test="document/role_id = 1"> <!--  ��������� ���� ���� -->
+									<xsl:if test="document/login != 'user'">   <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
+									<xsl:if test="document/role_id = 1"> <!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ -->
 										<font class="user1">
 											<xsl:value-of select="document/login"/>
 									</font>
 								</xsl:if>
 											 			
-								<xsl:if test="document/role_id = 2"><!--  ������� ���� ����� -->
+								<xsl:if test="document/role_id = 2"><!--  пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
 									<font class="user2">
 									<xsl:value-of select="document/login"/>
 									</font>
@@ -276,13 +277,13 @@
 				                    <LI>                   
 									<A><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute>
 						        	
-								      <!-- ������������ ������� ������  -->
+								      <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 						             
 							   		     <SPAN><xsl:for-each select="description/r">
 									      	<xsl:value-of select="."/><BR/>
 									     </xsl:for-each></SPAN></A>
 						             				
-									<!-- ������ ��������  , ������ -->
+									<!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 									
 									<xsl:if test="/document/admin/post_manager != ''">
 									
@@ -312,7 +313,7 @@
 								
 								
 									</xsl:if>
-								   <!-- ������ ��������  , �����  -->
+								   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->
 				                    </LI>                    
 				                  </xsl:for-each> 
 				                  <LI>
@@ -356,7 +357,7 @@
 									   	        <xsl:if test="big_image_type != 'swf'">
 									   	           <xsl:if test="big_image_type != 'flv'">
 						                    <A class="mostread_s3"><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute><br/>
-										       <!-- ������������ ������� ������  -->
+										       <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 										       <img  alt=""  width="147" border="0">
 										       <xsl:attribute name="src">
 										       <xsl:value-of select="image"/>
@@ -386,7 +387,7 @@
 								
 								            <xsl:if test="image = ''" >
 								                <A class="mostread_s3"  ><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute><br/>
-										      <!-- ������������ ������� ������  -->
+										      <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 										      <xsl:if test="count(description/r) > 1"> 
 							                  	<xsl:if test="string-length(description/r[1]) > 3">
 										              <IMG style="margin-right: 5px;margin-bottom:2px;">
@@ -403,7 +404,7 @@
 								              </U>
 												</A>
 										   </xsl:if>	
-										 <!-- ������ ��������  , ������ -->
+										 <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 										<xsl:if test="/document/admin/post_manager != ''">	
 										<table><tr><td width="60px" style="padding-bottom: 5px; padding-top: 5px">																
 											        <form name="product_del"  action="Productlist.jsp" method="POST">
@@ -423,7 +424,7 @@
 											        </form>
 										</td></tr></table>	
 										</xsl:if>
-									   <!-- ������ ��������  , �����  -->														
+									   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->														
 								        </LI>
 								        </xsl:for-each>      
 						               <LI class="mostread_s3" >
@@ -507,8 +508,8 @@
 						</xsl:if>
 						
 						
-						<!-- ������� (��� ������) -->
-			            <xsl:if test="document/role_id != 0"><!--  ���� ����� -->
+						<!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ) -->
+			            <xsl:if test="document/role_id != 0"><!--  пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -->
 			            <DIV class="module" style="margin-right:0px">
 			            <DIV class="first">
 			            <DIV class="sec">
@@ -521,10 +522,9 @@
 						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_order"/></xsl:attribute>The current order</a></div>	
 						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_account_history"/></xsl:attribute>Payments</a></div>
 						  	<div class="cab"><A HREF="Purchases.jsp" >  Purchases </A></div>
-						  	<div class="cab"><A HREF="Productlist.jsp?site=-4" > Resolution center </A></div>
 							<div class="cab"><A HREF="Notifications.jsp" >Notifications </A></div>
 							<div class="cab"><A HREF="Offers.jsp" > Offers </A></div>
-							<div class="cab"><A HREF="ActionBids.jsp" >Action bids </A></div>					      												             		    								
+							<div class="cab"><A HREF="AuctionBids.jsp" >Action bids </A></div>					      												             		    								
 						  	</div> 
 						  	            
 			            </DIV>
@@ -624,7 +624,7 @@
 			               </DIV>
 			            </xsl:if>	
 						
-			<!-- �������������� ������ -->
+			<!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ -->
 			
 			<xsl:if test="document/empty_page_ext1 = 'false'" >
 			<xsl:if test="count(document/extpolicy_productlist1/extpolicy_product1) != 0" >
@@ -652,7 +652,7 @@
                    	 <xsl:value-of select="policy_url"/>
                    	 </xsl:attribute>
                    	 <br/>
-				       <!-- ������������ ������� ������  -->
+				       <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 				       <img  alt=""  width="147" border="0">
 				       <xsl:attribute name="src">
 				       <xsl:value-of select="image"/>
@@ -681,7 +681,7 @@
 		
 		            <xsl:if test="image = ''" >
 		                <A class="mostread_s3"  ><xsl:attribute name="HREF"><xsl:value-of select="policy_url"/></xsl:attribute><br/>
-				      <!-- ������������ ������� ������  -->
+				      <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
  						<xsl:if test="count(description/r) > 1"> 
 							 <xsl:if test="string-length(description/r[1]) > 3">
 							 	<IMG style="margin-right: 5px;margin-bottom:2px;">
@@ -698,7 +698,7 @@
 		              </U>
 					</A>
 			    </xsl:if>	
-				 <!-- ������ ��������  , ������ -->
+				 <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 				<xsl:if test="/document/admin/post_manager != ''">	
 				<table><tr><td width="60px" style="padding-bottom: 5px;PADDING-TOP: 5px">																
 					        <form name="product_del"  action="Productlist.jsp" method="POST">
@@ -718,7 +718,7 @@
 					        </form>
 				</td></tr></table>	
 				</xsl:if>
-			   <!-- ������ ��������  , �����  -->														
+			   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->														
 		        </LI>
 		        </xsl:for-each>      
                 <LI class="mostread_s3" >
@@ -755,7 +755,7 @@
 					              <TBODY>
 							              <TR>
 								            <TD align="center">									
-											    <!-- �������� ������ ��� ���������� ������ , ������  -->				
+											    <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ , пїЅпїЅпїЅпїЅпїЅпїЅ  -->				
 											    <xsl:if test="document/role_id = '2'">											    
 														<div style="font-size: 12px">
 														This is the button to edit the site<br/>
@@ -961,7 +961,7 @@
 
 										   	    
 										            
-										  	    <!-- ������������ ������� ������  --> 
+										  	    <!-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  --> 
 												  <xsl:for-each select="document/product/description/r">
 													<xsl:value-of select="."/><br style="line-height: 0px"/>
 											  	  </xsl:for-each>
@@ -1306,8 +1306,8 @@
     														<div class="line2"></div><br/>
 															
 															<div class="scroll-container">
-															  <button class="scroll-left" onclick="leftScrollRecentlyReviewed()">&#9664;</button>
-															   <div class="scroll-content-recently-reviewed">
+															  <button class="scroll-left" onclick="leftScrollSponsoredBySeller()">&#9664;</button>
+															   <div class="scroll-content-sponsored-by-seller">
 																	  <xsl:if test="count(document/recentlyReviewedItems/reviewed) != 0">
 													                  <xsl:for-each select="document/recentlyReviewedItems/reviewed">
 													                  <div class="item">
@@ -1358,7 +1358,7 @@
 													                  </xsl:for-each> 
 													                  </xsl:if>
 																   </div>
-															  <button class="scroll-right" onclick="rightScrollRecentlyReviewed()">&#9654;</button>
+															  <button class="scroll-right" onclick="rightScrollSponsoredBySeller()">&#9654;</button>
 															</div>
 																	
 											 	                        
@@ -1438,7 +1438,7 @@
 															     												
 															
 													
-										   <!-- ������ �������� , ������ ��� ������  -->
+										   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ , пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 										<xsl:choose>
 										<xsl:when test="/document/role_id = 2">
 											<table style="width:200px; padding-left: 20px">
@@ -1464,12 +1464,12 @@
 											    </tbody>
 											</table>
 										</xsl:when>
-									   <!-- ������ ��������  , �����  ��� ������  -->
+									   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 							
-									   <!-- ������ �������� , ������ ��� ������  -->
+									   <!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ , пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  -->
 							
 							         <xsl:otherwise>
-										<xsl:if  test="user_id = $user_id">
+										<xsl:if  test="user_id = string(number($user_id))">
 										<xsl:if test="/document/role_id = '1'">
 										<table style="width:200px; padding-left: 20px">
 									   		<tbody>
@@ -1545,7 +1545,7 @@
 											</A>
 											
 
-								        	<!-- ������ ��������  , ������ -->
+								        	<!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅпїЅ -->
 											<xsl:if test="/document/admin/post_manager != ''">
 											<br/>
 											<table>
@@ -1571,7 +1571,7 @@
 											    </tbody>
 											</table>
 											</xsl:if>
-							           		<!-- ������ ��������  , �����  -->
+							           		<!-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  , пїЅпїЅпїЅпїЅпїЅ  -->
 										</td>
 					  	    	</xsl:for-each>
 	 <td width="20%"></td></tr>
@@ -1586,15 +1586,15 @@
 		</DIV>
 	</DIV>
 	
-    <div id="overlay" style="display:none"></div>
-    <div id="dialog" style="display:none">
-       <iframe id="iframe" src="about:blank" style="border:0"></iframe>
-       <button class="top-right-button"  onclick="closeDialog()">x</button>
+    <div id="overlay"></div>
+    <div id="dialog">
+        <iframe id="iframe" src=""></iframe>
+        <button class="top-right-button" onclick="closeDialog()">X</button>
     </div>
     
-    <div id="overlay_mail" style="display:none" ></div>
-    <div id="dialog_mail"  style="display:none" >
-        <iframe id="iframe_mail" src="about:blank" style="border:0" ></iframe>
+    <div id="overlay_mail"></div>
+    <div id="dialog_mail">
+        <iframe id="iframe_mail" src=""></iframe>
         <button class="top-right-button" onclick="closeDialogMail()">X</button>
     </div>
 

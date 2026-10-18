@@ -485,7 +485,7 @@
 						  	<div style="padding:5px 0px 26px"> 
 						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_order_hist"/></xsl:attribute>All orders</a></div>
 						  	<div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_order"/></xsl:attribute>The current order</a></div>	
-						  	<div class="cab"><a href="Policy.jsp?page=pay">Pay Order</a></div>
+						  	<div class="cab"><a href="ProductInfo.jsp?page=pay">Pay Order</a></div>
 						  	<!-- <div class="cab"><a><xsl:attribute name="HREF"><xsl:value-of select="document/to_account_history"/></xsl:attribute>Monetary operations</a></div>				      												             		    								
 						  	<div class="cab" style="color: black;"><b>Available funds: </b> <xsl:value-of select="document/balans"/> рублей .</div> -->
 						  	</div> 

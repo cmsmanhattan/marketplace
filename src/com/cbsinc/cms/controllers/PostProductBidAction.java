@@ -110,7 +110,7 @@ public class PostProductBidAction implements IAction {
 				&& productPostAllFaced.auctionBidOwnedBy(positionId, authorizationPageBeanId.getSiteId(),
 						authorizationPageBeanId.getIntUserID(), true).length() == 0) {
 			authorizationPageBeanId.setStrMessage("This bid is not yours.");
-			response.sendRedirect("ActionBids.jsp");
+			response.sendRedirect("AuctionBids.jsp");
 			return;
 		}
 		String cancelledProduct = productPostAllFaced.auctionBidOwnedBy(positionId, authorizationPageBeanId.getSiteId(), authorizationPageBeanId.getIntUserID(), false);
@@ -131,7 +131,7 @@ public class PostProductBidAction implements IAction {
 						"Your bid on \"" + name + "\" was cancelled by the seller", cancelledProduct, null, null);
 		}
 		authorizationPageBeanId.setStrMessage("The bid was canceled successfully");
-		response.sendRedirect("ActionBids.jsp");
+		response.sendRedirect("AuctionBids.jsp");
 
 	}
 
@@ -161,7 +161,7 @@ public class PostProductBidAction implements IAction {
 		if (productPostAllFaced.auctionBidOwnedBy(positionId, authorizationPageBeanId.getSiteId(),
 				authorizationPageBeanId.getIntUserID(), true).length() == 0) {
 			authorizationPageBeanId.setStrMessage("Only the seller can accept a bid.");
-			response.sendRedirect("ActionBids.jsp");
+			response.sendRedirect("AuctionBids.jsp");
 			return;
 		}
 		String wonProduct = productPostAllFaced.auctionBidOwnedBy(positionId, authorizationPageBeanId.getSiteId(), authorizationPageBeanId.getIntUserID(), true);
@@ -184,7 +184,7 @@ public class PostProductBidAction implements IAction {
 					"The auction for \"" + name + "\" that you follow is over: the item was sold", null, skip);
 		}
 		authorizationPageBeanId.setStrMessage("The bid won successfully");
-		response.sendRedirect("ActionBids.jsp");
+		response.sendRedirect("AuctionBids.jsp");
 
 	}
 
