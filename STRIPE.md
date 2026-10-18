@@ -2,6 +2,7 @@
 
 ## Что сделано
 
+
 Пополнение счёта (`PrePay.jsp → Pay.jsp`) теперь идёт через **Stripe
 Checkout** как основной канал. Старый банковский шлюз
 (`pgate.grabko.com`, форма в `pay.xsl`, опрос `CheckPaymentResult`) не
