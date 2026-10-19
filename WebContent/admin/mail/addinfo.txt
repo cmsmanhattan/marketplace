@@ -1,0 +1,10 @@
+Dear manager  
+
+The user of @FirstName @LastName added declaration on a site @Site.
+
+Please, check it in the folder "Arrived declarations".
+
+
+
+This letter is automatically generated and doesn't require the response.
+

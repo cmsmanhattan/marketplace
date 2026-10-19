@@ -30,7 +30,7 @@ import com.cbsinc.cms.annotations.Type;
  * @version 1.0
  */
 
-@PageXsltView(jspName = "Order.jsp", xsltName = "Productlist.xsl", responseType = Type.XML)
+@PageXsltView(jspName = "Order.jsp", xsltName = "order.xsl", responseType = Type.XML)
 public class OrderBean implements java.io.Serializable {
 
 	transient private static final long serialVersionUID = 2520644735859729809L;

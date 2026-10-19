@@ -1,0 +1,13 @@
+Dear client  
+
+The merchant account application can be downloaded here: @Policy
+
+Your registration data in system the Internet of shops:
+Free domain: www.@Login.irr.bz
+Login: @Login
+Password: @Password
+
+Your registration data in mail service:
+Mail: @Login@siteforyou.net
+Login: @Login
+Password: @EmailPassword

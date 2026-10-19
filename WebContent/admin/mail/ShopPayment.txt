@@ -1,0 +1,27 @@
+The client with the name @FirstName @LastName have the order and number is @NumberOfOrder. 
+
+The client use a payment system  @PaySystem 
+
+IP: @IPAddress
+Amount: @Amount
+Currency: @Currency
+
+
+@ProductCount of numbers was ordered.
+Your comments by request:
+@CustomerCommentariy.
+
+By request you have to contact to @ContactPerson, so  it is specified in the order form.  
+Contacts of the client @Phone phone and @CustomerFax fax.
+Money on client account @Balans 
+
+The place finding of the receiver is specified 
+@Contry country
+@City city
+address @Address 
+
+The e-mail address is specified to @CustomerEmail.
+
+Yours faithfully, internet shop team.
+www.@Login.irr.bz
+@Login@siteforyou.net
